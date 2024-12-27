@@ -146,7 +146,6 @@ a {
     max-height: var(--comicHeight);
     background-color: var(--eternalsmileWhite);
     width: 100%;
-
     font-size: 0;
 }
 .bgpage {
