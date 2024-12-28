@@ -193,6 +193,9 @@ a {
 	min-width: 0;
 	background-color:var(--eternalsmileWhite);
 }
+.svg.arrow {
+	fill: var(--eternalsmileGrey);
+}
 .clippy.arrow {
 	aspect-ratio:1/1;
 	max-height:170px;
