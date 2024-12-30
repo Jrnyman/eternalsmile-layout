@@ -176,10 +176,10 @@ a {
 .top.bookmark:hover  {
     transform: translateY(1%);
 }
-.top.save.bookmark {mask:url(assets/metacontent/nav/dsave.svg) no-repeat center}
-.top.load.bookmark {mask:url(assets/metacontent/nav/dload.svg) no-repeat center}
+/*.top.save.bookmark {mask:url(assets/metacontent/nav/dsave.svg) no-repeat center}*/
+/*.top.load.bookmark {mask:url(assets/metacontent/nav/dload.svg) no-repeat center}
 .load.bookmark {mask:url(assets/metacontent/nav/load.svg) no-repeat center}
-.save.bookmark {mask:url(assets/metacontent/nav/save.svg) no-repeat center}
+.save.bookmark {mask:url(assets/metacontent/nav/save.svg) no-repeat center}*/
 .clippy, .bookmark.clippy, .top.bookmark.clippy, .clippy.arrow {mask-size: 100%}
 .top.bookmark.clippy{
     width: 95px;
@@ -191,11 +191,12 @@ a {
 .nav.icon.arrow:hover {filter: brightness(0.8);}
 .clippy {
 	min-width: 0;
-	background-color:var(--eternalsmileWhite);
-}
-.svg {
+	/*background-color:var(--eternalsmileWhite);*/
 	fill: var(--eternalsmileWhite);
 }
+/*.svg {
+	fill: var(--eternalsmileWhite);
+}*/
 .clippy.arrow {
 	aspect-ratio:1/1;
 	max-height:170px;

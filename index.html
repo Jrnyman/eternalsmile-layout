@@ -10,8 +10,13 @@
 <body> 
 <div id="vWindow" style="width: 100%; position: relative; overflow: hidden;  min-height: 3000px;">
     <nav id="topBookmarks" class="horizontalList" style="padding-left: 2%; position: fixed; z-index: 3; transform: translateY(-25%);">
-	 <a class="top nav icon bookmark ani dynamicles save clippy"></a>
-   	 <a class="top nav icon bookmark ani dynamicles load clippy"></a>
+	    <!--	 <a class="top nav icon bookmark ani dynamicles save clippy"></a>-->
+	 <a class="top nav icon bookmark ani dynamicles save clippy">
+		 <svg width="100%" height="100%"><use href="#dsave" class="svg"/></svg>
+	 </a>
+   	 <a class="top nav icon bookmark ani dynamicles load clippy">
+		 <svg width="100%" height="100%"><use href="#dload" class="svg"/></svg>
+	 </a>
     </nav>
 
     <header class="horizontalList" style="width: 90%; max-width: 1220px;gap: 5%;">
