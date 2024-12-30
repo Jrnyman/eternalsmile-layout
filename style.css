@@ -7,6 +7,8 @@
     --eternalsmileGrey:#edefec15;
     --eternalsmileLightGrey:#edefec36;
     --subGreen: #78BC4135;
+
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 265 265' class='clippy'%3E%3Cpath d='M132 232v-25a8.5 8.5 45 0 0-8.5-8.5h-100a23 23 45 0 1-23-23.3v-88a21 21 135 0 1 21-21h103a8 8 135 0 0 8-7v-35a10 10 158 0 1 17-7l105 105a15 15 90 0 1 0 21.444l-101 101a12 12 23 0 1-21-8.6z'/%3E%3C/svg%3E%0A");
 }
 body {background-color: var(--eternalsmileBlackground);}
 @media (max-width: 1229px) {
@@ -177,15 +179,23 @@ a {
     transform: translateY(1%);
 }
 /*.top.save.bookmark {mask:url(assets/metacontent/nav/dsave.svg) no-repeat center}*/
-/*.top.load.bookmark {mask:url(assets/metacontent/nav/dload.svg) no-repeat center}
-.load.bookmark {mask:url(assets/metacontent/nav/load.svg) no-repeat center}
-.save.bookmark {mask:url(assets/metacontent/nav/save.svg) no-repeat center}*/
+/*.top.load.bookmark {mask:url(assets/metacontent/nav/dload.svg) no-repeat center}*/
+.load.bookmark {
+
+}
+.save.bookmark {
+
+}
 .clippy, .bookmark.clippy, .top.bookmark.clippy, .clippy.arrow {mask-size: 100%}
 .top.bookmark.clippy{
     width: 95px;
     height:220px;
 }
-.arrow {mask:url(assets/metacontent/nav/arrow.svg) no-repeat center}
+.arrow {
+/*	background-image:var(--arrow);*/
+	mask: var(--arrow);
+	background-color:var(--eternalsmileWhite);
+}
 .flip {transform: scale(-1);}
 .nav.icon {max-width: 170px;}
 .nav.icon.arrow:hover {filter: brightness(0.8);}
@@ -193,6 +203,9 @@ a {
 	min-width: 0;
 	/*background-color:var(--eternalsmileWhite);*/
 	fill: var(--eternalsmileWhite);
+}
+.sheen {
+	stop-color: var(--eternalsmileWhite);
 }
 /*.svg {
 	fill: var(--eternalsmileWhite);
