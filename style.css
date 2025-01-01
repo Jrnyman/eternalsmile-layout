@@ -222,6 +222,12 @@ a {
 	background-color:var(--subGreen);
 	min-width:130px;
 }
+.subButton span >* {
+	background-color: var(--eternalsmileBlackground);
+	width: 25px;
+	height: 25px;
+	aspect-ratio: 1/1;
+}
 #mobileSub{
 	color:var(--eternalsmileBlackground);
 	z-index: 1;

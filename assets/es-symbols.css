@@ -14,4 +14,7 @@
 .mobile.save {mask: var(--save) no-repeat center;}
 .save {mask: var(--dsave) no-repeat center;}
 .load {mask: var(--dload) no-repeat center;}
+.mail {mask: var(--mail) no-repeat center;}
+.rss {mask: var(--rss) no-repeat center;}
+.fury {mask: var(--fury) no-repeat center;}
 #banner {mask: var(--eslogo) no-repeat center;}
