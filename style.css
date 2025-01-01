@@ -252,10 +252,8 @@ a {
 	justify-content:center;
 	display:flex;
 }
-.iconBox img {width:25px;}
 .iconBox img:hover, .subButton a:hover {
-	background-color: unset;
-	filter:brightness(1.15);
+	filter:brightness(1.25);
 }
 .text-bg {
 	transform:rotate(-10deg);
@@ -280,8 +278,7 @@ a {
 	border-radius:6px;
 }
 .scroller::-webkit-scrollbar-thumb:hover {background-color:#474745;}
-/*.top, #banner {background-color:unset;}*/
-#banner {
+.main.banner {
 	aspect-ratio:789/199 ;
 	mask-size:100%;
 	max-width:725px;
