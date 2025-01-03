@@ -5,10 +5,11 @@
     --eternalsmileBlack: #272826;
     --eternalsmileBlackground: #1a1b19;
     --eternalsmileGrey:#edefec15;
-    --eternalsmileLightGrey:#edefec36;
+    --eternalsmileLightGrey:#edefec52;
     --subGreen: #78BC4135;
 }
-body {background-color: var(--eternalsmileBlackground);}
+body {background-color: var(--eternalsmileBlackground); margin:0;margin-top:10px;}
+body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
     #topBookmarks, #dSub{display: none;}
@@ -283,4 +284,23 @@ a {
 	mask-size:100%;
 	max-width:725px;
 	flex-shrink: 0.38;
+}
+.cascade {flex-direction: row-reverse;}
+.cascade >* {
+	transform: skewY(15deg) translateY(-3px);
+	filter: drop-shadow(0 0 2px black);
+}
+.main.cascade {
+	background-color:var(--eternalsmileGrey);
+	width:fit-content;
+	padding: 5px;
+	padding-left:10px;
+	padding-right:15px;
+}
+.main.cascade::after {
+	padding-right:2px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	color: var(--eternalsmileLightGrey);
+	content: "rate page -";
 }
