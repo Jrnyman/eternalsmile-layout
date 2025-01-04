@@ -19,4 +19,4 @@
 .rss {mask: var(--rss) no-repeat center; aspect-ratio: 1/1;}
 .fury {mask: var(--fury) no-repeat center; aspect-ratio: 1/1;}
 .plot.banner {mask: var(--plot) no-repeat center; aspect-ratio: 177/111;}
-.main.banner {mask: var(--eslogo) no-repeat center;}
+.main.banner {mask: var(--eslogo) no-repeat center; aspect-ratio: 789/199;}
