@@ -72,6 +72,8 @@ body, html {overflow-x: hidden;}
 a {
 	text-decoration: none;
 }
+.white.background {background-color: var(--eternalsmileWhite);}
+.white.text {color: var(--eternalsmileWhite);}
 .fancyText {font-family:Libertinus;}
 @font-face {
 	font-family: Libertinus;
@@ -279,9 +281,9 @@ a {
 	border-radius:6px;
 }
 .scroller::-webkit-scrollbar-thumb:hover {background-color:#474745;}
+.banner {mask-size:100%;}
 .main.banner {
 	aspect-ratio:789/199 ;
-	mask-size:100%;
 	max-width:725px;
 	flex-shrink: 0.38;
 }
@@ -296,11 +298,19 @@ a {
 	padding: 5px;
 	padding-left:10px;
 	padding-right:15px;
+	opacity: 0.5;
+	font-size: 20px;
+	letter-spacing: -10px;
 }
 .main.cascade::after {
 	padding-right:2px;
+	font-weight: bold;
 	letter-spacing: 1px;
 	font-size: 15px;
 	color: var(--eternalsmileLightGrey);
 	content: "rate page -";
 }
+
+.plot.banner {
+}
+
