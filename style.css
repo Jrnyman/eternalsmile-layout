@@ -199,12 +199,6 @@ a {
 .flip {transform: scale(-1);}
 .nav.icon {max-width: 170px;}
 .nav.icon.arrow:hover {filter: brightness(0.8);}
-.clippy {
-	background-color:var(--eternalsmileWhite);
-}
-.sheen {
-	stop-color: var(--eternalsmileWhite);
-}
 .clippy.arrow {
 	aspect-ratio:1/1;
 	max-height:170px;
