@@ -74,6 +74,7 @@ a {
 }
 .white.background {background-color: var(--eternalsmileWhite);}
 .white.text {color: var(--eternalsmileWhite);}
+
 .fancyText {font-family:Libertinus;}
 @font-face {
 	font-family: Libertinus;
@@ -125,7 +126,7 @@ a {
 .flexify, .horizontalList {
 	display:flex;
 }
-.center, .horizontalList, .page {
+.center, .horizontalList, .page, .banner {
 	align-content: center;
 	justify-content:center;
 	align-items:center;
@@ -312,5 +313,6 @@ a {
 }
 
 .plot.banner {
+	max-width: 350px;
 }
 
