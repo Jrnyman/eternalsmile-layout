@@ -72,8 +72,16 @@ body, html {overflow-x: hidden;}
 a {
 	text-decoration: none;
 }
-.white.background {background-color: var(--eternalsmileWhite);}
+.white.bg {background-color: var(--eternalsmileWhite);}
 .white.text {color: var(--eternalsmileWhite);}
+.grey.bg {background-color: var(--eternalsmileGrey);}
+.grey.text {color: var(--eternalsmileGrey);}
+.light.grey.bg {background-color: var(--eternalsmileLightGrey);}
+.light.grey.text {color: var(--eternalsmileLightGrey);}
+.blackground.bg {background-color: var(--eternalsmileBlackground);}
+.blackground.text {color: var(--eternalsmileBlackground);}
+.black.bg {background-color: var(--eternalsmileBlack);}
+.black.text {color: var(--eternalsmileBlack);}
 
 .fancyText {font-family:Libertinus;}
 @font-face {
@@ -98,7 +106,6 @@ a {
 	border:none;
 }
 .main.splitter {
-	background-color:var(--eternalsmileWhite);
 	height: 5px;
 	margin-bottom:20px;
 }
@@ -142,13 +149,11 @@ a {
 .page::before {
     width: var(--comicWidth);
     height: var(--comicHeight);
-    background-color: var(--eternalsmileWhite);
 }
 .page {
 	aspect-ratio: 4/7;
     max-width: var(--comicWidth);
     max-height: var(--comicHeight);
-    background-color: var(--eternalsmileWhite);
     width: 100%;
     font-size: 0;
 }
@@ -195,9 +200,7 @@ a {
 .nav.icon {max-width: 170px;}
 .nav.icon.arrow:hover {filter: brightness(0.8);}
 .clippy {
-	min-width: 0;
 	background-color:var(--eternalsmileWhite);
-	fill: var(--eternalsmileWhite);
 }
 .sheen {
 	stop-color: var(--eternalsmileWhite);
