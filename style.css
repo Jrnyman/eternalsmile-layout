@@ -8,7 +8,7 @@
     --eternalsmileLightGrey:#edefec52;
     --subGreen: #78BC4135;
 }
-body {background-color: var(--eternalsmileBlackground); margin:0;margin-top:10px;}
+body {margin:0;margin-top:10px;}
 body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
@@ -73,15 +73,15 @@ a {
 	text-decoration: none;
 }
 .white.bg {background-color: var(--eternalsmileWhite);}
-.white.text {color: var(--eternalsmileWhite);}
+.white.text, .white.text a {color: var(--eternalsmileWhite);}
 .grey.bg {background-color: var(--eternalsmileGrey);}
-.grey.text {color: var(--eternalsmileGrey);}
+.grey.text, .grey.text a {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
-.light.grey.text {color: var(--eternalsmileLightGrey);}
+.light.grey.text, .light.grey.text a, .secondary.text {color: var(--eternalsmileLightGrey);}
 .blackground.bg {background-color: var(--eternalsmileBlackground);}
-.blackground.text {color: var(--eternalsmileBlackground);}
+.blackground.text, .blackground.text a {color: var(--eternalsmileBlackground);}
 .black.bg {background-color: var(--eternalsmileBlack);}
-.black.text {color: var(--eternalsmileBlack);}
+.black.text, .black.text a {color: var(--eternalsmileBlack);}
 
 .fancyText {font-family:Libertinus;}
 @font-face {
@@ -102,20 +102,10 @@ a {
 	content:"";
 	padding:unset;
 }
-.splitter  {
-	border:none;
-}
+.splitter  {border:none;}
 .main.splitter {
 	height: 5px;
 	margin-bottom:20px;
-}
-.secondary.text, #pageSelect {
-	color: var(--eternalsmileLightGrey);
-	background-color:unset;
-}
-.secondary {
-	color: var(--eternalsmileBlack);
-	background-color: var(--eternalsmileGrey);
 }
 .secondary.splitter {height: 3px;}
 
@@ -271,7 +261,6 @@ a {
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
 	padding:1%;
-	color: var(--eternalsmileWhite);
 }
 .scroller::-webkit-scrollbar {height:5px;}
 .scroller::-webkit-scrollbar-thumb {
@@ -291,7 +280,6 @@ a {
 	filter: drop-shadow(0 0 2px black);
 }
 .main.cascade {
-	background-color:var(--eternalsmileGrey);
 	width:fit-content;
 	padding: 5px;
 	padding-left:10px;
