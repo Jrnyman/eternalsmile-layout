@@ -15,7 +15,7 @@
 .mobile.save {mask: var(--save) no-repeat center; aspect-ratio: 210/500;}
 .save {mask: var(--dsave) no-repeat center; aspect-ratio: 212/507;}
 .load {mask: var(--dload) no-repeat center; aspect-ratio: 212/507;}
-.mail {mask: var(--mail) no-repeat center; aspect-ratio 1/1;}
+.mail {mask: var(--mail) no-repeat center; aspect-ratio: 1/1;}
 .rss {mask: var(--rss) no-repeat center; aspect-ratio: 1/1;}
 .fury {mask: var(--fury) no-repeat center; aspect-ratio: 1/1;}
 .plot.banner {mask: var(--plot) no-repeat center; aspect-ratio: 177/111;}

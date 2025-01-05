@@ -210,7 +210,6 @@ a {text-decoration: none;}
 	background-color: var(--eternalsmileBlackground);
 	width: 25px;
 	height: 25px;
-	aspect-ratio: 1/1;
 }
 #mobileSub{
 	color:var(--eternalsmileBlackground);
