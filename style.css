@@ -125,7 +125,7 @@ a {text-decoration: none;}
     -webkit-touch-callout: none;
     -moz-user-select: none;
 }
-.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg {display:flex;}
+.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span {display:flex;}
 .center, .horizontalList, .page, .banner {
 	align-content: center;
 	align-items:center;
@@ -224,7 +224,7 @@ a {text-decoration: none;}
 	overflow:hidden;
 }
 .iconBox > span {gap:8px;}
-.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner  {
+.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner, h1 span  {
 	align-self:center;
 	justify-content:center;
 }
@@ -276,8 +276,18 @@ a {text-decoration: none;}
 	color: var(--eternalsmileLightGrey);
 	content: "rate page -";
 }
-
+h1 span {
+	align-items: flex-start;
+	gap: 15px;
+}
+h1 span .banner {margin: unset;}
 .plot.banner {
 	max-width: 325px;
+	width: 90%
 }
+.ex {filter:grayscale(00%) opacity(1.85);}
+.j.ex {
+	content: url('assets/metacontent/icons/jread3.svg');	
+{
+
 
