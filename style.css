@@ -70,6 +70,10 @@ body, html {overflow-x: hidden;}
 @media (min-width: 500px) {}
 
 @font-face {
+	font-family: "Fira Mono";
+	src:url(assets/metacontent/fonts/FiraMono-Regular.woff2);
+}
+@font-face {
 	font-family: Libertinus;
 	src:url(assets/metacontent/fonts/LibertinusSerif-Regular.woff2);
 }
@@ -77,10 +81,14 @@ body, html {overflow-x: hidden;}
 	font-family:'Archivo Black';
 	src: url(assets/metacontent/fonts/ArchivoBlack-Regular.woff2);
 }
+@font-face {
+	font-family: 'Francois One';
+	src: url(assets/metacontent/fonts/francois-one-v21-latin-regular.woff2);
+}
 
 a {text-decoration: none;}
 .white.bg {background-color: var(--eternalsmileWhite);}
-.white.text, .white.text a {color: var(--eternalsmileWhite);}
+.white.text, .white.text a, body {color: var(--eternalsmileWhite);}
 .grey.bg {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
@@ -125,7 +133,7 @@ a {text-decoration: none;}
     -webkit-touch-callout: none;
     -moz-user-select: none;
 }
-.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span {display:flex;}
+.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span, .row {display:flex;}
 .center, .horizontalList, .page, .banner {
 	align-content: center;
 	align-items:center;
@@ -238,11 +246,12 @@ a {text-decoration: none;}
 .boldify > a:hover{
 	background-color:var(--eternalsmileGrey);
 }
-.boldify, .boldify a, .boldify div{
+
+h1, h2, h3, h4, h5, h6, .boldify {
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
-	padding:1%;
 }
+.boldify, .boldify a, .boldify div {padding:1%;}
 .scroller::-webkit-scrollbar {height:5px;}
 .scroller::-webkit-scrollbar-thumb {
 	background-color:#2e2e2d;
@@ -276,14 +285,43 @@ a {text-decoration: none;}
 	color: var(--eternalsmileLightGrey);
 	content: "rate page -";
 }
+
+article {
+	max-width: 1500px;
+	margin: auto;
+}
+p {
+	font-family: 'Francois One';
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+blockquote {
+	font-family: "Fira Mono";
+	font-size: 15px;
+	filter:grayscale(100%) opacity(0.85);
+}
+blockquote.j {
+	background-image:url(assets/metacontent/icons/jread3.svg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-size:60px;
+	padding-left:70px;
+}
 h1 span {
 	align-items: flex-start;
-	gap: 15px;
+	gap: 15px; 
+	padding-left:20px; 
+	padding-right:20px;
 }
 h1 span .banner {margin: unset;}
 .plot.banner {
 	max-width: 325px;
 	width: 90%
+}
+.row h1, .row hr  {flex-basis:100%;}
+.row {width:85%; flex-wrap:wrap;}
+.row >* {
+	flex: 1 1 0px;
 }
 .ex {filter:grayscale(00%) opacity(1.85);}
 .j.ex {
