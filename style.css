@@ -5,7 +5,7 @@
     --eternalsmileBlack: #272826;
     --eternalsmileBlackground: #1a1b19;
     --eternalsmileGrey:#edefec15;
-    --eternalsmileLightGrey:#edefec52;
+    --eternalsmileLightGrey:#edefec7d;
     --subGreen: #78BC4135;
 }
 body {margin:0;margin-top:10px;}
@@ -92,7 +92,7 @@ a {text-decoration: none;}
 .grey.bg, .row hr {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
-.light.grey.text, .light.grey.text a, .secondary.text {color: var(--eternalsmileLightGrey);}
+.light.grey.text, .light.grey.text a, .secondary.text, blockquote {color: var(--eternalsmileLightGrey);}
 .blackground.bg {background-color: var(--eternalsmileBlackground);}
 .blackground.text, .blackground.text a {color: var(--eternalsmileBlackground);}
 .black.bg {background-color: var(--eternalsmileBlack);}
@@ -298,15 +298,20 @@ p {
 blockquote {
 	font-family: "Fira Mono";
 	font-size: 15px;
-	filter:grayscale(100%) opacity(0.85);
 }
-blockquote.j {
-	background-image:url(assets/metacontent/icons/jread3.svg);
-	background-position:top left;
-	background-repeat:no-repeat;
-	background-size:60px;
-	padding-left:70px;
+blockquote::before {
+	content:"";
+	position:absolute;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	aspect-ratio: 1;
+	transform: translateX(-65px);
+	opacity: 0.7;
+	width: 60px;
 }
+blockquote.j::before {background-image:url(assets/metacontent/icons/jread3.svg);}
+blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
 h1 span {
 	align-items: flex-start;
