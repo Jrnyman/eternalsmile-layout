@@ -30,10 +30,12 @@ body, html {overflow-x: hidden;}
     }
 	.row {flex-direction:column;}    
 	.row.center {align-items: center;}
+	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset}
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
 	.row.center {align-items: unset;}
+	.row hr {flex-basis:100%;}
 	.wrap>main {
 		padding-bottom:200px;
 	}
@@ -326,7 +328,7 @@ h1 span .banner {margin: unset;}
 	max-width: 325px;
 	width: 90%
 }
-.row h1, .row hr  {flex-basis:100%;}
+.row h1 {flex-basis:100%;}
 .row {width:85%; flex-wrap:wrap; gap: 20px;}
 .row >* {flex: 1 1 0px;}
 .not.row, .pic.typ {flex-direction:column;}
