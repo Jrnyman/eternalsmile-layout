@@ -29,9 +29,11 @@ body, html {overflow-x: hidden;}
         position: relative;
     }
 	.row {flex-direction:column;}    
+	.row.center {align-items: center;}
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
+	.row.center {align-items: unset;}
 	.wrap>main {
 		padding-bottom:200px;
 	}
@@ -327,12 +329,6 @@ h1 span .banner {margin: unset;}
 .row h1, .row hr  {flex-basis:100%;}
 .row {width:85%; flex-wrap:wrap; gap: 20px;}
 .row >* {flex: 1 1 0px;}
-.row.center {align-items:unset;}
-.row.splitter:before {
-	content: "";
-	border: 1px solid var(--eternalsmileWhite);
-	align-self: stretch;
-}
 .not.row, .pic.typ {flex-direction:column;}
 .ex {filter:grayscale(00%) opacity(1.85);}
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
