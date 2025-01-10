@@ -325,15 +325,14 @@ h1 span .banner {margin: unset;}
 	width: 90%
 }
 .row h1, .row hr  {flex-basis:100%;}
-.row {width:85%; flex-wrap:wrap;}
+.row {width:85%; flex-wrap:wrap; gap: 20px;}
 .row >* {flex: 1 1 0px;}
 .row.center {align-items:unset;}
-.row.splitter div:before {
+.row.splitter:before {
 	content: "";
 	border: 1px solid var(--eternalsmileWhite);
 	align-self: stretch;
 }
-.row.splitter .pic.typ:before {display:none;}
 .not.row, .pic.typ {flex-direction:column;}
 .ex {filter:grayscale(00%) opacity(1.85);}
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
@@ -342,13 +341,12 @@ h1 span .banner {margin: unset;}
 	width: 100%;
 	border-radius: 10px;
 }
-.pic.typ p {margin: 5px;}
+.pic.typ p {margin: 5px; font-size: 17px; letter-spacing:1px;}
 .pic.typ {
-	font-size: 17px;
 	text-transform:uppercase;
-	letter-spacing: 1px;
 	width:fit-content;
-	flex: unset;
+	flex-grow: 0;
+	flex-basis: fit-content;
 }
 .pic.typ p:last-child {
 	text-align: right;
