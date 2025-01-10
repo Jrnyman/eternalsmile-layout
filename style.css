@@ -93,7 +93,7 @@ body, html {overflow-x: hidden;}
 a {text-decoration: none;}
 .white.bg {background-color: var(--eternalsmileWhite);}
 .white.text, .white.text a, body {color: var(--eternalsmileWhite);}
-.grey.bg, .row hr {background-color: var(--eternalsmileGrey);}
+.grey.bg {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a  {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
 .light.grey.text, .light.grey.text a, .secondary.text, blockquote, .pic.typ {color: var(--eternalsmileLightGrey);}
@@ -119,12 +119,12 @@ a {text-decoration: none;}
 	content:"";
 	padding:unset;
 }
-.splitter, .row hr {border:none;}
 .main.splitter {
 	height: 5px;
 	margin-bottom:20px;
 }
-.secondary.splitter, .row hr {height: 3px;}
+.splitter.dotted, .dotted {border: 2px dashed var(--eternalsmileGrey);}
+.secondary.splitter, .row hr {border: 2px solid var(--eternalsmileGrey);}
 
 .dynamicles, #mainnav a {
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s;
@@ -331,6 +331,8 @@ h1 span .banner {margin: unset;}
 .row h1 {flex-basis:100%;}
 .row {width:85%; flex-wrap:wrap; gap: 20px;}
 .row >* {flex: 1 1 0px;}
+.not.row hr {flex: 1 1 0px; width: 100%;}
+.not.row {gap: 0;}
 .not.row, .pic.typ {flex-direction:column;}
 .ex {filter:grayscale(00%) opacity(1.85);}
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
