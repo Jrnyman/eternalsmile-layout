@@ -319,11 +319,17 @@ blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
 h1 span {
 	align-items: flex-start;
-	gap: 15px; 
+	gap: 1%; 
 	padding-left:20px; 
 	padding-right:20px;
+	width: 90%; 
+	margin: auto;
+	max-width: 460px;
 }
-h1 span .banner {margin: unset;}
+h1 span .banner {
+	margin: unset;
+	flex-basis: 70%;
+}
 .plot.banner {
 	max-width: 325px;
 	width: 90%
@@ -334,7 +340,12 @@ h1 span .banner {margin: unset;}
 .not.row hr {flex: 1 1 0px; width: 100%;}
 .not.row {gap: 0;}
 .not.row, .pic.typ {flex-direction:column;}
-.ex {filter:grayscale(00%) opacity(1.85);}
+.ex {
+	filter:grayscale(00%) opacity(1.85);
+	flex-basis: 22%;
+	min-width:0;
+	max-width:95px;
+}
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
 .pic.typ img {
 	max-width: 600px;
