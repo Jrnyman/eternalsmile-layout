@@ -376,4 +376,7 @@ h1 span .banner {
 	flex-wrap: wrap;
 }
 .cred.plug >*::after {position:absolute;}
-.cred.icles img {max-width: 75px; opacity: 0.7;}
+.cred.icles {max-width: 400px;}
+.cred.icles img {max-width: 75px; opacity: 0.7;flex-basis: 30%;min-width: 0;}
+.cred.icles .cred.plug {flex-basis: 70%;}
+
