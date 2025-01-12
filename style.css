@@ -236,7 +236,7 @@ a {text-decoration: none;}
 	overflow:hidden;
 }
 .iconBox > span {gap:8px;}
-.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner, h1 span  {
+.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner, h1 span, .cred.plug  {
 	align-self:center;
 	justify-content:center;
 }
@@ -378,5 +378,5 @@ h1 span .banner {
 .cred.plug >*::after {position:absolute;}
 .cred.icles {max-width: 400px;}
 .cred.icles img {max-width: 75px; opacity: 0.7;flex-basis: 30%;min-width: 0;}
-.cred.icles .cred.plug {flex-basis: 70%;}
+.cred.icles .cred.plug {flex-basis: 70%; justify-content:unset;}
 
