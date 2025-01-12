@@ -138,7 +138,7 @@ a {text-decoration: none;}
     -moz-user-select: none;
 }
 .flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span, .row, .pic.cred, .cred {display:flex;}
-.center, .horizontalList, .page, .banner {
+.center, .horizontalList, .page, .banner, .cred.main {
 	align-content: center;
 	align-items:center;
 	margin:auto;
@@ -341,6 +341,7 @@ h1 span .banner {
 .not.row hr {flex: 1 1 0px; width: 100%;}
 .not.row {gap: 0;}
 .not.row, .pic.cred, .cred.main {flex-direction:column;}
+.not.row {flex-grow:0; flex-basis:fit-content;}
 .ex {
 	filter:grayscale(00%) opacity(1.85);
 	flex-basis: 22%;
@@ -383,3 +384,4 @@ h1 span .banner {
 .cred.main img {max-width: 200px;}
 .cred.main {text-align: center;}
 .cred.main span:nth-child(3) {margin-top:-6px;}
+.cred.main .cred.plug {max-width:420px;}
