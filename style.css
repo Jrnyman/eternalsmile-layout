@@ -317,8 +317,8 @@ blockquote::before {
 blockquote.j::before {background-image:url(assets/metacontent/icons/jread3.svg);}
 blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
+h1 span, .cred.icles {align-items: flex-start;}
 h1 span {
-	align-items: flex-start;
 	gap: 1%; 
 	padding-left:20px; 
 	padding-right:20px;
@@ -348,12 +348,20 @@ h1 span .banner {
 	max-width:95px;
 }
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
+.atty, .cred.icles span::after {
+	display: inline-block;
+	content:"@";
+	font-size: 25px;
+	padding: 5px;
+	transform: rotate(12deg);
+	opacity:0.7;
+}
 .pic.cred img {
 	max-width: 600px;
 	width: 100%;
 	border-radius: 10px;
 }
-.pic.cred span {margin: 5px; font-size: 17px;}
+.cred span {margin: 5px; font-size: 17px;}
 .pic.cred, .cred {text-transform:uppercase;}
 .pic.cred {
 	width:fit-content;
