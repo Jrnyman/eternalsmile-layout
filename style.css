@@ -334,8 +334,9 @@ h1 span .banner {
 	max-width: 325px;
 	width: 90%
 }
-.row h1 {flex-basis:100%;}
-.row {width:85%; flex-wrap:wrap; gap: 20px;}
+.row h1, .cred.icles span {flex-basis:100%;}
+.row, .cred.icles {flex-wrap: wrap;}
+.row {width:85%; gap: 20px;}
 .row >* {flex: 1 1 0px;}
 .not.row hr {flex: 1 1 0px; width: 100%;}
 .not.row {gap: 0;}
@@ -352,14 +353,14 @@ h1 span .banner {
 	width: 100%;
 	border-radius: 10px;
 }
-.pic.cred p {margin: 5px; font-size: 17px;}
+.pic.cred span {margin: 5px; font-size: 17px;}
 .pic.cred, .cred {text-transform:uppercase;}
 .pic.cred {
 	width:fit-content;
 	flex-grow: 0;
 	flex-basis: fit-content;
 }
-.pic.cred p:last-child {text-align: right;}
+.pic.cred span:last-child {text-align: right;}
 .cred, .cred p {letter-spacing: 1px;}
 .cred a {padding: 4px; margin-left: 5px; margin-right: 5px;}
 .cred.plug {
@@ -367,4 +368,4 @@ h1 span .banner {
 	flex-wrap: wrap;
 }
 .cred.plug >*::after {position:absolute;}
-
+.cred.icles img {max-width: 75px; opacity: 0.7;}
