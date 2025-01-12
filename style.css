@@ -93,10 +93,10 @@ body, html {overflow-x: hidden;}
 a {text-decoration: none;}
 .white.bg {background-color: var(--eternalsmileWhite);}
 .white.text, .white.text a, body {color: var(--eternalsmileWhite);}
-.grey.bg {background-color: var(--eternalsmileGrey);}
+.grey.bg, .cred a:hover {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a  {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
-.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .pic.typ {color: var(--eternalsmileLightGrey);}
+.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .cred, .cred a {color: var(--eternalsmileLightGrey);}
 .blackground.bg {background-color: var(--eternalsmileBlackground);}
 .blackground.text, .blackground.text a {color: var(--eternalsmileBlackground);}
 .black.bg {background-color: var(--eternalsmileBlack);}
@@ -107,10 +107,10 @@ a {text-decoration: none;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;} 
 
-.fancyText, .pic.typ p {font-family:Libertinus;}
+.fancyText, .cred p, .cred {font-family:Libertinus;}
 
 .divided >#pageSelect::after {font-size:30px;}
-.divided >*::after {
+.divided >*::after, .cred.plug >*::after {
 	content:"/";
 	padding-left: 5px;
 	padding-right: 5px;
@@ -137,7 +137,7 @@ a {text-decoration: none;}
     -webkit-touch-callout: none;
     -moz-user-select: none;
 }
-.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span, .row, .pic.typ {display:flex;}
+.flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span, .row, .pic.cred, .cred {display:flex;}
 .center, .horizontalList, .page, .banner {
 	align-content: center;
 	align-items:center;
@@ -339,7 +339,7 @@ h1 span .banner {
 .row >* {flex: 1 1 0px;}
 .not.row hr {flex: 1 1 0px; width: 100%;}
 .not.row {gap: 0;}
-.not.row, .pic.typ {flex-direction:column;}
+.not.row, .pic.cred {flex-direction:column;}
 .ex {
 	filter:grayscale(00%) opacity(1.85);
 	flex-basis: 22%;
@@ -347,20 +347,24 @@ h1 span .banner {
 	max-width:95px;
 }
 .j.ex {content: url('assets/metacontent/icons/jread3.svg');}
-.pic.typ img {
+.pic.cred img {
 	max-width: 600px;
 	width: 100%;
 	border-radius: 10px;
 }
-.pic.typ p {margin: 5px; font-size: 17px; letter-spacing:1px;}
-.pic.typ {
-	text-transform:uppercase;
+.pic.cred p {margin: 5px; font-size: 17px;}
+.pic.cred, .cred {text-transform:uppercase;}
+.pic.cred {
 	width:fit-content;
 	flex-grow: 0;
 	flex-basis: fit-content;
 }
-.pic.typ p:last-child {
-	text-align: right;
+.pic.cred p:last-child {text-align: right;}
+.cred, .cred p {letter-spacing: 1px;}
+.cred a {padding: 4px; margin-left: 5px; margin-right: 5px;}
+.cred.plug {
+	font-size: 15px;
+	flex-wrap: wrap;
 }
-
+.cred.plug >*::after {position:absolute;}
 
