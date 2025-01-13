@@ -14,6 +14,10 @@ body, html {overflow-x: hidden;}
     /* Tablet small mode is on */
     #topBookmarks, #dSub{display: none;}
     .page, #mainnav>*, .rounder {border-radius: 10px;}
+	.cred.main.collab .cred.main:first-child:after {
+		transform: unset;
+		position: unset;
+	}
 
     #back1 {filter: blur(5px) brightness(0.5);}
     #back2 {filter: blur(7px) brightness(0.4);}
@@ -28,13 +32,18 @@ body, html {overflow-x: hidden;}
         width: 95%;
         position: relative;
     }
-	.row {flex-direction:column;}    
+	.row, .cred.main.collab {flex-direction:column;}    
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset}
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
+	.cred.main.collab .cred.main:first-child:after {
+		transform: translatex(150px);
+		position: absolute;
+	}
 	.row.center {align-items: unset;}
+	.cred.main.collab {flex-direction: row;}
 	.row hr {flex-basis:100%;}
 	.wrap>main {
 		padding-bottom:200px;
@@ -385,3 +394,10 @@ h1 span .banner {
 .cred.main {text-align: center;}
 .cred.main span:nth-child(3) {margin-top:-6px;}
 .cred.main .cred.plug {max-width:420px;}
+.cred.main.collab .cred.plug {max-width: 300px;}
+.cred.main.collab .cred.main:first-child:after {
+	content:"&";
+	font-weight: bolder;
+	font-size: 90px;
+	opacity: 0.1;
+}
