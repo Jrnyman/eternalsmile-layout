@@ -393,3 +393,4 @@ h1 span .banner {
 .cred.main.collab.mini .cred.icles {text-align: initial; line-height: 15px;}
 .cred.main.collab.mini .cred.icles .cred.plug {line-height:20px}
 .cred.main.collab.mini .cred.icles img {max-width: 120px}
+span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), rgba(0, 0, 0, 0)); background-clip:text; color: transparent;}
