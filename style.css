@@ -1,11 +1,12 @@
 :root {
     --comicWidth: 1000px;
     --comicHeight: 1750px;
-    --eternalsmileWhite: #edefec;
+    --white: 237, 239, 236;
+    --eternalsmileWhite: rgb(var(--white));
     --eternalsmileBlack: #272826;
     --eternalsmileBlackground: #1a1b19;
-    --eternalsmileGrey:#edefec15;
-    --eternalsmileLightGrey:#edefec7d;
+    --eternalsmileGrey:rgba(var(--white), 0.1);
+    --eternalsmileLightGrey: rgba(var(--white), 0.5);
     --subGreen: #78BC4135;
 }
 body {margin:0;margin-top:10px;}
@@ -123,6 +124,7 @@ a {text-decoration: none;}
 	padding:unset;
 }
 .main.splitter {
+	border: unset;
 	height: 5px;
 	margin-bottom:20px;
 }
