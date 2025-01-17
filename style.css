@@ -396,3 +396,17 @@ h1 span .banner {
 .cred.main.collab.mini .cred.icles .cred.plug {line-height:20px}
 .cred.main.collab.mini .cred.icles img {max-width: 120px}
 span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), rgba(0, 0, 0, 0)); background-clip:text; color: transparent;}
+.card {
+	display: flex;
+	flex-direction: column;
+
+	transform-style: preserve-3d;
+	animation: spin 20s infinite linear;	
+	width: 800px;
+	max-width: 70%;
+}
+div:has(.card) {perspective: 110em; width: 900px; aspect-ratio: 1; max-width:100%;}
+.card img {backface-visibility: hidden; transform: rotateZ(3deg); width:100%;}
+.card img:last-of-type {position: absolute;transform: rotateZ(3deg) rotateY(180deg);}
+
+@keyframes spin {100% {transform: rotateY(360deg)}}
