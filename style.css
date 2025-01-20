@@ -405,7 +405,8 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	width: 800px;
 	max-width: 70%;
 }
-div:has(.card) {perspective: 110em; width: 900px; aspect-ratio: 1; max-width:100%;}
+.card.holder .card {margin: auto;}
+.card.holder {perspective: 110em; max-width: 900px; aspect-ratio: 1; width:100%; animation: unset;}
 .card img {backface-visibility: hidden; transform: rotateZ(3deg); width:100%;}
 .card img:last-of-type {position: absolute;transform: rotateZ(3deg) rotateY(180deg);}
 
