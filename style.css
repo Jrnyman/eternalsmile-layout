@@ -2,12 +2,14 @@
     --comicWidth: 1000px;
     --comicHeight: 1750px;
     --white: 237, 239, 236;
+    --splash: 46, 60, 33;
     --eternalsmileWhite: rgb(var(--white));
     --eternalsmileBlack: #272826;
     --eternalsmileBlackground: #1a1b19;
     --eternalsmileGrey:rgba(var(--white), 0.1);
     --eternalsmileLightGrey: rgba(var(--white), 0.5);
-    --subGreen: #78BC4135;
+    /*--subGreen: #78BC4135;*/
+    --subGreen: rgb(var(--splash));
 }
 body {margin:0;margin-top:10px;}
 body, html {overflow-x: hidden;}
@@ -232,9 +234,13 @@ a {text-decoration: none;}
 	padding:7px;
 }
 #sub-bg {
+	/*background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);*/
 	background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);
 	background-clip:text;
-	color:#1a1b194a;
+	/*color:#1a1b194a;*/
+	color: rgba(var(--splash), 0.13);
+	filter: hue-rotate(180deg);
+	mix-blend-mode: hard-light;
 }
 .iconBox {
 	overflow:hidden;
