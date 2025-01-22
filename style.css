@@ -234,10 +234,8 @@ a {text-decoration: none;}
 	padding:7px;
 }
 #sub-bg {
-	/*background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);*/
 	background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);
 	background-clip:text;
-	/*color:#1a1b194a;*/
 	color: rgba(var(--splash), 0.13);
 	filter: hue-rotate(180deg);
 	mix-blend-mode: hard-light;
@@ -291,6 +289,7 @@ h1, h2, h3, h4, h5, h6, .boldify {
 	opacity: 0.5;
 	font-size: 20px;
 }
+.main.cascade:hover {background-color: rgba(var(--white), 0.15);}
 .main.cascade::after {
 	padding-right:2px;
 	font-weight: bold;
