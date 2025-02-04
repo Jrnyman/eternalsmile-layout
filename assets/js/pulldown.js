@@ -7,17 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
             var observermaybe = new IntersectionObserver(function(entries) {
                 if (entries[0].isIntersecting === true){
                     var titlesize = titleget.offsetHeight - 200;
-                    var whereIbe = window.pageYOffset + whoIbe.getBoundingClientRect().top - 2175 - titlesize;
+                    var whereIbe = window.pageYOffset + whoIbe.getBoundingClientRect().top - 2075 - titlesize;
                     
                     console.log(whereIbe)
                     if(whereIbe > -1204){
-                //        pageget.style.marginTop = whereIbe + 'px';
-			pageget.style.transform = 'translateY(' + whereIbe + 'px)';
+			pageget.style.translate = '0px ' + whereIbe + 'px';
                         console.log("Get over here!");
                     }
                 } else {
-                //    pageget.style.marginTop = '-1750px';
-		pageget.style.transform = 'translateY(0)';
+			pageget.style.translate = '0';
                 }
             }, { threshold: [0] });
             observermaybe.observe(bruh);
