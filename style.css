@@ -309,14 +309,19 @@ p, li {
 	letter-spacing: 0.5px;
 }
 li {
+	color: rgba(var(--white), 0.78);
 	padding: 1px;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 	padding-left: 7px;
 	padding-right: 7px;
 }
 li:nth-of-type(even) {
-	background-color: var(--eternalsmileGrey);
+	background-color: rgba(var(--white), 0.06);
 }
+ol.letters {list-style-type: lower-alpha;}
+ol.letters.uppercase {list-style-type: upper-alpha;}
+ol.roman {list-style-type: lower-roman;}
+ol.roman.uppercase {list-style-type: upper-roman;}
 blockquote {
 	font-family: "Fira Mono";
 	font-size: 15px;
