@@ -16,7 +16,7 @@ body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
     #topBookmarks, #dSub{display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr {border-radius: 10px;}
+    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li {border-radius: 10px;}
 
 
     #back1 {filter: blur(5px) brightness(0.5);}
@@ -303,10 +303,19 @@ article {
 	max-width: 1500px;
 	margin: auto;
 }
-p {
+p, li {
 	font-family: 'Francois One';
 	font-size: 16px;
 	letter-spacing: 0.5px;
+}
+li {
+	padding: 1px;
+	margin-bottom: 6px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+li:nth-of-type(even) {
+	background-color: var(--eternalsmileGrey);
 }
 blockquote {
 	font-family: "Fira Mono";
