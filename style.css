@@ -318,10 +318,37 @@ li {
 li:nth-of-type(even) {
 	background-color: rgba(var(--white), 0.06);
 }
+ol li::marker {
+	color: rgba(var(--white), 0.35);
+	font-family: Libertinus;
+}
 ol.letters {list-style-type: lower-alpha;}
 ol.letters.uppercase {list-style-type: upper-alpha;}
 ol.roman {list-style-type: lower-roman;}
 ol.roman.uppercase {list-style-type: upper-roman;}
+li.current::before {
+	height:55px;
+	width: 55px;
+	content: '';
+	display: inline-flex;
+	align-self: center;
+	background-size: contain;
+	background-image: url(assets/metacontent/icons/point.svg);
+	position:absolute;
+	margin-left: -75px;
+	animation: cursor-a 1s ease-in-out infinite;
+}
+li.current {
+	list-style-type: none;
+	display: flex;
+}
+.progress {margin: auto; max-width: 700px;}
+.progress, .progress >*, .progress >* >*, .progress >* >* >* {list-style-type: none;}
+.progress, ul.progress li {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
 blockquote {
 	font-family: "Fira Mono";
 	font-size: 15px;
@@ -446,3 +473,5 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 @keyframes flick {98% {opacity: 0;} 99% {opacity: 1;}}
 @keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;}}
 @keyframes hold {0% {opacity: 1;} 99% {opacity: 1;}}
+
+@keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}
