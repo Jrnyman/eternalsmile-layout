@@ -326,6 +326,24 @@ ol.letters {list-style-type: lower-alpha;}
 ol.letters.uppercase {list-style-type: upper-alpha;}
 ol.roman {list-style-type: lower-roman;}
 ol.roman.uppercase {list-style-type: upper-roman;}
+li.complete::before {
+	content: "ok!";
+	position: absolute;
+	margin-left: -70px;
+	font-family: 'Archivo Black';
+	font-size: 15px;
+	color: rgba(var(--white), 0.4);
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 6px;
+	background-color: rgba(var(--white), 0.07);
+	align-self: center;
+}
+li.complete {
+	opacity: 0.5;
+	text-decoration: line-through;
+	text-decoration-thickness: 2px;
+}
 li.current::before {
 	height:55px;
 	width: 55px;
@@ -338,16 +356,20 @@ li.current::before {
 	margin-left: -75px;
 	animation: cursor-a 1s ease-in-out infinite;
 }
-li.current {
+li.current, li.complete {
 	list-style-type: none;
 	display: flex;
 }
 .progress {margin: auto; max-width: 700px;}
-.progress, .progress >*, .progress >* >*, .progress >* >* >* {list-style-type: none;}
+.progress * {list-style-type: none;}
 .progress, ul.progress li {
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+}
+.progress * span {
+	font-family: 'Archivo Black';
+	
 }
 blockquote {
 	font-family: "Fira Mono";
