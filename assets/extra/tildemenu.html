@@ -33,42 +33,15 @@
 				<input type="BUTTON" id="reboot" style="max-width: 90px;" />
 			</div>
 		</div>
-		<!--<script src="../js/theme.js"></script>-->
+		<script src="../js/theme.js"></script>
 		<script>
 			localStorage.setItem("theme", false); 
-
-			const primaryButton = document.getElementById("customPrimary");
-			const secondaryButton = document.getElementById("customSecondary");
-			const splashButton = document.getElementById("customSplash");
-			const alright = document.getElementById("alrighty");
-			const reboot = document.getElementById("reboot");
-
-			var rootget = document.querySelector(':root');
-			var cpuStyle = getComputedStyle(rootget);
-
-			var primary = cpuStyle.getPropertyValue('--white');
-			var secondary = cpuStyle.getPropertyValue('--black');
-			var splash = cpuStyle.getPropertyValue('--splash');
-			console.log('primary: ', splash);
-
-			let customInfo;
-			let customPrimary;
-			alright.onclick = function(){
-				customPrimary = primaryButton.value;	
-				rootget.style.setProperty('--white', customPrimary);
-				localStorage.setItem("localP", customPrimary);
-			};
-			function setStyles() {
-				var localP = localStorage.getItem("localP");
-				customPrimary = localP; 	
-				rootget.style.setProperty('--white', customPrimary);
+			usersays.ok.onclick = function(){
+				usersays.input.primary = usersays.primary.value;
+				rootget.style.setProperty('--white', usersays.input.primary);
+				localStorage.setItem("localP", usersays.input.primary);
 			};
 			
-			if (!localStorage.getItem("localP")) {
-				populateStorage();
-			} else {
-				setStyles();
-			};
 		</script>
 	</body>
 </html>
