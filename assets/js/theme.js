@@ -5,20 +5,25 @@ const usersays = {
 	splash: document.getElementById("customSplash"),
 	ok: document.getElementById("alrighty"),
 	nvm: document.getElementById("reboot"),
-	input: {primary: null, secondary: null, splash: null}
 }
-var local = {
+let local = {
 	ready: localStorage.getItem("theme"),
-	primary: localStorage.getItem("localP"),
-//	secondary: ,
-//	splash: ,
+	primary: localStorage.getItem("localW"),
+	secondary: localStorage.getItem("localB"),
+	splash: localStorage.getItem("localS"),
 };
-//const gotcha = ["primary", "secondary", "splash"] 
+
 function setStyles() {
 	rootget.style.setProperty('--white', local.primary);
+	rootget.style.setProperty('--black', local.secondary);
+	rootget.style.setProperty('--splash', local.splash);
 }
+
 if (!local.primary) {
 	populateStorage();
+} else if (ready=true) {
+	setStyles();
+	local.ready=false;
 } else {
 	setStyles();
 };

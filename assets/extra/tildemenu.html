@@ -37,9 +37,14 @@
 		<script>
 			localStorage.setItem("theme", false); 
 			usersays.ok.onclick = function(){
-				usersays.input.primary = usersays.primary.value;
-				rootget.style.setProperty('--white', usersays.input.primary);
-				localStorage.setItem("localP", usersays.input.primary);
+				rootget.style.setProperty('--white', usersays.primary.value);
+				rootget.style.setProperty('--black', usersays.secondary.value);
+				rootget.style.setProperty('--splash', usersays.splash.value);
+
+				localStorage.setItem("localW", usersays.primary.value); 
+				localStorage.setItem("localB", usersays.secondary.value);
+				localStorage.setItem("localS", usersays.splash.value);
+				local.ready = true;
 			};
 			
 		</script>
