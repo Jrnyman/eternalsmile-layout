@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-            var bruh = document.querySelector('#catch-up');
+            var checkpoint = document.querySelector('#catch-up');
             var pageget = document.getElementById('nextpage');
-            var whoIbe = document.getElementById('catch-up');
+            var stophere = document.getElementById('catch-up');
             var titleget = document.getElementById('Title');
     
             var observermaybe = new IntersectionObserver(function(entries) {
                 if (entries[0].isIntersecting === true){
                     var titlesize = titleget.offsetHeight - 200;
-                    var whereIbe = window.pageYOffset + whoIbe.getBoundingClientRect().top - 2075 - titlesize;
+                    var whereIbe = window.pageYOffset + stophere.getBoundingClientRect().top - 2075 - titlesize;
                     
                     console.log(whereIbe)
                     if(whereIbe > -1204){
@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', function() {
 			pageget.style.translate = '0';
                 }
             }, { threshold: [0] });
-            observermaybe.observe(bruh);
+            observermaybe.observe(checkpoint);
         })

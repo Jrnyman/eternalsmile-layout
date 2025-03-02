@@ -190,7 +190,7 @@ a {text-decoration: none;}
 }
 #underpage.horizontalList >* {flex-basis: 250px;}
 
-.top.bookmark:hover  {
+a.bookmark:hover  {
     transform: translateY(1%);
 }
 .load.bookmark {
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6, .boldify {
 }
 
 article {
-	max-width: 1500px;
+	max-width: 1230px;
 	margin: auto;
 }
 p, li {
