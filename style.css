@@ -1,3 +1,4 @@
+.hosted {display: none !important;}
 :root {
     --comicWidth: 1000px;
     --comicHeight: 1750px;
@@ -477,7 +478,7 @@ h1 span .banner {
 .cred.icles img, .cred.main img {opacity: 0.7;}
 .cred.icles .cred.plug {flex-basis: 70%; justify-content:unset;}
 .cred.main img {max-width: 200px;}
-.cred.main {text-align: center;}
+.cred.main, #mainnav a {text-align: center;}
 .cred.main span:nth-child(3) {margin-top:-6px;}
 .cred.main .cred.plug {max-width:420px;}
 .cred.main.collab {gap: 50px;}
