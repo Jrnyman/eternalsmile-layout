@@ -76,10 +76,10 @@
     <hr class="splitter secondary rounder dynamicles" style="max-width:1040px; width:95%">
 	<nav class="flexify center divided" style="font-size: 18px;">
 		<span id="pageSelect" class="light grey text" style="display:flex;">
-			<select name="pageselector" style="height:25px; align-self:center;">
-				<option value="no1">NO. ONE</option>
-				<option value="no2">NO. 2</option>
-				<option value="no3">NO. 3</option>
+			<select name="pageselector" style="height:25px; align-self:center;" onchange="document.getElementById('currentpage').src = this.value">
+				<option value="42e.png">original</option>
+				<option value="42thumb.png">thumbail</option>
+				<option value="no3">sketch</option>
 				<option value="no4">NO. 4</option>
 			</select>
 		</span>
