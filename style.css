@@ -573,6 +573,12 @@ span.key::before {
 	padding-left: 8px;
 	opacity: 0.9;
 }
+.archivelist li {
+	font-size: 22px;	
+	font-family: 'Archivo Black';
+	list-style-type: none;
+	margin-bottom: 10px;
+}
 #tildemenu {
 	z-index: 999;
 	backdrop-filter: blur(10px);
