@@ -335,12 +335,6 @@ li.complete::before {
 	position: absolute;
 	margin-left: -70px;
 	font-family: 'Archivo Black';
-	font-size: 15px;
-	color: rgba(var(--white), 0.4);
-	padding-left: 5px;
-	padding-right: 5px;
-	border-radius: 6px;
-	background-color: rgba(var(--white), 0.07);
 	align-self: center;
 }
 li.complete {
@@ -506,7 +500,15 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	padding: 20px;
 	background-color: white; 
 }
-
+.appendage {margin-left: 3px;}
+.appendage, li.complete::before {
+	font-size: 15px;
+	color: rgba(var(--white), 0.4);
+	background-color: rgba(var(--white), 0.07);
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 6px;
+}
 .boo {
 	animation-name: flick;
 	opacity: 0;
