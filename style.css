@@ -135,7 +135,7 @@ a {text-decoration: none;}
 .splitter.dotted, .dotted {border: 2px dashed var(--eternalsmileGrey);}
 .secondary.splitter, .row hr {border: 2px solid var(--eternalsmileGrey);}
 
-.dynamicles, #mainnav a {
+.dynamicles, #mainnav a, .dynamicles li{
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s, translate 1000ms;
 }
 
@@ -574,13 +574,16 @@ span.key::before {
 	opacity: 0.9;
 }
 .archivelist { max-width: 290px; }
+.archivelist a {display: inline-block; width: 100%;}
 .archivelist a:link{color: var(--eternalsmileWhite);}
 .archivelist a:visited{color: rgb(121, 121, 121);}
+.archivelist li:hover{background-color: var(--eternalsmileGrey);}
 .archivelist li {
 	font-size: 22px;	
 	font-family: 'Archivo Black';
 	list-style-type: none;
 	margin-bottom: 10px;
+	
 }
 #tildemenu {
 	z-index: 999;
