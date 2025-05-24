@@ -574,6 +574,8 @@ span.key::before {
 	opacity: 0.9;
 }
 .archivelist { max-width: 290px; }
+.archivelist a:link{color: var(--eternalsmileWhite);}
+.archivelist a:visited{color: rgb(121, 121, 121);}
 .archivelist li {
 	font-size: 22px;	
 	font-family: 'Archivo Black';
