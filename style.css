@@ -607,5 +607,6 @@ span.key::before {
 @keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;}}
 @keyframes flick-softer {0% {opacity:0.25} 50% {opacity: 0.4;} 100% {opacity: 0.25;}}
 @keyframes hold {0% {opacity: 1;} 99% {opacity: 1;}}
+@keyframes batch-come-in {0% {transform: translateX(-10%);}}
 
 @keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}
