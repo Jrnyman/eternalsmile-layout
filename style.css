@@ -37,6 +37,7 @@ body, html {overflow-x: hidden;}
 	.row, .cred.main.collab {flex-direction:column;}    
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset}
+	.mobile-initial {width: initial !important;}
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
