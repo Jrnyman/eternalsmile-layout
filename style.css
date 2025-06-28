@@ -43,7 +43,7 @@ body, html {overflow-x: hidden;}
 	main#chapter-select-page * .archivelist {gap: min(7vw, 40px);}
 	main#chapter-select-page * .archivelist li {font-size: min(12vw, 60px) !important;}
 	main#chapter-select-page * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12); backdrop-filter: blur(3px);}
-
+	main#chapter-select-page > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
 
 }
 @media (min-width: 1230px) {
