@@ -40,7 +40,10 @@ body, html {overflow-x: hidden;}
 	
 	.archivelist {max-width: initial !important;}
 	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%;}
-	main#chapter-select-page * .archivelist li {font-size: 7vw !important;}
+	main#chapter-select-page * .archivelist {gap: 30px;}
+	main#chapter-select-page * .archivelist li {font-size: 60px !important;}
+
+
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
