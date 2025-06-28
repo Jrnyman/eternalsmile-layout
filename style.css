@@ -598,6 +598,7 @@ span.key::before {
 	margin-bottom: 10px;
 	
 }
+.verify {background-color: rgb(255, 0 , 255);}
 #tildemenu {
 	z-index: 999;
 	backdrop-filter: blur(10px);
