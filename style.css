@@ -601,6 +601,7 @@ span.key::before {
 .verify, .verifyd {display: inline; padding: unset;}
 .verify {background-color: rgb(255, 0 , 255);}
 .verify.ok, .verifyd {background-color: unset;}
+body#chapter-select-page article * img {align-self: center;}
 
 #tildemenu {
 	z-index: 999;
