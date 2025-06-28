@@ -38,10 +38,11 @@ body, html {overflow-x: hidden;}
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
 	
-	.archivelist {max-width: initial !important;}
+	main#chapter-select-page * .archivelist {max-width: initial !important;}
 	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
 	main#chapter-select-page * .archivelist {gap: min(5vw, 30px);}
 	main#chapter-select-page * .archivelist li {font-size: min(12vw, 60px) !important;}
+	main#chapter-select-page * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12);
 
 
 }
