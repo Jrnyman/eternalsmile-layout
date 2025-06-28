@@ -18,7 +18,7 @@ body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
     #topBookmarks, #dSub{display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li {border-radius: 10px;}
+    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, main#chapter-select-page * img {border-radius: 10px;}
 
 
     #back1 {filter: blur(5px) brightness(0.5);}
@@ -39,7 +39,7 @@ body, html {overflow-x: hidden;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
 	
 	.archivelist {max-width: initial !important;}
-	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%;}
+	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
 	main#chapter-select-page * .archivelist {gap: 30px;}
 	main#chapter-select-page * .archivelist li {font-size: 60px !important;}
 
