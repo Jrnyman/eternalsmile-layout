@@ -38,7 +38,7 @@ body, html {overflow-x: hidden;}
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
 	
-	.archivelist {max-width: initial !important;}
+	.archivelist {max-width: 100% !important;}
 	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
 	main#chapter-select-page * .archivelist {gap: 30px;}
 	main#chapter-select-page * .archivelist li {font-size: 60px !important;}
