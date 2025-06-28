@@ -18,7 +18,7 @@ body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
     #topBookmarks, #dSub{display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, main#chapter-select-page * img {border-radius: 10px;}
+    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img {border-radius: 10px;}
 
 
     #back1 {filter: blur(5px) brightness(0.5);}
@@ -38,13 +38,13 @@ body, html {overflow-x: hidden;}
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
 	
-	main#chapter-select-page * .archivelist {max-width: initial !important; min-height: unset;}
-	main#chapter-select-page * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
-	main#chapter-select-page * .archivelist {gap: min(7vw, 40px);}
-	main#chapter-select-page * .archivelist li {font-size: min(12vw, 60px) !important;}
-	main#chapter-select-page * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12); backdrop-filter: blur(3px);}
-	main#chapter-select-page > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
-	main#chapter-select-page * h1 {padding-bottom: 10px;}
+	body#chapter-select-page main * .archivelist {max-width: initial !important; min-height: unset;}
+	body#chapter-select-page main * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
+	body#chapter-select-page main * .archivelist {gap: min(7vw, 40px);}
+	body#chapter-select-page main * .archivelist li {font-size: min(12vw, 60px) !important;}
+	body#chapter-select-page main * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12); backdrop-filter: blur(3px);}
+	body#chapter-select-page main > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
+	body#chapter-select-page main * h1 {padding-bottom: 10px;}
 
 }
 @media (min-width: 1230px) {
