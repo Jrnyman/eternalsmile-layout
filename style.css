@@ -598,7 +598,9 @@ span.key::before {
 	margin-bottom: 10px;
 	
 }
-.verify {background-color: rgb(255, 0 , 255);}
+.verify {background-color: rgb(255, 0 , 255); display: inline;}
+.verify.ok, .verifyd {display: inline; background-color: unset;}
+
 #tildemenu {
 	z-index: 999;
 	backdrop-filter: blur(10px);
