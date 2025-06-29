@@ -116,7 +116,7 @@ a {text-decoration: none;}
 .grey.bg, .cred a:hover {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a  {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
-.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .cred, .cred a {color: var(--eternalsmileLightGrey);}
+.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .cred, .cred a, address {color: var(--eternalsmileLightGrey);}
 .blackground.bg {background-color: var(--eternalsmileBlackground);}
 .blackground.text, .blackground.text a {color: var(--eternalsmileBlackground);}
 .black.bg {background-color: var(--eternalsmileBlack);}
@@ -127,7 +127,7 @@ a {text-decoration: none;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;} 
 
-.fancyText, .cred p, .cred {font-family:Libertinus;}
+.fancyText, .cred p, .cred, address {font-family:Libertinus;}
 
 .divided >#pageSelect::after {font-size:30px;}
 .divided >*::after, .cred.plug >*::after {
@@ -400,6 +400,11 @@ footer span, footer p {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Libertinus';
+}
+address {
+	padding-left: 20px;
+	font-size: 17px;
+
 }
 blockquote {
 	font-family: "Fira Mono";
