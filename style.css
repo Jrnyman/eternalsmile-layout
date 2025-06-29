@@ -619,6 +619,7 @@ body#chapter-select-page article * ul li:nth-of-type(2n) {background-color: unse
 body#chapter-select-page article * .key {width: 45px; height: 45px; margin-left: unset; margin-right: unset;}
 body#chapter-select-page article * span.key::before {bottom: 8px; right: 9px; top: 2px;}
 body#chapter-select-page article * span.key {font-size: 19px;}
+body#chapter-select-page article * a {color: rgb(var(--white)); opacity: 0.7;}
 
 #tildemenu {
 	z-index: 999;
