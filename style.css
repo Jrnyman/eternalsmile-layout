@@ -1,4 +1,4 @@
-.hosted, body.local * .bookmark {display: none !important;}
+.hosted, body.local * .bookmark, body#chapter-select-page * .arrow {display: none !important;}
 :root {
     --comicWidth: 1000px;
     --comicHeight: 1750px;
