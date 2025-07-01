@@ -1,4 +1,4 @@
-.hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow  {display: none !important;}
+.hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow, body.local * hr.main.splitter {display: none !important;}
 :root {
     --comicWidth: 1000px;
     --comicHeight: 1750px;
@@ -607,6 +607,7 @@ span.key::before {
 .verify, .verifyd {display: inline; padding: unset;}
 .verify {background-color: rgb(255, 0 , 255);}
 .verify.ok, .verifyd {background-color: unset;}
+body.local.actual * main {margin-top: 30px !important;}
 body#chapter-select-page article * img {align-self: center;}
 body#chapter-select-page article * ul li {
 	font-size: 17px;
