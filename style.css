@@ -17,7 +17,7 @@ body {margin:0;}
 body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
-    #topBookmarks, #dSub{display: none;}
+    #topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
     .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img {border-radius: 10px;}
 
 
@@ -202,6 +202,7 @@ a {text-decoration: none;}
     transform: translateY(-25%);
 }
 #underpage.horizontalList >* {flex-basis: 250px;}
+body.local * #underpage.horizontalList >* {flex-basis: 100%; justify-content: space-around;}
 
 a.bookmark:hover  {
     transform: translateY(1%);
@@ -219,6 +220,7 @@ a.bookmark:hover  {
 }
 .flip {transform: scale(-1);}
 .nav.icon {max-width: 170px;}
+body.local * .nav.icon {max-width: 120px;}
 .nav.icon.arrow:hover {filter: brightness(0.8);}
 .clippy.arrow {
 	max-height:170px;
