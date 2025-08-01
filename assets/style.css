@@ -95,19 +95,19 @@ body, html {overflow-x: hidden;}
 
 @font-face {
 	font-family: "Fira Mono";
-	src:url(assets/metacontent/fonts/FiraMono-Regular.woff2);
+	src:url(metacontent/fonts/FiraMono-Regular.woff2);
 }
 @font-face {
 	font-family: Libertinus;
-	src:url(assets/metacontent/fonts/LibertinusSerif-Regular.woff2);
+	src:url(metacontent/fonts/LibertinusSerif-Regular.woff2);
 }
 @font-face {
 	font-family:'Archivo Black';
-	src: url(assets/metacontent/fonts/ArchivoBlack-Regular.woff2);
+	src: url(metacontent/fonts/ArchivoBlack-Regular.woff2);
 }
 @font-face {
 	font-family: 'Francois One';
-	src: url(assets/metacontent/fonts/francois-one-v21-latin-regular.woff2);
+	src: url(metacontent/fonts/francois-one-v21-latin-regular.woff2);
 }
 
 a {text-decoration: none;}
@@ -365,7 +365,7 @@ li.current::before {
 	display: inline-flex;
 	align-self: center;
 	background-size: contain;
-	background-image: url(assets/metacontent/icons/point.svg);
+	background-image: url(metacontent/icons/point.svg);
 	position:absolute;
 	margin-left: -75px;
 	animation: cursor-a 1s ease-in-out infinite;
@@ -423,7 +423,7 @@ blockquote::before {
 	opacity: 0.7;
 	width: 60px;
 }
-blockquote.j::before {background-image:url(assets/metacontent/icons/jread3.svg);}
+blockquote.j::before {background-image:url(metacontent/icons/jread3.svg);}
 blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
 h1 span, .cred.icles {align-items: flex-start;}
@@ -457,7 +457,7 @@ h1 span .banner {
 	min-width:0;
 	max-width:95px;
 }
-.j.ex {content: url('assets/metacontent/icons/jread3.svg');}
+.j.ex {content: url('metacontent/icons/jread3.svg');}
 .atty, .cred.icles span::after, .cred.main span:nth-child(3):after {
 	display: inline-block;
 	content:"@";
