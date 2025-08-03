@@ -123,7 +123,7 @@ a {text-decoration: none;}
 .black.text, .black.text a {color: var(--eternalsmileBlack);}
 
 .relative, .iconBox, #underpage {position: relative;}
-.absolute, .bgpage, #sticker, .text-bg {position: absolute;}
+.absolute, .page, #sticker, .text-bg {position: absolute;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;} 
 
@@ -180,6 +180,9 @@ a {text-decoration: none;}
 	max-width: var(--comicWidth);
 	max-height: var(--comicHeight);
 	font-size: 0;
+
+	left: 0;
+	right: 0;
 }
 .bgpage {
     left: 0;
