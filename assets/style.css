@@ -165,7 +165,7 @@ a {text-decoration: none;}
 	margin:auto;
 }
 .horizontalList {flex-direction: row; gap: 3%;}
-.horizontalList >*, .page {width: 100%;}
+.horizontalList >*, .page, body.actual * main > div {width: 100%;}
 .scroller.horizontalList {
 	justify-content:space-between;
 	overflow:auto;
@@ -175,7 +175,7 @@ a {text-decoration: none;}
     width: var(--comicWidth);
     height: var(--comicHeight);
 }
-.page {
+.page, body.actual * main > div{
 	aspect-ratio: 4/7;
 	max-width: var(--comicWidth);
 	max-height: var(--comicHeight);
@@ -196,7 +196,7 @@ a {text-decoration: none;}
 #sticker {
     max-width: 200%;
     max-height: 2000px;
-    margin-top: -4px;
+    transform: translateY(-6.25%);
 }
 
 #underpage {
