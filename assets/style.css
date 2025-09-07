@@ -194,7 +194,9 @@ a {text-decoration: none;}
     max-height: 2000px;
     transform: translateY(-6.25%);
 }
-
+.reverse-sticker { /*this is put on the current layer*/
+	z-index: 1;
+}
 #underpage {
     max-width: 1000px; 
     transform: translateY(-25%);
