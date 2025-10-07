@@ -250,7 +250,7 @@ body.local * .nav.icon {max-width: 120px;}
 	width: unset;
 	display: flex;
 	align-items: center;
-	opacity: 0.6;	
+	opacity: 0.5;	
 }
 .subButton .web img {
 	width: 60px;
