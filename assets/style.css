@@ -653,6 +653,7 @@ body#chapter-select-page article * a {color: rgb(var(--white)); opacity: 0.7;}
 @keyframes flick-softer {0% {opacity:0.25} 50% {opacity: 0.4;} 100% {opacity: 0.25;}}
 @keyframes hold {0% {opacity: 1;} 99% {opacity: 1;}}
 @keyframes page-come-in {0% {transform: translateX(100%);}}
+@keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);}}
 @keyframes batch-come-in {0% {transform: translateX(-10%);}}
 
 @keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}
