@@ -240,6 +240,7 @@ body.local * .nav.icon {max-width: 120px;}
 	background-color:var(--subGreen);
 	min-width:130px;
 }
+body.local * .subButton {max-width: unset !important; min-width: max-content !important;}
 .subButton span >* {
 	background-color: var(--eternalsmileBlackground);
 	width: 25px;
