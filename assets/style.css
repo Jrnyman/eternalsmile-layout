@@ -245,6 +245,17 @@ body.local * .nav.icon {max-width: 120px;}
 	width: 25px;
 	height: 25px;
 }
+.subButton .web{
+	background-color: unset;
+	width: unset;
+	display: flex;
+	align-items: center;
+	opacity: 0.6;	
+}
+.subButton .web img {
+	width: 60px;
+	height: 30px;
+}
 #mobileSub{
 	color:var(--eternalsmileBlackground);
 	padding:7px;
