@@ -1,3 +1,4 @@
+.off, .hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow, body.local * hr.main.splitter {display: none !important;}
 :root {
     --comicWidth: 1000px;
     --comicHeight: 1750px;
@@ -16,8 +17,8 @@ body {margin:0;}
 body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
-    #topBookmarks, #dSub{display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li {border-radius: 10px;}
+    #topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
+    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img {border-radius: 10px;}
 
 
     #back1 {filter: blur(5px) brightness(0.5);}
@@ -35,7 +36,16 @@ body, html {overflow-x: hidden;}
     }
 	.row, .cred.main.collab {flex-direction:column;}    
 	.row.center {align-items: center;}
-	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset}
+	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
+	
+	body#chapter-select-page main * .archivelist {max-width: initial !important; min-height: unset;}
+	body#chapter-select-page main * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
+	body#chapter-select-page main * .archivelist {gap: min(7vw, 40px);}
+	body#chapter-select-page main * .archivelist li {font-size: min(12vw, 60px) !important;}
+	body#chapter-select-page main * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12); backdrop-filter: blur(3px);}
+	body#chapter-select-page main > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
+	body#chapter-select-page main * h1 {padding-bottom: 10px;}
+
 }
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
@@ -46,6 +56,7 @@ body, html {overflow-x: hidden;}
 	.wrap>main {
 		padding-bottom:200px;
 	}
+	body#chapter-select-page main {padding-bottom: 130px;}
     #underpage, #mobileSub, .mobile{
         display: none;
     }
@@ -74,6 +85,8 @@ body, html {overflow-x: hidden;}
     #nextpage {
 	    left: calc(70% + 300px);
 	    float: right;
+	    
+	    animation: page-come-in 1s;
 }
 }
 
@@ -82,19 +95,19 @@ body, html {overflow-x: hidden;}
 
 @font-face {
 	font-family: "Fira Mono";
-	src:url(assets/metacontent/fonts/FiraMono-Regular.woff2);
+	src:url(metacontent/fonts/FiraMono-Regular.woff2);
 }
 @font-face {
 	font-family: Libertinus;
-	src:url(assets/metacontent/fonts/LibertinusSerif-Regular.woff2);
+	src:url(metacontent/fonts/LibertinusSerif-Regular.woff2);
 }
 @font-face {
 	font-family:'Archivo Black';
-	src: url(assets/metacontent/fonts/ArchivoBlack-Regular.woff2);
+	src: url(metacontent/fonts/ArchivoBlack-Regular.woff2);
 }
 @font-face {
 	font-family: 'Francois One';
-	src: url(assets/metacontent/fonts/francois-one-v21-latin-regular.woff2);
+	src: url(metacontent/fonts/francois-one-v21-latin-regular.woff2);
 }
 
 a {text-decoration: none;}
@@ -103,18 +116,18 @@ a {text-decoration: none;}
 .grey.bg, .cred a:hover {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a  {color: var(--eternalsmileGrey);}
 .light.grey.bg {background-color: var(--eternalsmileLightGrey);}
-.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .cred, .cred a {color: var(--eternalsmileLightGrey);}
+.light.grey.text, .light.grey.text a, .secondary.text, blockquote, .cred, .cred a, address {color: var(--eternalsmileLightGrey);}
 .blackground.bg {background-color: var(--eternalsmileBlackground);}
 .blackground.text, .blackground.text a {color: var(--eternalsmileBlackground);}
 .black.bg {background-color: var(--eternalsmileBlack);}
 .black.text, .black.text a {color: var(--eternalsmileBlack);}
 
 .relative, .iconBox, #underpage {position: relative;}
-.absolute, .bgpage, #sticker, .text-bg {position: absolute;}
+.absolute, .page, #sticker, .text-bg {position: absolute;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;} 
 
-.fancyText, .cred p, .cred {font-family:Libertinus;}
+.fancyText, .cred p, .cred, address {font-family:Libertinus;}
 
 .divided >#pageSelect::after {font-size:30px;}
 .divided >*::after, .cred.plug >*::after {
@@ -134,7 +147,7 @@ a {text-decoration: none;}
 .splitter.dotted, .dotted {border: 2px dashed var(--eternalsmileGrey);}
 .secondary.splitter, .row hr {border: 2px solid var(--eternalsmileGrey);}
 
-.dynamicles, #mainnav a {
+.dynamicles, #mainnav a, .dynamicles li{
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s, translate 1000ms;
 }
 
@@ -152,7 +165,7 @@ a {text-decoration: none;}
 	margin:auto;
 }
 .horizontalList {flex-direction: row; gap: 3%;}
-.horizontalList >*, .page {width: 100%;}
+.horizontalList >*, .page, body.actual * main > div {width: 100%;}
 .scroller.horizontalList {
 	justify-content:space-between;
 	overflow:auto;
@@ -162,33 +175,34 @@ a {text-decoration: none;}
     width: var(--comicWidth);
     height: var(--comicHeight);
 }
-.page {
+.page, body.actual * main > div{
 	aspect-ratio: 4/7;
 	max-width: var(--comicWidth);
 	max-height: var(--comicHeight);
 	font-size: 0;
-}
-.bgpage {
-    left: 0;
-    right: 0;
+
+	left: 0;
+	right: 0;
 }
 #back3 {transform: translate(calc(-5.7% * 3), calc(3.25714% * 3));}
 #back2 {transform: translate(calc(-5.7% * 2), calc(3.25714% * 2));}
 #back1 {transform: translate(-5.7%, 3.25714%);}
 
 
-
 #sticker {
     max-width: 200%;
     max-height: 2000px;
-    margin-top: -4px;
+    transform: translateY(-6.25%);
 }
-
+.reverse-sticker { /*this is put on the current layer*/
+	z-index: 1;
+}
 #underpage {
     max-width: 1000px; 
     transform: translateY(-25%);
 }
 #underpage.horizontalList >* {flex-basis: 250px;}
+body.local * #underpage.horizontalList >* {flex-basis: 100%; justify-content: space-around;}
 
 a.bookmark:hover  {
     transform: translateY(1%);
@@ -206,6 +220,7 @@ a.bookmark:hover  {
 }
 .flip {transform: scale(-1);}
 .nav.icon {max-width: 170px;}
+body.local * .nav.icon {max-width: 120px;}
 .nav.icon.arrow:hover {filter: brightness(0.8);}
 .clippy.arrow {
 	max-height:170px;
@@ -225,10 +240,22 @@ a.bookmark:hover  {
 	background-color:var(--subGreen);
 	min-width:130px;
 }
+body.local * .subButton {max-width: unset !important; min-width: max-content !important;}
 .subButton span >* {
 	background-color: var(--eternalsmileBlackground);
 	width: 25px;
 	height: 25px;
+}
+.subButton .web{
+	background-color: unset;
+	width: unset;
+	display: flex;
+	align-items: center;
+	opacity: 0.5;	
+}
+.subButton .web img {
+	width: 60px;
+	height: 30px;
 }
 #mobileSub{
 	color:var(--eternalsmileBlackground);
@@ -332,12 +359,6 @@ li.complete::before {
 	position: absolute;
 	margin-left: -70px;
 	font-family: 'Archivo Black';
-	font-size: 15px;
-	color: rgba(var(--white), 0.4);
-	padding-left: 5px;
-	padding-right: 5px;
-	border-radius: 6px;
-	background-color: rgba(var(--white), 0.07);
 	align-self: center;
 }
 li.complete {
@@ -356,12 +377,12 @@ li.current::before {
 	display: inline-flex;
 	align-self: center;
 	background-size: contain;
-	background-image: url(assets/metacontent/icons/point.svg);
+	background-image: url(metacontent/icons/point.svg);
 	position:absolute;
 	margin-left: -75px;
 	animation: cursor-a 1s ease-in-out infinite;
 }
-li.current, li.complete, .progress * li {
+li.current, li.complete, .progress * li, #behindContent {
 	list-style-type: none;
 	display: flex;
 }
@@ -394,6 +415,11 @@ footer span, footer p {
 	text-transform: uppercase;
 	font-family: 'Libertinus';
 }
+address {
+	padding-left: 20px;
+	font-size: 17px;
+
+}
 blockquote {
 	font-family: "Fira Mono";
 	font-size: 15px;
@@ -409,7 +435,7 @@ blockquote::before {
 	opacity: 0.7;
 	width: 60px;
 }
-blockquote.j::before {background-image:url(assets/metacontent/icons/jread3.svg);}
+blockquote.j::before {background-image:url(metacontent/icons/jread3.svg);}
 blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
 h1 span, .cred.icles {align-items: flex-start;}
@@ -443,7 +469,7 @@ h1 span .banner {
 	min-width:0;
 	max-width:95px;
 }
-.j.ex {content: url('assets/metacontent/icons/jread3.svg');}
+.j.ex {content: url('metacontent/icons/jread3.svg');}
 .atty, .cred.icles span::after, .cred.main span:nth-child(3):after {
 	display: inline-block;
 	content:"@";
@@ -477,7 +503,7 @@ h1 span .banner {
 .cred.icles img, .cred.main img {opacity: 0.7;}
 .cred.icles .cred.plug {flex-basis: 70%; justify-content:unset;}
 .cred.main img {max-width: 200px;}
-.cred.main {text-align: center;}
+.cred.main, #mainnav a {text-align: center;}
 .cred.main span:nth-child(3) {margin-top:-6px;}
 .cred.main .cred.plug {max-width:420px;}
 .cred.main.collab {gap: 50px;}
@@ -503,7 +529,15 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	padding: 20px;
 	background-color: white; 
 }
-
+.appendage {margin-left: 3px;}
+.appendage, li.complete::before {
+	font-size: 15px;
+	color: rgba(var(--white), 0.4);
+	background-color: rgba(var(--white), 0.07);
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 6px;
+}
 .boo {
 	animation-name: flick;
 	opacity: 0;
@@ -572,6 +606,42 @@ span.key::before {
 	padding-left: 8px;
 	opacity: 0.9;
 }
+.archivelist { max-width: 290px; min-height:550px;}
+.archivelist a {display: inline-block; width: 100%;}
+.archivelist a:link{color: var(--eternalsmileWhite);}
+.archivelist a:visited{color: rgb(121, 121, 121);}
+.archivelist li:hover{background-color: var(--eternalsmileGrey);}
+.archivelist li {
+	font-size: 22px;	
+	font-family: 'Archivo Black';
+	list-style-type: none;
+	margin-bottom: 10px;
+	
+}
+.verify, .verifyd {display: inline; padding: unset;}
+.verify {background-color: rgb(255, 0 , 255);}
+.verify.ok, .verifyd {background-color: unset;}
+body.local.actual * main {padding-top: 30px !important;}
+body.local * #underpage {transform: unset;}
+body#chapter-select-page article * img {align-self: center;}
+body#chapter-select-page article * ul li {
+	font-size: 17px;
+	letter-spacing:0px;
+	display:flex;
+	align-items:end;
+	list-style-type:none;
+	text-transform:uppercase;
+	font-family:'Archivo Black';
+	text-wrap: nowrap;
+	gap: 23px;
+}
+body#chapter-select-page article * ul {margin: unset;padding-right: 40px;}
+body#chapter-select-page article * ul li:nth-of-type(2n) {background-color: unset;}
+body#chapter-select-page article * .key {width: 45px; height: 45px; margin-left: unset; margin-right: unset;}
+body#chapter-select-page article * span.key::before {bottom: 8px; right: 9px; top: 2px;}
+body#chapter-select-page article * span.key {font-size: 19px;}
+body#chapter-select-page article * a {color: rgb(var(--white)); opacity: 0.7;}
+
 #tildemenu {
 	z-index: 999;
 	backdrop-filter: blur(10px);
@@ -594,5 +664,8 @@ span.key::before {
 @keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;}}
 @keyframes flick-softer {0% {opacity:0.25} 50% {opacity: 0.4;} 100% {opacity: 0.25;}}
 @keyframes hold {0% {opacity: 1;} 99% {opacity: 1;}}
+@keyframes page-come-in {0% {transform: translateX(100%);}}
+@keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);}}
+@keyframes batch-come-in {0% {transform: translateX(-10%);}}
 
 @keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}

@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     var titlesize = titleget.offsetHeight - 200;
                     var whereIbe = window.pageYOffset + stophere.getBoundingClientRect().top - 2075 - titlesize;
                     
-                    console.log(whereIbe)
-                    if(whereIbe > -1204){
+                    console.log(whereIbe);
+                    if(whereIbe > 504){
 			pageget.style.translate = '0px ' + whereIbe + 'px';
                         console.log("Get over here!");
                     }
