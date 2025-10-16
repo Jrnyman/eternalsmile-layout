@@ -671,6 +671,6 @@ body#chapter-select-page article * a {color: rgb(var(--white)); opacity: 0.7;}
 @keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);}}
 @keyframes batch-come-in {0% {transform: translateX(-10%);}}
 
-@keyframes page-get-out {0%{left: 0; opacity:1;} 8%{left: 5%} 30%{opacity: 0;}}
+@keyframes page-get-out {0%{left: 0; opacity:1;} 30%{opacity: 0;}}
 
 @keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}
