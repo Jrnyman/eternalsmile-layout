@@ -17,9 +17,9 @@ body {margin:0;}
 body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
+/*
     #topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
     .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img {border-radius: 10px;}
-
 
     #back1 {filter: blur(5px) brightness(0.5);}
     #back2 {filter: blur(7px) brightness(0.4);}
@@ -33,7 +33,7 @@ body, html {overflow-x: hidden;}
     .wrap {
         width: 95%;
         position: relative;
-    }
+    }*/
 	.row, .cred.main.collab {flex-direction:column;}    
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
@@ -47,7 +47,7 @@ body, html {overflow-x: hidden;}
 	body#chapter-select-page main * h1 {padding-bottom: 10px;}
 
 }
-@media (min-width: 1230px) {
+@media (min-width: 0px) {
     /* Desktop big mode is on */
 
 	.row.center {align-items: unset;}
@@ -81,9 +81,9 @@ body, html {overflow-x: hidden;}
     #back2 {filter: blur(0) brightness(0.8);}
     #back3 {filter: blur(0) brightness(0.7);}
 
-    #nextpage:hover {left: calc(70% + 300px - 20px);}
+    #nextpage:hover {left: calc(70% + 225px - 20px);}
     #nextpage {
-	    left: calc(70% + 300px);
+	    left: calc(70% + 225px);
 	    float: right;
 	    
 	    animation: page-come-in 1s;
@@ -146,7 +146,7 @@ a {text-decoration: none;}
 }
 .splitter.dotted, .dotted {border: 2px dashed var(--eternalsmileGrey);}
 .secondary.splitter, .row hr {border: 2px solid var(--eternalsmileGrey);}
-
+#mainnav {scale: 0.9;}
 .dynamicles, #mainnav a, .dynamicles li{
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s, translate 1000ms;
 }
@@ -183,6 +183,8 @@ a {text-decoration: none;}
 
 	left: 0;
 	right: 0;
+	
+	width: 700px;
 }
 #back3 {transform: translate(calc(-5.7% * 3), calc(3.25714% * 3));}
 #back2 {transform: translate(calc(-5.7% * 2), calc(3.25714% * 2));}
@@ -302,6 +304,7 @@ h1, h2, h3, h4, h5, h6, .boldify {
 .main.banner {
 	max-width:725px;
 	flex-shrink: 0.38;
+	scale: 0.85;
 }
 .cascade {flex-direction: row-reverse;}
 .cascade >* {
