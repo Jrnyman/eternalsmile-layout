@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var observermaybe = new IntersectionObserver(function(entries) {
                 if (entries[0].isIntersecting === true){
                     var titlesize = titleget.offsetHeight - 200;
-                    var whereIbe = window.pageYOffset + stophere.getBoundingClientRect().top - 2075 - titlesize;
+                    var whereIbe = window.pageYOffset + stophere.getBoundingClientRect().top - 1575 - titlesize;
                     
                     console.log(whereIbe);
                     if(whereIbe > 504){
