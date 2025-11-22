@@ -17,23 +17,23 @@ body {margin:0;}
 body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
-    #topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img, #comicimage, #previous1, #previous2, #previous3, #nextone {border-radius: 10px;}
+	
+	#topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
+	.page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img, #comicimage, #previous1, #previous2, #previous3, #nextone {border-radius: 10px;}
+	
+	#back1 {filter: blur(5px) brightness(0.5);}
+	#back2 {filter: blur(7px) brightness(0.4);}
+	#back3 {filter: blur(9px) brightness(0.3);}
+	#behindContent a {pointer-events: none;}
 
-
-    #back1 {filter: blur(5px) brightness(0.5);}
-    #back2 {filter: blur(7px) brightness(0.4);}
-    #back3 {filter: blur(9px) brightness(0.3);}
-    #behindContent a {pointer-events: none;}
-
-    #nextpage {
-        left: 105%;
-    }
+	#nextpage {
+		left: 105%;
+	}
     
-    .wrap {
-        width: 95%;
-        position: relative;
-    }
+	.wrap {
+		width: 95%;
+		position: relative;
+	}
 	.row, .cred.main.collab {flex-direction:column;}    
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
@@ -46,7 +46,29 @@ body, html {overflow-x: hidden;}
 	body#chapter-select-page main > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
 	body#chapter-select-page main * h1 {padding-bottom: 10px;}
 
+	body.mini * #topBookmarks, #dSub, body.local.mini * #underpage #bookmarkside {display: initial;}
+	body.mini * .page, body.mini * #mainnav>*, body.mini * .rounder, body.mini * .cred img, body.mini * .cred a, body.mini * hr, body.mini * li, body.mini * body.mini#chapter-select-page main * img, body.mini * #comicimage, body.mini * #previous1, body.mini * #previous2, body.mini * #previous3, body.mini * #nextone {border-radius: initial;}
+	body.mini * #back1, body.mini * #back2, body.mini * #back3 {filter: initial;}
+	body.mini * #behindContent a {pointer-events: initial;}
+	body.mini * #nextpage {left: initial;}
+	body.mini * .wrap {width: initial; position: initial;}
+	body.mini * .row.center {align-items: unset;}
+	body.mini * .cred.main.collab {flex-direction: row;}
+	body.mini * .row hr {flex-basis:100%;}
+	body.mini * .wrap>main {padding-bottom:200px;}
+	body.mini#chapter-select-page main {padding-bottom: 130px;}
+	body.mini * #underpage, body.mini * #mobileSub, body.mini * .mobile {display: none;}
+	body.mini * .wrap {min-width: 1100px;width: 70%;}
+	body.mini * #back1:hover {transform: translate(calc(-5.7% - 14px), 3.25714%);filter: blur(0) brightness(0.95);}
+	body.mini * #back2:hover {transform: translate(calc(-5.7% * 2 - 14px), calc(3.25714% * 2));filter: blur(0) brightness(0.85);}
+	body.mini * #back3:hover {transform: translate(calc(-5.7% * 3 - 14px), calc(3.25714% * 3));filter: blur(0) brightness(0.75);}
+	body.mini * #back1 {filter: blur(0) brightness(0.9);}
+	body.mini * #back2 {filter: blur(0) brightness(0.8);}
+	body.mini * #back3 {filter: blur(0) brightness(0.7);}
+	body.mini * #nextpage:hover {left: calc(70% + 300px - 20px);}
+	body.mini * #nextpage {left: calc(70% + 300px);float: right;animation: page-come-in 1s;}
 }
+
 @media (min-width: 1230px) {
     /* Desktop big mode is on */
 
