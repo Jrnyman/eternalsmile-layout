@@ -18,7 +18,7 @@ body, html {overflow-x: hidden;}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
     #topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
-    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img {border-radius: 10px;}
+    .page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img, #comicimage, #previous1, #previous2, #previous3, #nextone {border-radius: 10px;}
 
 
     #back1 {filter: blur(5px) brightness(0.5);}
@@ -111,7 +111,7 @@ body, html {overflow-x: hidden;}
 }
 
 a {text-decoration: none;}
-.white.bg {background-color: var(--eternalsmileWhite);}
+.white.bg, #comicimage, #previous1, #previous2, #previous3, #nextone {background-color: var(--eternalsmileWhite);}
 .white.text, .white.text a, body {color: var(--eternalsmileWhite);}
 .grey.bg, .cred a:hover {background-color: var(--eternalsmileGrey);}
 .grey.text, .grey.text a  {color: var(--eternalsmileGrey);}
@@ -123,7 +123,7 @@ a {text-decoration: none;}
 .black.text, .black.text a {color: var(--eternalsmileBlack);}
 
 .relative, .iconBox, #underpage {position: relative;}
-.absolute, .page, #sticker, .text-bg {position: absolute;}
+.absolute, .page, #sticker, .text-bg, #comicimage, #previous1, #previous2, #previous3, #nextone {position: absolute;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;} 
 
@@ -147,7 +147,7 @@ a {text-decoration: none;}
 .splitter.dotted, .dotted {border: 2px dashed var(--eternalsmileGrey);}
 .secondary.splitter, .row hr {border: 2px solid var(--eternalsmileGrey);}
 
-.dynamicles, #mainnav a, .dynamicles li{
+.dynamicles, #mainnav a, .dynamicles li, #comicimage, #previous1, #previous2, #previous3, #nextone, .credplug div a {
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s, translate 1000ms;
 }
 
@@ -159,13 +159,13 @@ a {text-decoration: none;}
     -moz-user-select: none;
 }
 .flexify, .horizontalList, .iconBox, .iconBox > span, .text-bg, h1 span, .row, .pic.cred, .cred {display:flex;}
-.center, .horizontalList, .page, .banner, .cred.main {
+.center, .horizontalList, .page, .banner, .cred.main, #comicimage, #previous1, #previous2, #previous3, #nextone {
 	align-content: center;
 	align-items:center;
 	margin:auto;
 }
 .horizontalList {flex-direction: row; gap: 3%;}
-.horizontalList >*, .page, body.actual * main > div {width: 100%;}
+.horizontalList >*, .page, body.actual * main > div, #comicimage, #previous1, #previous2, #previous3, #nextone {width: 100%;}
 .scroller.horizontalList {
 	justify-content:space-between;
 	overflow:auto;
@@ -261,6 +261,20 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	color:var(--eternalsmileBlackground);
 	padding:7px;
 }
+.textbackground {position:relative; display: inline-flex;}
+.textbackground:before {
+	content:"";
+	opacity: 0.1;
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	z-index: -1;
+	animation: background-slide 1.5s ease-out;
+}
+.textbackground img {animation: page-come-in 2s ease-out; animation-delay: -1s; }
+.textbackground.static img, .textbackground.static:before {animation: unset}
+.archive.textbackground:before {background-image: url(extra/archive-text.svg);}
+.blog.textbackground:before {background-image: url(extra/blog-text.svg); background-size: 67px;}
 #sub-bg {
 	background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);
 	background-clip:text;
@@ -268,11 +282,11 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	filter: hue-rotate(180deg);
 	mix-blend-mode: hard-light;
 }
-.iconBox {
+.iconBox, .textbackground {
 	overflow:hidden;
 }
 .iconBox > span {gap:8px;}
-.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner, h1 span, .cred.plug, .cred.main  {
+.iconBox, .iconBox > span, .text-bg, .center, .horizontalList, .page, .banner, h1 span, .cred.plug, .cred.main, #comicimage, #previous1, #previous2, #previous3, #nextone, .textbackground {
 	align-self:center;
 	justify-content:center;
 }
@@ -287,7 +301,7 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	background-color:var(--eternalsmileGrey);
 }
 
-h1, h2, h3, h4, h5, h6, .boldify {
+h1, h2, h3, h4, h5, h6, .boldify, .nl-archivecomictitle, .nl-archivecomicnumber, .nl-chapter-more a, .blogtitle, .blogmeta, .blog .posttime {
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
 }
@@ -327,7 +341,7 @@ h1, h2, h3, h4, h5, h6, .boldify {
 	content: "rate page -";
 }
 
-article {
+article, .blog, .nl-archive-page {
 	max-width: 1230px;
 	margin: auto;
 }
@@ -388,7 +402,7 @@ li.current, li.complete, .progress * li, #behindContent {
 }
 .progress {margin: auto; max-width: 700px;}
 .progress * {list-style-type: none;}
-.progress, ul.progress li {
+.progress, ul.progress li, .blogmeta {
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
@@ -485,7 +499,7 @@ h1 span .banner {
 }
 .cred span {margin: 5px; font-size: 17px;}
 .pic.cred, .cred {text-transform:uppercase;}
-.pic.cred {
+.pic.cred, .blogmeta {
 	width:fit-content;
 	flex-grow: 0;
 	flex-basis: fit-content;
@@ -500,10 +514,10 @@ h1 span .banner {
 .cred.plug >*::after {position:absolute;}
 .cred.icles {max-width: 400px;}
 .cred.icles img {max-width: 75px;flex-basis: 30%;min-width: 0;}
-.cred.icles img, .cred.main img {opacity: 0.7;}
+.cred.icles img, .cred.main img, .blogmeta {opacity: 0.7;}
 .cred.icles .cred.plug {flex-basis: 70%; justify-content:unset;}
 .cred.main img {max-width: 200px;}
-.cred.main, #mainnav a {text-align: center;}
+.cred.main, #mainnav a, .box h1, .box h2, .box h3, .nl-archive-page h1.center {text-align: center;}
 .cred.main span:nth-child(3) {margin-top:-6px;}
 .cred.main .cred.plug {max-width:420px;}
 .cred.main.collab {gap: 50px;}
@@ -520,7 +534,7 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	width: 800px;
 	max-width: 70%;
 }
-.card.holder .card {margin: auto;}
+.card.holder .card, #commentform, .comment-box {margin: auto;}
 .card.holder {perspective: 110em; max-width: 900px; aspect-ratio: 1; width:100%; animation: unset;}
 .card img {backface-visibility: hidden; transform: rotateZ(3deg); width:100%;}
 .card img:last-of-type {position: absolute;transform: rotateZ(3deg) rotateY(180deg);}
@@ -530,7 +544,7 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	background-color: white; 
 }
 .appendage {margin-left: 3px;}
-.appendage, li.complete::before {
+.appendage, li.complete::before, .blogmeta {
 	font-size: 15px;
 	color: rgba(var(--white), 0.4);
 	background-color: rgba(var(--white), 0.07);
@@ -658,10 +672,123 @@ body#chapter-select-page article * a {color: rgb(var(--white)); opacity: 0.7;}
 	transition: transform 450ms ease-in-out;
 	display: none;
 }
+.blogcontent p {line-height: 2;}
 body.clear-prev * #back3, body.clear-prev * #previous3 {opacity: 0; left: -200%; animation: page-get-out 2s ease-in; pointer-events: none;}
 body.clear-prev * #back2, body.clear-prev * #previous2 {opacity: 0; left: -200%; animation: page-get-out 2.5s ease-in; pointer-events: none;}
 body.clear-prev * #back1, body.clear-prev * #previous1 {opacity: 0; left: -200%; animation: page-get-out 3s ease-in; pointer-events: none;}
 
+/*Extra stuff from old version*/
+
+.box {
+	padding:10px;
+	margin-bottom:15px;
+	font-family: 'Francois One', sans-serif;
+}
+.box img {
+	max-width:100%;
+	height:auto;
+}
+.comment-box, #commentform {
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	padding-top:20px;
+	width: 90%;
+	max-width: 800px;
+}
+.comment img {
+	height:auto;
+	max-width:100%;
+}
+.replyform-placeholder iframe {margin-top:10px;}
+.reply .comment {margin-left: 40px;}
+.posttime {
+	color:#aaaa;
+	font-size:12px;
+	float:right;
+	font-weight:bold;
+	font-family: Libertinus;
+	letter-spacing: 1px;
+}
+#trueposttime {
+	display: inline;
+	font-size:100%;
+	line-height: 150%;
+	float: none;
+	font-weight: normal;
+}
+.blog .postime {
+	float: unset;
+	font-size: 11px;
+	color: unset;
+	opacity: 0.25;
+}
+.blogtitle {font-size: 50px;}
+.blogcontent ul, .blogcontent ol {width: 50%; min-width: fit-content;}
+#authornotes .comment:not(:last-of-type) {margin-bottom:40px;}
+.authordata {
+	text-align:left;
+	margin-bottom:6px;
+}
+.author {
+	font-size:18px;
+	font-family: 'Archivo Black';
+
+	text-transform: uppercase;
+}
+.avatar {
+	float:left;
+	margin-right:15px;
+	position: absolute;
+	z-index: -1;
+	mask-image: linear-gradient(to right, rgb(0, 0, 0) -20%, rgba(0,0,0,0) 75%);
+}
+.commentcontent {min-height: 120px;}
+.commentcontrol {text-align:right;}
+.commentcontrol a {margin-left:10px;}
+.clear {clear:both;}
+.replyform-placeholder iframe {margin-top:10px;}
+.comicnavlink-grayedout {
+	background-color: var(--eternalsmileGrey) !important;
+	pointer-events: none;
+	cursor: default;
+}
+.lastfirstopac {
+	opacity: 0.3 !important;
+	pointer-events: none;
+}
+.credplug div a {padding: 2%; text-wrap: nowrap;}
+#comicimage {height: auto;}
+.loadplace-inactive {
+	opacity:0.5;
+	display: none;
+}
+.jquoticles {
+	background-size: 60px;
+	padding-left: 70px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	font-size: 15px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin: 0;
+	margin-left: 0px;
+	margin-left: 10px;
+}
+#bonus {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	right: 0;
+	left: 0;
+	text-align: center;
+	max-width: 1000px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 95%;
+	display: block;
+}
 @keyframes spin {100% {transform: rotateY(360deg)}}
 @keyframes flick {98% {opacity: 0;} 99% {opacity: 1;}}
 @keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;}}
@@ -670,6 +797,8 @@ body.clear-prev * #back1, body.clear-prev * #previous1 {opacity: 0; left: -200%;
 @keyframes page-come-in {0% {transform: translateX(100%);}}
 @keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);}}
 @keyframes batch-come-in {0% {transform: translateX(-10%);}}
+
+@keyframes background-slide {0% {background-position-x: -5%;}}
 
 @keyframes page-get-out {0%{left: 0; opacity:1;} 25%{opacity: 0;}}
 
