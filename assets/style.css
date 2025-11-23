@@ -166,7 +166,7 @@ a {text-decoration: none;}
     transition: -webkit-filter 400ms, border-radius 1s, left 400ms, filter 400ms, opacity 400ms, transform 400ms, background-color 0.25s, translate 1000ms;
 }
 
-.untouchable, .text-bg {
+.untouchable {
     pointer-events: none;
     user-select: none;
     -webkit-user-select: none;
@@ -295,13 +295,7 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 .textbackground.static img, .textbackground.static:before {animation: unset}
 .archive.textbackground:before {background-image: url(extra/archive-text.svg);}
 .blog.textbackground:before {background-image: url(extra/blog-text.svg); background-size: 67px;}
-#sub-bg {
-	background:linear-gradient(154.8deg, rgba(102, 128, 76, 0.21) 0%, rgba(18, 30, 5, 0.24) 100%);
-	background-clip:text;
-	color: rgba(var(--splash), 0.13);
-	filter: hue-rotate(180deg);
-	mix-blend-mode: hard-light;
-}
+
 .iconBox, .textbackground {
 	overflow:hidden;
 }
@@ -311,11 +305,6 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	justify-content:center;
 }
 .iconBox img:hover, .subButton a:hover {filter:brightness(1.25);}
-.text-bg {
-	transform:rotate(-10deg);
-	font-size: 15px;
-	line-height:13px;
-}
 
 .boldify > a:hover{
 	background-color:var(--eternalsmileGrey);
