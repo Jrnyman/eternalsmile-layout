@@ -251,10 +251,16 @@ body.local * .nav.icon {max-width: 120px;}
     max-width: 120px;
 }
 
-.subButton {
+.subButton {min-width:130px;}
+.subButton:before{
+	background-image: url(extra/sub.svg);
+	background-size: 100px;
+	background-attachment:fixed;
 	background-color:var(--subGreen);
-	min-width:130px;
+	top: -50%;
+	left: -50%;
 }
+.subButton.intro:before, .textbackground:before {animation: background-slide 1.5s ease-out;}
 body.local * .subButton {max-width: unset !important; min-width: max-content !important;}
 .subButton span >* {
 	background-color: var(--eternalsmileBlackground);
@@ -277,14 +283,13 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	padding:7px;
 }
 .textbackground {position:relative; display: inline-flex;}
-.textbackground:before {
+.textbackground:before {opacity: 0.1;}
+.textbackground:before, .subButton:before {
 	content:"";
-	opacity: 0.1;
 	position: absolute;
 	width: 200%;
 	height: 200%;
 	z-index: -1;
-	animation: background-slide 1.5s ease-out;
 }
 .textbackground img {animation: page-come-in 2s ease-out; animation-delay: -1s; }
 .textbackground.static img, .textbackground.static:before {animation: unset}
