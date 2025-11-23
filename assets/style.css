@@ -38,12 +38,12 @@ body, html {overflow-x: hidden;}
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
 	
-	body#chapter-select-page main * .archivelist {max-width: initial !important; min-height: unset;}
-	body#chapter-select-page main * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%) !important;}
+	body#chapter-select-page main * .archivelist {max-width: initial; min-height: unset;}
+	body#chapter-select-page main * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%)!important;}
 	body#chapter-select-page main * .archivelist {gap: min(7vw, 40px);}
-	body#chapter-select-page main * .archivelist li {font-size: min(12vw, 60px) !important;}
+	body#chapter-select-page main * .archivelist li {font-size: min(12vw, 60px);}
 	body#chapter-select-page main * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.12); backdrop-filter: blur(3px);}
-	body#chapter-select-page main > .not.row.center > div {width: unset !important; text-align: center; padding-bottom: 30px;}
+	body#chapter-select-page main > .not.row.center > div {width: unset; text-align: center; padding-bottom: 30px;}
 	body#chapter-select-page main * h1 {padding-bottom: 10px;}
 
 	body.mini * #topBookmarks, #dSub, body.local.mini * #underpage #bookmarkside {display: initial;}
@@ -52,7 +52,14 @@ body, html {overflow-x: hidden;}
 	body.mini * #behindContent a {pointer-events: initial;}
 	body.mini * #nextpage {left: initial;}
 	body.mini * .wrap {width: initial; position: initial;}
-	
+
+	body.mini#chapter-select-page main * .archivelist {max-width: 290px; min-height: 550px;}
+	body.mini#chapter-select-page main * img#chapter-cover {left: initial; right: inherit; margin: initial; max-width: initial; mask-image: linear-gradient(to right, black, transparent 97%)!important;}
+	body.mini#chapter-select-page main * .archivelist {gap: initial;}
+	body.mini#chapter-select-page main * .archivelist li {font-size: 22px;}
+	body.mini#chapter-select-page main * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.06); backdrop-filter: initial;}
+	body.mini#chapter-select-page main > .not.row.center > div {width: 85%; text-align: initial; padding-bottom: initial; flex-direction: row;}
+	body.mini#chapter-select-page main * h1 {padding-bottom: initial;}
 }
 
 @media (min-width: 1230px) {
