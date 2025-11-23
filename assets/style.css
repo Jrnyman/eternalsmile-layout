@@ -255,7 +255,6 @@ body.local * .nav.icon {max-width: 120px;}
 .subButton:before{
 	background-image: url(metacontent/nav/sub.svg);
 	background-size: 100px;
-	background-attachment:fixed;
 	background-color:var(--subGreen);
 	top: -50%;
 	left: -50%;
