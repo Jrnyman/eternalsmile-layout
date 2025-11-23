@@ -253,7 +253,7 @@ body.local * .nav.icon {max-width: 120px;}
 
 .subButton {min-width:130px;}
 .subButton:before{
-	background-image: url(extra/sub.svg);
+	background-image: url(metacontent/nav/sub.svg);
 	background-size: 100px;
 	background-attachment:fixed;
 	background-color:var(--subGreen);
