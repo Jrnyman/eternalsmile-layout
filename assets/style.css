@@ -258,6 +258,7 @@ body.local * .nav.icon {max-width: 120px;}
 	background-color:var(--subGreen);
 	top: -50%;
 	left: -50%;
+	min-width: 1000px;
 }
 .subButton.intro:before, .textbackground:before {animation: background-slide 1.5s ease-out;}
 body.local * .subButton {max-width: unset !important; min-width: max-content !important;}
