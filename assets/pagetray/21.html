@@ -45,16 +45,16 @@
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">
             <nav id="behindContent">
-                <a href="assets/pagetray/18.html#start"><img id="back3" class="white bg page bgpage dynamicles ani"  src="assets/pagetray/18r.png" alt="back 3"></a>
-                <a href="assets/pagetray/19.html#start"><img id="back2" class="white bg page bgpage dynamicles ani"  src="assets/pagetray/19r.png" alt="back 2"></a>
-                <a href="assets/pagetray/20.html#start"><img id="back1" class="white bg page bgpage dynamicles ani"  src="assets/pagetray/20r.png" alt="back 1"></a>
+                <a href="assets/pagetray/18.html#start"><img id="back3" class="white bg page bgpage dynamicles ani off"  src="assets/pagetray/18r.png" alt="back 3"></a>
+                <a href="assets/pagetray/19.html#start"><img id="back2" class="white bg page bgpage dynamicles ani off"  src="assets/pagetray/19r.png" alt="back 2"></a>
+                <a href="assets/pagetray/20.html#start"><img id="back1" class="white bg page bgpage dynamicles ani off"  src="assets/pagetray/20r.png" alt="back 1"></a>
 
-                <a href="assets/pagetray/22.html#start"><img id="nextpage" class="white bg page bgpage dynamicles ani" alt="next page" src="assets/pagetray/22r.png"></a>
+                <a href="assets/pagetray/22.html#start"><img id="nextpage" class="off white bg page bgpage dynamicles ani" alt="next page" src="assets/pagetray/22r.png"></a>
             </nav>
             
             <div style="z-index: 2; margin: auto; display: flex; justify-content: center;">
-                <a href="comic.html"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="assets/pagetray/21r.png"></a>
-                <img src="assets/pagetray/dev.png" id="sticker" class="untouchable" alt="sticker layer">
+                <a href="comic.html"><img id="currentpage"style="background: unset; animation: page-come-in-BOTTOM 3s;" class="white bg page dynamicles ani" alt="current page" src="assets/pagetray/21r.png"></a>
+                <img src="assets/pagetray/21s.png" id="sticker" class="untouchable" alt="sticker layer">
             </div>
         </main>
 
@@ -77,7 +77,7 @@
     </div>
     <hr class="splitter secondary rounder dynamicles" style="max-width:1040px; width:95%">
 	<nav class="flexify center divided" style="font-size: 18px;">
-		<span id="pageSelect" class="light grey text" style="display:flex;">
+		<span id="pageSelect" class="off light grey text" style="display:flex;">
 			<select name="versionselect" style="height:25px; align-self:center;text-transform:uppercase;" onchange="document.getElementById('currentpage').src = this.value">
 				<option value="assets/pagetray/21r.png">ORIGINAL</option>
 				<optgroup label="PROGRESS">
@@ -96,6 +96,14 @@
 	</a>
 
    		<article class="under" style="padding-top:20px">
+			<div class="row center">
+				<div class="card holder">
+					<div class="card styled">
+						<img src="assets/extra/wait.webp">
+						<img src="assets/extra/cover.png">
+					</div>
+				</div>
+			</div>
 		</article>
 
 		<div id="catch-up"></div>
