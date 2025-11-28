@@ -311,7 +311,8 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	background-color:var(--eternalsmileGrey);
 }
 
-h1, h2, h3, h4, h5, h6, .boldify, .nl-archivecomictitle, .nl-archivecomicnumber, .nl-chapter-more a, .blogtitle, .blogmeta, .blog .posttime {
+h1, h2, h3, h4, h5, h6, .boldify, .nl-archivecomictitle, .nl-archivecomicnumber, .nl-chapter-more a, .blogtitle, .blogmeta, .blog .posttime,
+th {
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
 }
