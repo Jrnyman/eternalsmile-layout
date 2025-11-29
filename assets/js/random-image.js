@@ -6,38 +6,43 @@ document.addEventListener('DOMContentLoaded', function() {
 	let pfp_target = document.getElementsByClassName('guest')
 	let target = [pic_target, pfp_target]
 
-	function choose() {
-		let a = Math.floor(Math.random() * relevent.length);
-		let choice = path + relevent[a];
-		pic_target[0].src = choice;
-
-	}
-
-	if (target[0].length > 0 || target[1].length > 0) {
+	if (pfp_target.length > 0 || pic_target.length > 0) {
 		switch (pfp_target[0]) {
 			case undefined:
 				break;
 			default:
-				superchoose();
+				superchoose(pfp_target, relevent);
 		}	
 	}
 	switch (pic_target[0]) {
 		case undefined:
 			break;
 		default:
-			choose();
+			superchoose(pic_target, relevent);
 			break;
 	}
 	
-	function superchoose() {
+	function superchoose(subject, items) {
 		let choice
-		let d = Math.floor(Math.random() * relevent.length);
-		let e = Math.floor(Math.random() * relevent[d].length);
-		console.log(relevent[d][e])
-		choice = path + relevent[d][e];
-		for (let superchosen of pfp_target) {
-			superchosen.src = choice;
+		let d = Math.floor(Math.random() * items.length);
+		switch (subject) {
+			case pic_target:
+				choice = path + items[d];
+				for (let superchosen of subject){
+					superchosen.src = choice;	
+				}
+				break;
+			case pfp_target: 
+				let e = Math.floor(Math.random() * items[d].length);
+				choice = path + items[d][e];
+				for (let superchosen of subject) {
+					superchosen.src = choice;
+				}	
+				break;
+			default:
+				break;
 		}
+		
 		
 	}
 })
