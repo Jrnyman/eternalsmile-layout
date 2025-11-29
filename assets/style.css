@@ -476,14 +476,15 @@ h1 span .banner {
 	margin: unset;
 	flex-basis: 70%;
 }
-table {font-size: 14px; border-collapse: collapse;}
+table {font-size: 14px; border-collapse: separate; border-spacing: 0 6px;}
 table.goals td, table.goals th {padding: 10px}
 th {text-align: left; font-size: 22px;}
 table.goals th:nth-of-type(2) {max-width: 63%;}
 table.goals th:nth-of-type(3) {min-width: 100px;}
 table.goals tr td:nth-of-type(1) span, table.goals tr td:nth-of-type(3) span {white-space: nowrap; margin: 0px 3px;}
+
 table.goals tr.complete {background-image: linear-gradient(to top, rgba(85, 255, 0, 0.06), rgba(5, 255, 0, 0.06));}
-table.goals tr.complete.not.almost {background-image: linear-gradient(to top, rgba(251, 212, 4, 0.06), rgba(5, 255, 0, 0.06));}
+table.goals tr.complete.not.almost {background-image: linear-gradient(to left, rgba(251, 212, 4, 0.06), rgba(5, 255, 0, 0.06));}
 table.goals tr.complete.not {background-image: linear-gradient(to top, rgba(255, 0, 0, 0.06), rgba(255, 0, 0, 0.06));}
 table.goals tr.complete.almost {background-image: linear-gradient(to top, rgba(251, 212, 4, 0.06), rgba(255, 227, 0, 0.06));}
 .plot.banner {
