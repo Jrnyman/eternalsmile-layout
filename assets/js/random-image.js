@@ -4,24 +4,13 @@
 document.addEventListener('DOMContentLoaded', function() {
 	let pic_target = document.getElementsByClassName('randomimg'); 
 	let pfp_target = document.getElementsByClassName('guest')
-	let target = [pic_target, pfp_target]
 
-	if (pfp_target.length > 0 || pic_target.length > 0) {
-		switch (pfp_target[0]) {
-			case undefined:
-				break;
-			default:
-				superchoose(pfp_target, relevent);
-		}	
+	if (pfp_target.length > 0) {
+		superchoose(pfp_target, relevent);
+	} else if (pic_target.length > 0) {
+		superchoose(pic_target, relevent);
 	}
-	switch (pic_target[0]) {
-		case undefined:
-			break;
-		default:
-			superchoose(pic_target, relevent);
-			break;
-	}
-	
+
 	function superchoose(subject, items) {
 		let choice
 		let d = Math.floor(Math.random() * items.length);
