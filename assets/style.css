@@ -488,7 +488,7 @@ table.goals tr.complete.not.almost {background-image: linear-gradient(to left, r
 table.goals tr.complete.not {background-image: linear-gradient(to top, rgba(255, 0, 0, 0.06), rgba(255, 0, 0, 0.06));}
 table.goals tr.complete.almost {background-image: linear-gradient(to top, rgba(251, 212, 4, 0.06), rgba(255, 227, 0, 0.06));}
 
-table.goals.next {max-width: 1000px;}
+table.goals.next {max-width: 1100px;}
 
 .plot.banner {
 	max-width: 325px;
