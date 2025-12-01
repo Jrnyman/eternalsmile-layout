@@ -487,6 +487,9 @@ table.goals tr.complete {background-image: linear-gradient(to top, rgba(85, 255,
 table.goals tr.complete.not.almost {background-image: linear-gradient(to left, rgba(251, 212, 4, 0.06), rgba(5, 255, 0, 0.06));}
 table.goals tr.complete.not {background-image: linear-gradient(to top, rgba(255, 0, 0, 0.06), rgba(255, 0, 0, 0.06));}
 table.goals tr.complete.almost {background-image: linear-gradient(to top, rgba(251, 212, 4, 0.06), rgba(255, 227, 0, 0.06));}
+
+table.goals.next {max-width: 1000px;}
+
 .plot.banner {
 	max-width: 325px;
 	width: 90%
@@ -557,7 +560,7 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	width: 800px;
 	max-width: 70%;
 }
-.card.holder .card, #commentform, .comment-box {margin: auto;}
+.card.holder .card, #commentform, .comment-box, table.goals.next {margin: auto;}
 .card.holder {perspective: 110em; max-width: 900px; aspect-ratio: 1; width:100%; animation: unset;}
 .card img {backface-visibility: hidden; transform: rotateZ(3deg); width:100%;}
 .card img:last-of-type {position: absolute;transform: rotateZ(3deg) rotateY(180deg);}
