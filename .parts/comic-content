@@ -54,7 +54,7 @@
 
    		<article class="under" style="padding-top:20px">
 
-			_ARTICLE_CONTENT
+$comic-article
 
 		</article>
 

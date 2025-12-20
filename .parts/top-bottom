@@ -42,7 +42,7 @@
 
     <div id="start" class="wrap" style="margin: auto;">
 
-_CONTENT_HERE
+$content
 
 <footer class="light grey text center fancyText flexify not row">
 			<nav class="divided hosted" style="margin-bottom: 12px;" >
