@@ -1,0 +1,42 @@
+<hr class="main splitter rounder dynamicles white bg" style="display: none;">
+
+        <main style="margin: auto; background-color: rgba(255, 255, 255, 0); padding-top: 30px;">
+		<div class="not row center">
+			<div style="margin: auto; margin-bottom:20px;">
+				<h1 style="margin-bottom: 0;">eternalsmile <span class="verify">no. 42 - no. 61</span></h1>
+				<h3 style="margin-top: 0;" class="verify">originally published 12/17/24 <span class="appendage">rev. 0</span></h3>
+			</div>
+			<div class="row center">
+				<div style="max-width:430px;">
+					<img id="chapter-cover" class="randomimg" src="assets/extra/coverc.png" style="animation: batch-come-in 1s; opacity:0.35; mask-image: linear-gradient(to right, black, transparent 97%); position:absolute; z-index:-1; ">
+				</div>
+				<ul style="column-count: 3; padding: 0;" class="archivelist dynamicles mobile-inital">
+					<li><a href="assets/pagetray/1.html">01</a></li>	
+					<li><a href="assets/pagetray/2.html">02</a></li>	
+					<li><a href="assets/pagetray/3.html">03</a></li>	
+					<li><a href="assets/pagetray/4.html">04</a></li>	
+					<li><a href="assets/pagetray/5.html">05</a></li>	
+					<li><a href="assets/pagetray/6.html">06</a></li>	
+					<li><a href="assets/pagetray/7.html">07</a></li>	
+					<li><a href="assets/pagetray/8.html">08</a></li>	
+					<li><a href="assets/pagetray/9.html">09</a></li>	
+					<li><a href="assets/pagetray/10.html">10</a></li>	
+					<li><a href="assets/pagetray/11.html">11</a></li>	
+					<li><a href="assets/pagetray/12.html">12</a></li>	
+					<li><a href="assets/pagetray/13.html">13</a></li>	
+					<li><a href="assets/pagetray/14.html">14</a></li>	
+					<li><a href="assets/pagetray/15.html">15</a></li>	
+					<li><a href="assets/pagetray/16.html">16</a></li>	
+					<li><a href="assets/pagetray/17.html">17</a></li>	
+					<li><a href="assets/pagetray/18.html">18</a></li>	
+					<li><a href="assets/pagetray/19.html">19</a></li>	
+					<li><a href="assets/pagetray/20.html">20</a></li>	
+					<li><a href="assets/pagetray/21.html">21</a></li>	
+				</ul>
+			</div>
+		</div>
+        </main>
+
+	_CHOOSER_ARTICLE_CONTENT
+
+
