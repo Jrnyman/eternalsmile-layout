@@ -17,7 +17,7 @@
 
 	<nav id="underpage" class="horizontalList mobile" style="padding:2%; margin-bottom: 3%;">
 		<div id="navside" class="horizontalList" style="padding-top: 2px;">
-			<a class="local" href="assets/pagetray/1.html" style="filter: drop-shadow(-4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-left: 10px;">
+			<a class="local" href="assets/pagetray/.html" style="filter: drop-shadow(-4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-left: 10px;">
 				<div class="arrow nav clippy white bg icon dynamicles flip" ></div>
 			</a>
 			<a href="assets/pagetray/3.html" class="arrow nav clippy white bg flip icon dynamicles" ></a>
@@ -36,10 +36,10 @@
 	<nav class="flexify center divided" style="font-size: 18px;">
 		<span id="pageSelect" class="light grey text" style="display:flex;">
 			<select name="versionselect" style="height:25px; align-self:center;text-transform:uppercase;" onchange="document.getElementById('currentpage').src = this.value">
-				<option value="assets/pagetray/4r.png">ORIGINAL</option>
+				<option value="assets/pagetray/{{ currentpage }}r.png">ORIGINAL</option>
 				<optgroup label="PROGRESS">
-					<option value="assets/pagetray/old/4s.png">SKETCH</option>
-					<option value="assets/pagetray/old/4t.png">THUMBNAIL</option>
+					<option value="assets/pagetray/old/{{ currentpage }}s.png">SKETCH</option>
+					<option value="assets/pagetray/old/{{ currentpage }}t.png">THUMBNAIL</option>
 				</optgroup>
 				<optgroup label="OLD">
 					<option value="assets/pagetray/50.png">"NO. 42" (12/16/24)</option>
