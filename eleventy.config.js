@@ -8,10 +8,5 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.ignores.add(".trash");
 
 };
-module.exports.config = {
- 	dir: {
-		input: "input"
-	}
-};
 
 
