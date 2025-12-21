@@ -1,4 +1,4 @@
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
 
 
 	eleventyConfig.addGlobalData("layout", "top-bottom.html");
@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/js/");
 
 	eleventyConfig.ignores.add(".trash");
+	
+	const { HtmlBasePlugin } = await import("@11ty/eleventy");
+	eleventyConfig.addPlugin(HtmlBasePlugin);
 
 };
 

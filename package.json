@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jrnyman/eternalsmile-layout/issues"
   },
-  "homepage": "https://github.com/Jrnyman/eternalsmile-layout#readme"
+  "homepage": "https://github.com/Jrnyman/eternalsmile-layout#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
 }
