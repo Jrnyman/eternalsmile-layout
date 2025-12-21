@@ -1,0 +1,20 @@
+{
+  "name": "eternalsmile-layout",
+  "version": "1.0.0",
+  "description": "everything webpage related to eternalsmile, used as a basis for local html chapter releases, comic fury referencing, newgrounds, and itch.io",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jrnyman/eternalsmile-layout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jrnyman/eternalsmile-layout/issues"
+  },
+  "homepage": "https://github.com/Jrnyman/eternalsmile-layout#readme"
+}
