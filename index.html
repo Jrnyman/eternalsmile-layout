@@ -4,6 +4,11 @@ title: eternalsmile
 flags: chapter-select-page
 scripts: <script src="assets/js/random-image.js"></script>
 relevant: <script>const relevent = ["covera.png", "coverb.png", "coverc.png"]; const path = "assets/extra/";</script>
+
+pagination:
+ data: collections.input
+ alias: page-picker
+ size: 1
 ---
        <hr class="main splitter rounder dynamicles white bg" style="display: none;">
 
@@ -19,26 +24,9 @@ relevant: <script>const relevent = ["covera.png", "coverb.png", "coverc.png"]; c
 				</div>
 				<ul style="column-count: 3; padding: 0;" class="archivelist dynamicles mobile-inital">
 					<li><a href="assets/pagetray/1.html">01</a></li>	
-					<li><a href="assets/pagetray/2.html">02</a></li>	
-					<li><a href="assets/pagetray/3.html">03</a></li>	
-					<li><a href="assets/pagetray/4.html">04</a></li>	
-					<li><a href="assets/pagetray/5.html">05</a></li>	
-					<li><a href="assets/pagetray/6.html">06</a></li>	
-					<li><a href="assets/pagetray/7.html">07</a></li>	
-					<li><a href="assets/pagetray/8.html">08</a></li>	
-					<li><a href="assets/pagetray/9.html">09</a></li>	
-					<li><a href="assets/pagetray/10.html">10</a></li>	
-					<li><a href="assets/pagetray/11.html">11</a></li>	
-					<li><a href="assets/pagetray/12.html">12</a></li>	
-					<li><a href="assets/pagetray/13.html">13</a></li>	
-					<li><a href="assets/pagetray/14.html">14</a></li>	
-					<li><a href="assets/pagetray/15.html">15</a></li>	
-					<li><a href="assets/pagetray/16.html">16</a></li>	
-					<li><a href="assets/pagetray/17.html">17</a></li>	
-					<li><a href="assets/pagetray/18.html">18</a></li>	
-					<li><a href="assets/pagetray/19.html">19</a></li>	
-					<li><a href="assets/pagetray/20.html">20</a></li>	
-					<li><a href="assets/pagetray/21.html">21</a></li>	
+					{% for page-picker in page-picker %}	
+						<li><a href="{{ page-picker }}.html">01</a></li>	
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
