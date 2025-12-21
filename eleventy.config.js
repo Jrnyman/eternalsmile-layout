@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/js/");
 
 	eleventyConfig.ignores.add(".trash");
+	eleventyConfig.ignores.add("input");
 
 };
 
