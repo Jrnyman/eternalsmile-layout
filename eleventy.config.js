@@ -5,6 +5,7 @@ module.exports = async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/metacontent");
 	eleventyConfig.addPassthroughCopy("assets/extra/");
 	eleventyConfig.addPassthroughCopy("assets/js/");
+	eleventyConfig.addPassthroughCopy("assets/pagetray/input/");
 
 	eleventyConfig.ignores.add(".trash");
 	eleventyConfig.ignores.add("readme.md");
