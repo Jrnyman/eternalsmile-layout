@@ -7,6 +7,7 @@ module.exports = async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/js/");
 
 	eleventyConfig.ignores.add(".trash");
+	eleventyConfig.ignores.add("readme.md");
 	
 
 	//eleventyConfig.addCollection("images", function (collectionApi) { 
