@@ -1,5 +1,6 @@
 module.exports = async function (eleventyConfig) {
 
+	//eleventyConfig.addGlobalData("permalink", "/{{ page.filePathStem }}.html");
 
 	eleventyConfig.addGlobalData("layout", "top-bottom.html");
 	eleventyConfig.addPassthroughCopy("assets/metacontent");

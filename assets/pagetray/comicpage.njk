@@ -15,9 +15,9 @@ pagination:
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">
             <nav id="behindContent">
-		<a href="{{ p.pages[3 - pn].type.bw }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 3].type.bw] | join }}" alt="back 3"></a>
-		<a href="assets/pagetray/{{ pn - 1}}.html#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 2].type.bw] | join }}" alt="back 2"></a>
-		<a href="assets/pagetray/{{ pn }}.html#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 1].type.bw] | join }}" alt="back 1"></a>
+		<a href="{{ p.hrefs[pn - 3] }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 3].type.bw] | join }}" alt="back 3"></a>
+		<a href="{{ p.hrefs[pn - 2] }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 2].type.bw] | join }}" alt="back 2"></a>
+		<a href="{{ p.hrefs[pn - 1] }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 1].type.bw] | join }}" alt="back 1"></a>
 
 		<a href="{{ p.href.next }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ [comb, p.pages[pn + 1].type.bw] | join }}#start"></a>
             </nav>
