@@ -7,9 +7,9 @@
 	"email": "eternalsmile.cfw.me@gmail.com",
 	"social-bluesky": "@eternalsmile.org",
 	"default": "bw", 
-	"url": [{
-		"page": "assets/pagetray/",
-		"old": "assets/pagetray/old/",
-		"article": "assets/pagetray/blerbs/"
-	}]
+	"url": {
+		"page": "assets/pagetray/input/",
+		"old": "assets/pagetray/input/old/",
+		"article": "assets/pagetray/input/blerbs/"
+	}
 }

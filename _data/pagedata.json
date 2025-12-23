@@ -1,53 +1,53 @@
 [
 	{
 	"name": "page1", "date": "11/22/33", "article": "1a.html", 
-	"sticker": [{"url": "1s.png"},{"behind": false}],
-	"type": [{
+	"sticker": {"url": "1s.png", "behind": false},
+	"type": {
 		"bw": "1r.png",
 		"color": "1c.png",
 		"sketch": "1s.png",
 		"thumb": "1t.png"
-	}]
+	}
 	},
 	{
 	"name": "page2", "date": "11/22/33", "article": "2a.html", 
-	"sticker": [{"url": "2s.png"},{"behind": false}],
-	"type": [{
+	"sticker": {"url": "2s.png", "behind": false},
+	"type": {
 		"bw": "2r.png",
 		"color": "2c.png",
 		"sketch": "2s.png",
 		"thumb": "2t.png"
-	}]
+	}
 	},
 	{
 	"name": "page3", "date": "11/22/33", "article": "3a.html", 
-	"sticker": [{"url": "3s.png"},{"behind": false}],
-	"type": [{
+	"sticker": {"url": "3s.png", "behind": false},
+	"type": {
 		"bw": "3r.png",
 		"color": "3c.png",
 		"sketch": "3s.png",
 		"thumb": "3t.png"
-	}]
+	}
 	},
 	{
 	"name": "page4", "date": "11/22/33", "article": "4a.html", 
-	"sticker": [{"url": "4s.png"},{"behind": false}],
-	"type": [{
+	"sticker": {"url": "4s.png", "behind": false},
+	"type": {
 		"bw": "4r.png",
 		"color": "4c.png",
 		"sketch": "4s.png",
 		"thumb": "4t.png"
-	}]
+	}
 	},
 	{
 	"name": "page5", "date": "11/22/33", "article": "5a.html", 
-	"sticker": [{"url": "5s.png"},{"behind": false}],
-	"type": [{
+	"sticker": {"url": "5s.png", "behind": false},
+	"type": {
 		"bw": "5r.png",
 		"color": "5c.png",
 		"sketch": "5s.png",
 		"thumb": "5t.png"
-	}]
+	}
 	}
 
 
