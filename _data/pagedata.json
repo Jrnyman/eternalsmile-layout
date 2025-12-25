@@ -1,58 +1,277 @@
 [
 	{
-	"name": "page1", "date": "11/22/33", "article": "1a.html", 
+	"name": "page1", "date": "11/22/33", "time": "10:30 AM", "article": "1a.html", 
 	"sticker": {"url": "1s.png", "behind": false},
 	"type": {
-		"bw": "1r.png",
-		"color": "1c.png",
-		"sketch": "1s.png",
-		"thumb": "1t.png",
+		"bw": 		"1r.png",
+		"color": 	"1c.png",
+		"sketch": 	"1s.png",
+		"thumb": 	"1t.png",
 		"alts": {
 			"cfw1": {"url": "null", "date": "null"}
 		}
 	}
 	},
 	{
-	"name": "page2", "date": "11/22/33", "article": "2a.html", 
+	"name": "page2", "date": "11/22/33", "time": "10:30 AM", "article": "2a.html", 
 	"sticker": {"url": "2s.png", "behind": false},
 	"type": {
-		"bw": "2r.png",
-		"color": "2c.png",
-		"sketch": "2s.png",
-		"thumb": "2t.png"
+		"bw": 		"2r.png",
+		"color": 	"2c.png",
+		"sketch": 	"2s.png",
+		"thumb": 	"2t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
 	}
 	},
 	{
-	"name": "page3", "date": "11/22/33", "article": "3a.html", 
+	"name": "page3", "date": "11/22/33", "time": "10:30 AM", "article": "3a.html", 
 	"sticker": {"url": "3s.png", "behind": false},
 	"type": {
-		"bw": "3r.png",
-		"color": "3c.png",
-		"sketch": "3s.png",
-		"thumb": "3t.png"
+		"bw": 		"3r.png",
+		"color": 	"3c.png",
+		"sketch": 	"3s.png",
+		"thumb": 	"3t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
 	}
 	},
 	{
-	"name": "page4", "date": "11/22/33", "article": "4a.html", 
+	"name": "page4", "date": "11/22/33", "time": "10:30 AM", "article": "4a.html", 
 	"sticker": {"url": "4s.png", "behind": false},
 	"type": {
-		"bw": "4r.png",
-		"color": "4c.png",
-		"sketch": "4s.png",
-		"thumb": "4t.png"
+		"bw": 		"4r.png",
+		"color": 	"4c.png",
+		"sketch": 	"4s.png",
+		"thumb": 	"4t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
 	}
 	},
 	{
-	"name": "page5", "date": "11/22/33", "article": "5a.html", 
+	"name": "page5", "date": "11/22/33", "time": "10:30 AM", "article": "5a.html", 
 	"sticker": {"url": "5s.png", "behind": false},
 	"type": {
-		"bw": "5r.png",
-		"color": "5c.png",
-		"sketch": "5s.png",
-		"thumb": "5t.png"
+		"bw": 		"5r.png",
+		"color": 	"5c.png",
+		"sketch": 	"5s.png",
+		"thumb": 	"5t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page6", "date": "11/22/33", "time": "10:30 AM", "article": "6a.html", 
+	"sticker": {"url": "6s.png", "behind": false},
+	"type": {
+		"bw": 		"6r.png",
+		"color": 	"6c.png",
+		"sketch": 	"6s.png",
+		"thumb": 	"6t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page7", "date": "11/22/33", "time": "10:30 AM", "article": "7a.html", 
+	"sticker": {"url": "7s.png", "behind": false},
+	"type": {
+		"bw": 		"7r.png",
+		"color": 	"7c.png",
+		"sketch": 	"7s.png",
+		"thumb": 	"7t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page8", "date": "11/22/33", "time": "10:30 AM", "article": "8a.html", 
+	"sticker": {"url": "8s.png", "behind": false},
+	"type": {
+		"bw": 		"8r.png",
+		"color": 	"8c.png",
+		"sketch": 	"8s.png",
+		"thumb": 	"8t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page9", "date": "11/22/33", "time": "10:30 AM", "article": "9a.html", 
+	"sticker": {"url": "9s.png", "behind": false},
+	"type": {
+		"bw": 		"9r.png",
+		"color": 	"9c.png",
+		"sketch": 	"9s.png",
+		"thumb": 	"9t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page10", "date": "11/22/33", "time": "10:30 AM", "article": "10a.html", 
+	"sticker": {"url": "10s.png", "behind": false},
+	"type": {
+		"bw": 		"10r.png",
+		"color": 	"10c.png",
+		"sketch": 	"10s.png",
+		"thumb": 	"10t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page11", "date": "11/22/33", "time": "10:30 AM", "article": "11a.html", 
+	"sticker": {"url": "11s.png", "behind": false},
+	"type": {
+		"bw": 		"11r.png",
+		"color": 	"11c.png",
+		"sketch": 	"11s.png",
+		"thumb": 	"11t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page12", "date": "11/22/33", "time": "10:30 AM", "article": "12a.html", 
+	"sticker": {"url": "12s.png", "behind": false},
+	"type": {
+		"bw": 		"12r.png",
+		"color": 	"12c.png",
+		"sketch": 	"12s.png",
+		"thumb": 	"12t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page13", "date": "11/22/33", "time": "10:30 AM", "article": "13a.html", 
+	"sticker": {"url": "13s.png", "behind": false},
+	"type": {
+		"bw": 		"13r.png",
+		"color": 	"13c.png",
+		"sketch": 	"13s.png",
+		"thumb": 	"13t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page14", "date": "11/22/33", "time": "10:30 AM", "article": "14a.html", 
+	"sticker": {"url": "14s.png", "behind": false},
+	"type": {
+		"bw": 		"14r.png",
+		"color": 	"14c.png",
+		"sketch": 	"14s.png",
+		"thumb": 	"14t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page15", "date": "11/22/33", "time": "10:30 AM", "article": "15a.html", 
+	"sticker": {"url": "15s.png", "behind": false},
+	"type": {
+		"bw": 		"15r.png",
+		"color": 	"15c.png",
+		"sketch": 	"15s.png",
+		"thumb": 	"15t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page16", "date": "11/22/33", "time": "10:30 AM", "article": "16a.html", 
+	"sticker": {"url": "16s.png", "behind": false},
+	"type": {
+		"bw": 		"16r.png",
+		"color": 	"16c.png",
+		"sketch": 	"16s.png",
+		"thumb": 	"16t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page17", "date": "11/22/33", "time": "10:30 AM", "article": "17a.html", 
+	"sticker": {"url": "17s.png", "behind": false},
+	"type": {
+		"bw": 		"17r.png",
+		"color": 	"17c.png",
+		"sketch": 	"17s.png",
+		"thumb": 	"17t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page18", "date": "11/22/33", "time": "10:30 AM", "article": "18a.html", 
+	"sticker": {"url": "18s.png", "behind": false},
+	"type": {
+		"bw": 		"18r.png",
+		"color": 	"18c.png",
+		"sketch": 	"18s.png",
+		"thumb": 	"18t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page19", "date": "11/22/33", "time": "10:30 AM", "article": "19a.html", 
+	"sticker": {"url": "19s.png", "behind": false},
+	"type": {
+		"bw": 		"19r.png",
+		"color": 	"19c.png",
+		"sketch": 	"19s.png",
+		"thumb": 	"19t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page20", "date": "11/22/33", "time": "10:30 AM", "article": "20a.html", 
+	"sticker": {"url": "20s.png", "behind": false},
+	"type": {
+		"bw": 		"20r.png",
+		"color": 	"20c.png",
+		"sketch": 	"20s.png",
+		"thumb": 	"20t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
+	}
+	},
+	{
+	"name": "page21", "date": "11/22/33", "time": "10:30 AM", "article": "21a.html", 
+	"sticker": {"url": "21s.png", "behind": false},
+	"type": {
+		"bw": 		"21r.png",
+		"color": 	"21c.png",
+		"sketch": 	"21s.png",
+		"thumb": 	"21t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
 	}
 	}
-
 
 
 ]
