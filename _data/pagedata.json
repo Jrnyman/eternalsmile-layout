@@ -6,7 +6,10 @@
 		"bw": "1r.png",
 		"color": "1c.png",
 		"sketch": "1s.png",
-		"thumb": "1t.png"
+		"thumb": "1t.png",
+		"alts": {
+			"cfw1": {"url": "null", "date": "null"}
+		}
 	}
 	},
 	{
