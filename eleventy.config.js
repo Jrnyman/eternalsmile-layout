@@ -16,22 +16,19 @@ module.exports = async function (eleventyConfig) {
 		return a.slice(1);
 	});
 	
-	//console.log(pageDefault)
-
 	//eleventyConfig.addCollection("images", function (collectionApi) { 
 	//	return glob(['assets/pagetray/**./input/*.{jpeg,jpg,png,webp}"]);
 	//})
 };
 
-const fs = require("fs");
 const path = require("path");
 const { glob } = require('node:fs/promises');
 
-(async () => {
-
-	let files
-	for await (const entry of glob("./input/*.{png,gif,webp,jpg,jpeg}"))
-		console.log(entry);
-		entry = files;
-})();
+//(async () => {
+//
+//	let files
+//	for await (const entry of glob("./input/*.{png,gif,webp,jpg,jpeg}"))
+//		console.log(entry);
+//		entry = files;
+//})();
 
