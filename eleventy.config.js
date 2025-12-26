@@ -16,6 +16,7 @@ module.exports = async function (eleventyConfig) {
 		return a.slice(1);
 	});
 	
+	//console.log(pageDefault)
 
 	//eleventyConfig.addCollection("images", function (collectionApi) { 
 	//	return glob(['assets/pagetray/**./input/*.{jpeg,jpg,png,webp}"]);
