@@ -15,15 +15,15 @@ pagination:
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">
             <nav id="behindContent">
-		<a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 3].type.bw] | join }}" alt="back 3"></a>
-		<a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 2].type.bw] | join }}" alt="back 2"></a>
-		<a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 1].type.bw] | join }}" alt="back 1"></a>
+		<a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 3].bw.url] | join }}" alt="back 3"></a>
+		<a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 2].bw.url] | join }}" alt="back 2"></a>
+		<a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 1].bw.url] | join }}" alt="back 1"></a>
 
-		<a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ [comb, p.pages[pn + 1].type.bw] | join }}#start"></a>
+		<a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ [comb, p.pages[pn + 1].bw.url] | join }}#start"></a>
             </nav>
             
             <div style="z-index: 2; margin: auto; display: flex; justify-content: center;">
-		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="{{ comb + comicPage.type.bw }}"></a>
+		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="{{ comb + comicPage.bw.url }}"></a>
 		    <img src="assets/pagetray/{{ comb2[0] }}.png" id="sticker" class="untouchable boo long" alt="sticker layer">
             </div>
         </main>
@@ -49,17 +49,17 @@ pagination:
 	<nav class="flexify center divided" style="font-size: 18px;">
 		<span id="pageSelect" class="light grey text" style="display:flex;">
 			<select name="versionselect" style="height:25px; align-self:center;text-transform:uppercase;" onchange="document.getElementById('currentpage').src = this.value">
-				<option value="assets/pagetray/{{ currentpage }}r.png">ORIGINAL</option>
+				<option value="{{ comb + comicPage.bw.url }}">ORIGINAL</option>
 				<optgroup label="PROGRESS">
-					<option value="assets/pagetray/old/{{ currentpage }}s.png">SKETCH</option>
-					<option value="assets/pagetray/old/{{ currentpage }}t.png">THUMBNAIL</option>
+					<option value="{{ comb + comicPage.sketch.url }}">SKETCH</option>
+					<option value="{{ comb + comicPage.thumb.url }}">THUMBNAIL</option>
 				</optgroup>
 				<optgroup label="OLD">
 					<option value="assets/pagetray/50.png">"NO. 42" (12/16/24)</option>
 				</optgroup>
 			</select>
 		</span>
-	    <span class="fancyText secondary text">12/17/24, 3:48 PM</span>
+	    <span class="fancyText secondary text">{{ comicPage.date }}, {{ comicPage.time }}</span>
 	</nav>
 	<a href="comic.html" class="grey bg fancyText center flexify main cascade flexify rounder dynamicles hosted" style="text-transform:uppercase; margin-top:10px">
 			<span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>

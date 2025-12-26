@@ -1,0 +1,14 @@
+[
+	{
+	"name": "page1", "date": "11/22/33", "time": "10:30 AM", "article": "1a.html", 
+	"sticker": 	{"url": "1s.png", 	"behind": false},
+	"bw": 		{"url": "1r.png", 	"date": "11/22/33", 	"time": "10:30 AM"},
+	"color": 	{"url": "1c.png",	"date": "11/22/33",	"time": "10:30 AM"},
+	"sketch": 	{"url": "old/1s.png",	"date": "11/22/33",	"time": "10:30 AM"},
+	"thumb": 	{"url": "old/1t.png",	"date": "11/22/33",	"time": "10:30 AM"},
+	"alts": {
+		"cfw1": {"url": "null", 	"date": "null",		"time": "null"}
+	}
+	}
+	
+]
