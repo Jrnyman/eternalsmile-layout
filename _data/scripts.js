@@ -15,12 +15,13 @@ function defaulter(f) {
 	});
 }
 
-switch (comicData.pageDefault) {
+switch (choice) {
 	case 'bw': case 'sketch': case 'color': case 'thumb':
 		defaulter(choice);
 		console.log("switched");
 		break;
 	default:
+		console.log("No matching default, falling back to BW")
 		defaulter(bw);
 		break;
 };
