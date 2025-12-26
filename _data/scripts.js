@@ -8,7 +8,10 @@ let pageData = JSON.parse(b);
 
 if (comicData.pageDefault == 'bw') {
 	console.log("its bw!");
-	pageData[0].assumed = "i've been touched!";
+	pageData.forEach((page) => {
+//		page.assumed = "I've been touched!"
+		Object.assign(page.assumed, page.bw); 
+	});
 };
 
-console.log(comicData.pageDefault, pageData[0].assumed);
+console.log(comicData.pageDefault, pageData[4].assumed);
