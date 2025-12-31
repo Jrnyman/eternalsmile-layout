@@ -8,7 +8,7 @@ pagination:
  size: 1
  alias: comicPage 
 eleventyComputed:
- default: "{{ comic_data.url.page }}{{ pagination.pageNumber | assumed('sketch') }}"
+ default: "{{ comic_data.url.page }}{{ pagination.pageNumber | assumed(comic_data.pageDefault) }}"
 ---
 {% set p = pagination %}{% set pn = p.pageNumber %}
 {% set comb = comic_data.url.page %}
