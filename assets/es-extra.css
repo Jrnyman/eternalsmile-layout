@@ -1,2 +1,2 @@
 table.goals tr.redo {background-image: linear-gradient(to top, rgba(255, 0, 191, 0.06), rgba(223, 0, 255, 0.06));}
-table.goals tr.extra {}
+table.goals tr.extra {background-image: linear-gradient(to top, rgba(0, 231, 255, 0.06), rgba(0, 40, 255, 0.06));}
