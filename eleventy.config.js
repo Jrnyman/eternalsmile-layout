@@ -15,6 +15,7 @@ module.exports = async function (eleventyConfig) {
 		let a = String(value)
 		return a.slice(1);
 	});
+
 	eleventyConfig.addFilter("assumed", function(value, choice) {
 		let a = String(value);
 		switch (choice) {
@@ -24,6 +25,8 @@ module.exports = async function (eleventyConfig) {
 				return a + 's.png';
 			case 'thumb':
 				return a + 't.png';
+			case 'color':
+				return a + 'c.png';
 		};
 	});
 	
