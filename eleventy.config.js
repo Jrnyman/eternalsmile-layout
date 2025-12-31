@@ -18,6 +18,7 @@ module.exports = async function (eleventyConfig) {
 
 	eleventyConfig.addFilter("assumed", function(value, choice) {
 		let a = String(value);
+		a++;
 		switch (choice) {
 			case 'bw':
 				return a + 'r.png';
@@ -30,19 +31,8 @@ module.exports = async function (eleventyConfig) {
 		};
 	});
 	
-	//eleventyConfig.addCollection("images", function (collectionApi) { 
-	//	return glob(['assets/pagetray/**./input/*.{jpeg,jpg,png,webp}"]);
-	//})
 };
 
 const path = require("path");
 const { glob } = require('node:fs/promises');
-
-//(async () => {
-//
-//	let files
-//	for await (const entry of glob("./input/*.{png,gif,webp,jpg,jpeg}"))
-//		console.log(entry);
-//		entry = files;
-//})();
 
