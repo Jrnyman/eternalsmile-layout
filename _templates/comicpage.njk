@@ -7,10 +7,13 @@ pagination:
  data: pagedata 
  size: 1
  alias: comicPage 
+eleventyComputed:
+ default: "{{ comic_data.url.page }}{{ pagination.pageNumber | assumed('sketch') }}"
 ---
 {% set p = pagination %}{% set pn = p.pageNumber %}
 {% set comb = comic_data.url.page %}
 {% set mathed = 1 + pn %}
+{{ default }}
 <hr class="main splitter rounder dynamicles white bg">
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">

@@ -15,6 +15,17 @@ module.exports = async function (eleventyConfig) {
 		let a = String(value)
 		return a.slice(1);
 	});
+	eleventyConfig.addFilter("assumed", function(value, choice) {
+		let a = String(value);
+		switch (choice) {
+			case 'bw':
+				return a + 'r.png';
+			case 'sketch':
+				return a + 's.png';
+			case 'thumb':
+				return a + 't.png';
+		};
+	});
 	
 	//eleventyConfig.addCollection("images", function (collectionApi) { 
 	//	return glob(['assets/pagetray/**./input/*.{jpeg,jpg,png,webp}"]);
