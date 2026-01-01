@@ -9,24 +9,26 @@ pagination:
  alias: comicPage 
 eleventyComputed:
  default: "{{ comic_data.url.page }}{{ pagination.pageNumber | assumed(comic_data.pageDefault) }}"
+ defaultOne: "{{ comic_data.url.page }}{{ [pagination.pageNumber - 1] | assumed(comic_data.pageDefault) }}"
+ defaultTwo: "{{ comic_data.url.page }}{{ [pagination.pageNumber - 2] | assumed(comic_data.pageDefault) }}"
+ defaultThree: "{{ comic_data.url.page }}{{ [pagination.pageNumber - 3] | assumed(comic_data.pageDefault) }}"
+ defaultNext: "{{ comic_data.url.page }}{{ [pagination.pageNumber + 1] | assumed(comic_data.pageDefault) }}"
 ---
 {% set p = pagination %}{% set pn = p.pageNumber %}
 {% set comb = comic_data.url.page %}
-{% set mathed = 1 + pn %}
-{{ default }}
 <hr class="main splitter rounder dynamicles white bg">
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">
             <nav id="behindContent">
-		<a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 3].bw.url] | join }}" alt="back 3"></a>
-		<a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 2].bw.url] | join }}" alt="back 2"></a>
-		<a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ [comb, p.pages[pn - 1].bw.url] | join }}" alt="back 1"></a>
+		<a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ defaultThree }}" alt="back 3"></a>
+		<a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ defaultTwo }}" alt="back 2"></a>
+		<a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ defaultOne }}" alt="back 1"></a>
 
-		<a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ [comb, p.pages[pn + 1].bw.url] | join }}#start"></a>
+		<a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ defaultNext }}#start"></a>
             </nav>
             
             <div style="z-index: 2; margin: auto; display: flex; justify-content: center;">
-		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="{{ comb + comicPage.bw.url }}"></a>
+		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="{{ default }}"></a>
 		    <img src="assets/pagetray/{{ comb2[0] }}.png" id="sticker" class="untouchable boo long" alt="sticker layer">
             </div>
         </main>

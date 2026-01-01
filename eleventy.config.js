@@ -22,12 +22,18 @@ module.exports = async function (eleventyConfig) {
 		switch (choice) {
 			case 'bw':
 				return a + 'r.png';
+				break;
 			case 'sketch':
-				return a + 's.png';
+				return 'old/' + a + 's.png';
+				break;
 			case 'thumb':
-				return a + 't.png';
+				return 'old/' + a + 't.png';
+				break;
 			case 'color':
 				return a + 'c.png';
+				break;
+			default:
+				return a + 'r.png';
 		};
 	});
 	
