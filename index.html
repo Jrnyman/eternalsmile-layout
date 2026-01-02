@@ -16,9 +16,8 @@ relevant: <script>const relevent = ["covera.png", "coverb.png", "coverc.png"]; c
 					<img id="chapter-cover" class="randomimg" src="assets/extra/coverc.png" style="animation: batch-come-in 1s; opacity:0.35; mask-image: linear-gradient(to right, black, transparent 97%); position:absolute; z-index:-1; ">
 				</div>
 				<ul style="column-count: 3; padding: 0;" class="archivelist dynamicles mobile-inital">
-					<li><a href="assets/pagetray/1.html">01</a></li>	
 					{% for item in pagedata %}	
-					<li><a href="{{ comic_data.url.dir }}{{ item.name }}.html">01</a></li>	
+					<li><a href="{{ comic_data.url.dir }}{{ item.name }}.html">{{ forloop.index }}</a></li>	
 					{% endfor %}
 				</ul>
 			</div>
