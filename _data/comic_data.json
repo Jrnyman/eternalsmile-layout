@@ -7,7 +7,7 @@
 	"layout": "top-bottom.hmtl",
 	"email": "eternalsmile.cfw.me@gmail.com",
 	"social-bluesky": "@eternalsmile.org",
-	"pageDefault": "bw", 
+	"pageDefault": "thumb", 
 	"url": {
 		"dir": "assets/pagetray/",
 		"page": "assets/pagetray/input/",
