@@ -1,0 +1,23 @@
+{% block header %}
+<table class="goals">
+	<tbody>
+		<tr>
+			<th>type</th>
+			<th>goal</th>
+			<th>done?</th>
+			<th>excuse</th>
+		</tr>
+{% endblock %}
+		{% for goal in table_goals %}	
+		<tr class="{{ goal.colorCall }}">
+			<td><span>{{ goal.type }}</span></td>
+			<td><span>{{ goal.goal }}</span></td>
+			<td><span>{{ goal.done }}</span></td>
+			<td><span>{{ goal.excuse }}</span></td>
+		</tr>
+		{% endfor %}
+		
+{% block footer %}
+	</tbody>
+</table>
+{% endblock %}
