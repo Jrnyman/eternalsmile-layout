@@ -40,6 +40,11 @@
         "goal": "If I get the 5 pages all done and posted/posting, and I have the other 4 character sheets done; start sketching the next 5 pages",
         "type": "drawing",
         "priority": "last resort"
+      },
+      {
+      "goal": "",
+      "type": "",
+      "priority": ""
       }
     ],
     "again": [
