@@ -1,5 +1,5 @@
-{% block header %}
-<table class="goals">
+{% block mainHeader %}
+<table class="goals" style="margin: auto;">
 	<tbody>
 		<tr>
 			<th>type</th>
@@ -16,8 +16,68 @@
 			<td><span>{{ goal.excuse }}</span></td>
 		</tr>
 		{% endfor %}
-		
-{% block footer %}
+{% block mainFooter %}
+	</tbody>
+</table>
+{% endblock %}
+
+{% block extraHeader %}
+<h1 style="text-align: center;">notable extra</h1>
+<table class="goals" style="padding-bottom: 150px; margin: auto;">
+	<tbody>
+{% endblock %}
+
+	{% for extraGoal in table_goalsExtra %}
+		<tr class="extra">
+			<td><span>{{ extraGoal.type }}</span></td>
+			<td>{{ extraGoal.extra}}</td>
+			<td><span>{{ extraGoal.priority }}</span></td>
+		</tr>
+	{% endfor %}	
+{% block extraFooter %}
+	</tbody>
+</table>
+{% endblock %}
+
+{% block nextHeader %}
+<h2 class="super" style="text-align: center;">next up</h2>
+<table class="next goals" style="margin: auto;">
+	<tbody>
+		<tr>
+			<th>type</th>
+			<th>goal</th>
+			<th>priority</th>
+		</tr>
+{% endblock %}
+	
+	{% for nextGoal in table_goalsNext[0].next %}
+		<tr>
+			<td><span>{{ nextGoal.type }}</span></td>
+			<td>{{ nextGoal.goal }}</td>
+			<td><span>{{ nextGoal.priority }}</span></td>
+		</tr>
+	{% endfor %}
+
+{% block nextFooter %}
+	</tbody>
+</table>
+{% endblock %}
+
+{% block nextTryHeader %}
+<h1 style="text-align: center;">try again</h1>
+<table class="next goals redo">
+	<tbody>
+{% endblock %}
+
+	{% for nextTry in table_goalsNext[0].again %}
+		<tr>
+			<td><span>{{ nextTry.type }}</span></td>
+			<td>{{ nextTry.goal }}</td>
+			<td><span>{{ nextTry.priority }}</span></td>
+		</tr>
+	{% endfor %}
+
+{% block nextTryFooter %}
 	</tbody>
 </table>
 {% endblock %}

@@ -1,0 +1,78 @@
+[
+  {
+    "next": [
+      {
+        "goal": "Continue sketching the 5 next pages",
+        "type": "drawing",
+        "priority": "top"
+      },
+      {
+        "goal": "When done sketching, do the line art",
+        "type": "drawing",
+        "priority": "high"
+      },
+      {
+        "goal": "Do a quality check of the pages and then make some flavor key art, like a cast page. At the same time write whatever is going to be in the article below the page with the synopsis of what's happened up until now.",
+        "type": "drawing/writing",
+        "priority": "upper"
+      },
+      {
+        "goal": "Color the rest of the old pages and post them on Instagram, I want the rest of the comic on the site by the end of the month at least.",
+        "type": "drawing/posting",
+        "priority": "micro"
+      },
+      {
+        "goal": "I need to get 4 characters fully realized, 2 new ones and 2 we've seen before. These will be easier and quicker for me to do because I'm not doing the like 8 point turnarounds I was doing for the main three. I just need particulates for their attire and height in comparison.",
+        "type": "drawing",
+        "priority": "medium"
+      },
+      {
+        "goal": "The method i'm using to make these tables is a lot faster than before, but I'd like to make this even easier for me by having the info be in one file I can jump around in with a JSON reader. I split it up into 3 files because I didn't know what I was doing, but now I know just a little bit more of what I'm doing, and I'd like to fix it when I get the chance",
+        "type": "code",
+        "priority": "micro"
+      },
+      {
+        "goal": "These tables look garbage on vertical displays, I need to do something about that",
+        "type": "site",
+        "priority": "lower"
+      },
+      {
+        "goal": "If I get the 5 pages all done and posted/posting, and I have the other 4 character sheets done; start sketching the next 5 pages",
+        "type": "drawing",
+        "priority": "last resort"
+      }
+    ],
+    "again": [
+      {
+        "goal": "\"The position the avatars are at aren't completely satisfactory for me yet, they don't look good on scrunched screens yet\"",
+        "type": "site",
+        "priority": "small"
+      },
+      {
+        "goal": "\"I was also thinking of styling a \"code\" text where the font goes monospaced and separate, so I can reference my classes and ID's\"",
+        "type": "site",
+        "priority": "tiny"
+      },
+      {
+        "goal": "\"I'm also tempted in putting the credentials at the end of posts automatically, but only on the individual blog articles themselves, not the blog archive page, I think I can make that work.\"",
+        "type": "site",
+        "priority": "tiny"
+      },
+      {
+        "goal": "\"Next, previous and \"To blog archive\" buttons are still ugly to me, and I'd like to style them more\"",
+        "type": "site",
+        "priority": "small"
+      },
+      {
+        "goal": "\"I also want to reevaluate the way the final page is handled, I think removing the pages is doing too much, I should just darken them and maybe add a little rotate, like someone holding a hand of cards.\" \t",
+        "type": "site",
+        "priority": "small"
+      },
+      {
+        "goal": "\"The Newgrounds version is done, but I was thinking about adding extra interactiveness to the page, I want the reader to be able to draw and color on the pages. At LEAST draw on it, I have it functional on a branch already, but I want an actual GUI that you click to activate it and graphics for pen or color-pen/highlighter. I think I should be able to have a pen with a multiply filter or something to act as a highlighter/color tool, it might look bad because the lines aren't actually black, but this is still 1000% better than nothing to me. I also want to be able to slap stamps on the pages. This is hecka shit tho so it's going in minor\"",
+        "type": "site extra",
+        "priority": "small"
+      }
+    ]
+  }
+]

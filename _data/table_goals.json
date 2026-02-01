@@ -1,10 +1,100 @@
 [
-{
-	"goal": "eat dirt",
-	"colorCall": "complete",
-	"type": "site",	
-	"done": "hell no",
-	"excuse": "sfsdfdjdsfajfdkdaldfhlafjdlkfjadfh djhafdjf hhadfjklafhdj shfafldhajfhd lafjdalfadfhaf fdkdah"
-}
-
+  {
+    "goal": "After making the new template for pages, I need to look over how the thumbnails I made look on the website ",
+    "colorCall": "complete",
+    "type": "Inspection",
+    "done": "done",
+    "excuse": ""
+  },
+  {
+    "goal": "After checking and adjusting the thumbnails, I want to make all the panels for each page and get them ready",
+    "colorCall": "complete",
+    "type": "drawing",
+    "done": "done",
+    "excuse": ""
+  },
+  {
+    "goal": "After I have satisfactory thumbnails, panels, and reference sheets for at least the characters in the first 5 pages (Aireoli, Cydia, Jj, and 2 others) I will start sketching the first 5 pages",
+    "colorCall": "complete not almost",
+    "type": "drawing",
+    "done": "ongoing",
+    "excuse": "I got 2 pages sketched, I'm prolly going to have pages ready this month"
+  },
+  {
+    "goal": "I want to use 11ty to help me make these tables and other things on the site easier for me, I don't know the particulates yet, but I'll look into it",
+    "colorCall": "complete",
+    "type": "site",
+    "done": "done",
+    "excuse": "shoot- I'm making use of it rn!!"
+  },
+  {
+    "goal": "I am going to make a drawing for Haloopdy on Bluesky cuz I said I would",
+    "colorCall": "complete",
+    "type": "drawing",
+    "done": "done",
+    "excuse": ""
+  },
+  {
+    "goal": "\"Make ref sheets for characters. I've only done this once, and it was so long ago it was before I was using a graphics tablet to do this comic. I'm still not all that excited to do it- it's a lot of time that would have me taken away from potentially drawing the comic, but I still think about doing it, so I'll put it here.\"",
+    "colorCall": "complete not almost",
+    "type": "drawing",
+    "done": "3 of 5",
+    "excuse": "I hate doing these, but it was educational for me. I can really see them in 3d now! I skipped the other 2 because one only has their hooves onscreen and the other only shows up on the 5th page in one panel."
+  },
+  {
+    "goal": "\"The Newgrounds version is done, but I was thinking about adding extra interactiveness to the page, I want the reader to be able to draw and color on the pages. At LEAST draw on it, I have it functional on a branch already, but I want an actual GUI that you click to activate it and graphics for pen or color-pen/highlighter. I think I should be able to have a pen with a multiply filter or something to act as a highlighter/color tool, it might look bad because the lines aren't actually black, but this is still 1000% better than nothing to me. I also want to be able to slap stamps on the pages. This is hecka shit tho so it's going in minor\"",
+    "colorCall": "not complete",
+    "type": "site extra",
+    "done": "no",
+    "excuse": "I still want to do this but moving forward comes first. Likely after I get 11ty in a really good spot, I'll get back to this. "
+  },
+  {
+    "goal": "\"I'm not at this point yet, but before I start sketching, I want to redo my template I have for the pages. At the top of my head I already know I want the canvas to be bigger, because it helps a lot when making perspective that aren't with the automatic 2-point grid. The further out of the canvas the harder Krita is to work with. I also want more information that I frequently call back to, like what tone pattern do I use for Aireoli or Jj or other Items, or the darkest black I'm allowed to use before It's darker than the lineart, stuff like that. I know I also want to reorganize the layers and maybe merge some to keep the base file size down, maybe. I'm sure there's more, but you get the point\"",
+    "colorCall": "complete",
+    "type": "\"Drawing\"",
+    "done": "done",
+    "excuse": "It's done but upping the resolution to 6612x6612 got these EMPTY templates sitting at 17Mb... NOT CUTE. I'll look into optimizing my initial layers to shave some of that off. But I'll be alright, this lets me work faster"
+  },
+  {
+    "goal": "\"I also want to reevaluate the way the final page is handled, I think removing the pages is doing too much, I should just darken them and maybe add a little rotate, like someone holding a hand of cards.\"",
+    "colorCall": "not complete",
+    "type": "site",
+    "done": "no",
+    "excuse": "Again it's really just me focusing on moving forward, this will definitely be dealt with when I start posting pages though."
+  },
+  {
+    "goal": "\"Next, previous and \"To blog archive\" buttons are still ugly to me, and I'd like to style them more\"",
+    "colorCall": "not complete",
+    "type": "site",
+    "done": "no",
+    "excuse": "^^^"
+  },
+  {
+    "goal": "\"I'm also tempted in putting the credentials at the end of posts automatically, but only on the individual blog articles themselves, not the blog archive page, I think I can make that work.\"",
+    "colorCall": "not complete",
+    "type": "site",
+    "done": "no",
+    "excuse": "^^^"
+  },
+  {
+    "goal": "\"I was also thinking of styling a \"code\" text where the font goes monospaced and separate, so I can reference my classes and ID's\"",
+    "colorCall": "not complete",
+    "type": "site",
+    "done": "no",
+    "excuse": "^^^"
+  },
+  {
+    "goal": "\"The position the avatars are at aren't completely satisfactory for me yet, they don't look good on scrunched screens yet\"",
+    "colorCall": "not complete",
+    "type": "site",
+    "done": "no",
+    "excuse": "^^^"
+  },
+  {
+    "goal": "",
+    "colorCall": "",
+    "type": "",
+    "done": "",
+    "excuse": ""
+  }
 ]
