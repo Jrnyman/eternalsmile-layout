@@ -39,12 +39,12 @@
       {
         "goal": "If I get the 5 pages all done and posted/posting, and I have the other 4 character sheets done; start sketching the next 5 pages",
         "type": "drawing",
-        "priority": "last resort"
+        "priority": "medium"
       },
       {
-      "goal": "",
-      "type": "",
-      "priority": ""
+        "goal": "Keep using 11ty to make templates for stuff like the constructing the following: fan art template, normal credits, collaborative credits, batch construction progress list, rotating card.",
+        "type": "code",
+        "priority": "min"
       }
     ],
     "again": [
