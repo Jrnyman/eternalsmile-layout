@@ -1,7 +1,7 @@
 [
 	{
 	"name": "page1", "date": "11/22/33", "time": "10:30 AM", "article": "1a.html", "assumed": {},  
-	"sticker": 	{"url": "1s.png", 	"behind": false},
+	"sticker": 	{"url": "1s.png", 	"behind": true},
 	"bw": 		{"url": "1r.png", 	"date": "11/22/33", 	"time": "10:30 AM"},
 	"color": 	{"url": "1c.png",	"date": "11/22/33",	"time": "10:30 AM"},
 	"sketch": 	{"url": "old/1s.png",	"date": "11/22/33",	"time": "10:30 AM"},
