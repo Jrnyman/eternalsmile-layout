@@ -29,7 +29,7 @@ eleventyComputed:
             
             <div style="z-index: 2; margin: auto; display: flex; justify-content: center;">
 		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani" alt="current page" src="{{ default }}"></a>
-		    <img src="assets/pagetray/{{ comb2[0] }}.png" id="sticker" class="untouchable boo long" alt="sticker layer">
+		    <img src="{{ comb + comicPage.sticker.url }}" id="sticker" class="untouchable" alt="sticker layer">
             </div>
         </main>
 
