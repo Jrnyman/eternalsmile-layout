@@ -34,7 +34,7 @@
 	},
 	{
 	"name": "page4", "date": "11/22/33", "time": "10:30 AM", "article": "4a.html", "assumed": {}, 
-	"sticker": 	{"url": "4s.png", 	"behind": false},
+	"sticker": 	{"url": "4s.png", 	"behind": true},
 	"bw": 		{"url": "4r.png", 	"date": "11/22/33", 	"time": "10:30 AM"},
 	"color": 	{"url": "4c.png",	"date": "11/22/33",	"time": "10:30 AM"},
 	"sketch": 	{"url": "old/4s.png",	"date": "11/22/33",	"time": "10:30 AM"},
