@@ -55,7 +55,7 @@
 	}
 	},
 	{
-	"name": "page6", "date": "11/22/33", "time": "10:30 AM", "article": "6a.html", "flags": "null",  
+	"name": "page6", "date": "11/22/33", "time": "10:30 AM", "article": "6a.html", "flags": "firstOfChapter",  
 	"sticker": 	{"url": "6s.png", 	"behind": false},
 	"bw": 		{"url": "6r.png", 	"date": "11/22/33", 	"time": "10:30 AM"},
 	"color": 	{"url": "6c.png",	"date": "11/22/33",	"time": "10:30 AM"},
