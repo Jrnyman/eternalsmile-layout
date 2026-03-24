@@ -739,8 +739,8 @@ body.mini * #sticker {max-width: 145.1%; max-height: 1450.5px}
 	padding-right:20px;
 	padding-bottom:20px;
 	padding-top:20px;
-	width: 90%;
-	max-width: 800px;
+	width: 800px;
+	max-width: 100%;
 }
 .comment img {
 	height:auto;
