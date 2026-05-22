@@ -269,7 +269,7 @@
 	"bw": 		{"url": "25r.png", 	"date": "11/22/33", 	"time": "10:30 AM"},
 	"color": 	{"url": "25c.png",	"date": "11/22/33",	"time": "10:30 AM"},
 	"sketch": 	{"url": "old/25s.png",	"date": "11/22/33",	"time": "10:30 AM"},
-	"thumb": 	{"url": "old/26t.png",	"date": "11/22/33",	"time": "10:30 AM"},
+	"thumb": 	{"url": "old/25t.png",	"date": "11/22/33",	"time": "10:30 AM"},
 	"alts": {
 		"cfw1": {"url": "null", 	"date": "null",		"time": "null"}
 	}
