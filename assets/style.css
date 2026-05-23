@@ -191,6 +191,8 @@ a {text-decoration: none;}
     width: var(--comicWidth);
     height: var(--comicHeight);
 }
+body.v1 * .page {aspect-ratio: 4/7;}
+body.v2 * .page {aspect-ratio: 5.5/8.5;}
 .page, body.actual * main > div{
 	aspect-ratio: 4/7;
 	max-width: var(--comicWidth);
