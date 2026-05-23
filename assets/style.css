@@ -189,13 +189,13 @@ a {text-decoration: none;}
 
 .page::before {
     width: var(--comicWidth);
-    height: var(--comicHeight);
+    /*height: var(--comicHeight);*/
 }
-body.v1 * .page {aspect-ratio: 4/7;}
-body.v2 * .page {aspect-ratio: 5.5/8.5;}
+body.v1 * .page, body.v1 * #page-sticker {aspect-ratio: 4/7;}
+body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 5.5/8.5;}
 .page, body.actual * main > div{
 	max-width: var(--comicWidth);
-	max-height: var(--comicHeight);
+	/*max-height: var(--comicHeight);*/
 	font-size: 0;
 
 	left: 0;
