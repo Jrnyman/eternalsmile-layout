@@ -194,7 +194,6 @@ a {text-decoration: none;}
 body.v1 * .page {aspect-ratio: 4/7;}
 body.v2 * .page {aspect-ratio: 5.5/8.5;}
 .page, body.actual * main > div{
-	aspect-ratio: 4/7;
 	max-width: var(--comicWidth);
 	max-height: var(--comicHeight);
 	font-size: 0;
