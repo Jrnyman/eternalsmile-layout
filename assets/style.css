@@ -1,6 +1,7 @@
 .off, .hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow, body.local * hr.main.splitter {display: none !important;}
 :root {
     --comicWidth: 1000px;
+    --v2comicWidth: 800px;
     --comicHeight: 1750px;
     --white: 237, 239, 236;
     --black: 26, 27, 25;
@@ -187,14 +188,15 @@ a {text-decoration: none;}
 	overflow:auto;
 }
 
-.page::before {
+body.v1 * .page::before {width: var(--comicWidth);}
+body.v2 * .page::before {width: var(--v2comicWidth);}
+/*.page::before {
     width: var(--comicWidth);
-    /*height: var(--comicHeight);*/
-}
-body.v1 * .page, body.v1 * #page-sticker {aspect-ratio: 4/7;}
-body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 5.5/8.5;}
+}*/
+body.v1 * .page, body.v1 * #page-sticker {aspect-ratio: 4/7; max-width: var(--comicWidth);}
+body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 5.5/8.5; max-width: var(--v2comicWidth);}
 .page, body.actual * main > div{
-	max-width: var(--comicWidth);
+	/*max-width: var(--comicWidth);*/
 	/*max-height: var(--comicHeight);*/
 	font-size: 0;
 
