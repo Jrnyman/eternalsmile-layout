@@ -194,7 +194,7 @@ body.v2 * .page::before {width: var(--v2comicWidth);}
     width: var(--comicWidth);
 }*/
 body.v1 * .page, body.v1 * #page-sticker {aspect-ratio: 4/7; max-width: var(--comicWidth);}
-body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 5.5/8.5; max-width: var(--v2comicWidth);}
+body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 800/1219; max-width: var(--v2comicWidth);}
 .page, body.actual * main > div{
 	/*max-width: var(--comicWidth);*/
 	/*max-height: var(--comicHeight);*/
