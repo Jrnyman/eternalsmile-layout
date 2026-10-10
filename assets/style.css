@@ -502,11 +502,11 @@ table.goals.next {max-width: 1100px;}
   width: 100%;
   margin: auto;
   overflow-x: auto;
-  position: relative;
+  position: absolute;
 }
 #comic-rail {}
 #comic-rail {
-  width: calc(2800px + 2pt);
+  width: calc(calc(1600px + 2pt) + calc(100vw - 800px));
   justify-content: center;
   flex-wrap: nowrap;
   gap: 2pt;
