@@ -20,17 +20,21 @@ eleventyComputed:
 
         <main style="margin: auto; background-color: rgba(255, 255, 255, 0);">
             <nav id="behindContent">
-		<a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ defaultThree }}" alt="back 3"></a>
-		<a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ defaultTwo }}" alt="back 2"></a>
-		<a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ defaultOne }}" alt="back 1"></a>
+		          <a href="{{ p.hrefs[pn - 3] | r }}#start"><img id="back3" class="white bg page bgpage dynamicles ani{% if pn < 3 %} off{% endif %}"  src="{{ defaultThree }}" alt="back 3"></a>
+		          <a href="{{ p.hrefs[pn - 2] | r }}#start"><img id="back2" class="white bg page bgpage dynamicles ani{% if pn < 2 %} off{% endif %}"  src="{{ defaultTwo }}" alt="back 2"></a>
+		          <a href="{{ p.hrefs[pn - 1] | r }}#start"><img id="back1" class="white bg page bgpage dynamicles ani{% if pn < 1 %} off{% endif %}"  src="{{ defaultOne }}" alt="back 1"></a>
 
-		<a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ defaultNext }}#start"></a>
+		          <a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ defaultNext }}#start"></a>
             </nav>
             
-            <div id="page-sticker" style="z-index: 2; margin: auto; display: flex; justify-content: center;">
-		    <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
-		    <img src="{{ comb + comicPage.sticker.url }}" id="sticker" class="untouchable " alt="sticker layer">
-            </div>
+		        <div id="comic-rail">
+              <div id="page-sticker" style="z-index: 2; margin: auto; display: flex; justify-content: center;">
+		            <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
+		            <img src="{{ comb + comicPage.sticker.url }}" id="sticker" class="untouchable " alt="sticker layer">
+              </div>
+
+		          <a href="{{ pagination.href.next | r }}"><img id="rightpage" class="white bg page dynamicles ani"></img></a>
+		        </div>
         </main>
 
 	<nav id="underpage" class="horizontalList mobile" style="padding:2%; margin-bottom: 3%;">
