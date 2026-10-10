@@ -498,10 +498,17 @@ table.goals.next {max-width: 1100px;}
 	max-width: 325px;
 	width: 90%;
 }
-#comic-rail {flex-wrap: nowrap;}
+#comic-viewport {width: 100%; margin: auto;}
+#comic-rail {
+  max-width: var(--v2comicWidth);
+  flex-wrap: nowrap;
+  gap: 2pt;
+  margin: auto;
+  overflow-x: auto;
+}
 #comic-rail > * {
 flex: none;
-min-width: 100%;
+min-width: 800px; /*problematic*/
 margin: unset;
 }
 #comic-rail > * > img {
