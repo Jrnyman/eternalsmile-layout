@@ -496,7 +496,12 @@ table.goals.next {max-width: 1100px;}
 
 .plot.banner {
 	max-width: 325px;
-	width: 90%
+	width: 90%;
+}
+#comic-rail {flex-wrap: nowrap;}
+#comic-rail > * {
+flex: none;
+min-width: 100%;
 }
 .row h1, .cred.icles span {flex-basis:100%;}
 .row, .cred.icles {flex-wrap: wrap;}
