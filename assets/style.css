@@ -498,13 +498,20 @@ table.goals.next {max-width: 1100px;}
 	max-width: 325px;
 	width: 90%;
 }
-#comic-viewport {width: 100%; margin: auto;}
+#comic-viewport {
+  width: 100%;
+  margin: auto;
+  overflow-x: auto;
+  position: relative;
+}
+#comic-rail {}
 #comic-rail {
-  max-width: var(--v2comicWidth);
+  width: calc(2800px + 2pt);
+  justify-content: center;
   flex-wrap: nowrap;
   gap: 2pt;
   margin: auto;
-  overflow-x: auto;
+  height: 1219px;
 }
 #comic-rail > * {
 flex: none;
@@ -515,6 +522,7 @@ margin: unset;
   left: unset;
   right: unset;
 }
+
 .row h1, .cred.icles span {flex-basis:100%;}
 .row, .cred.icles {flex-wrap: wrap;}
 .row {width:85%; gap: 20px;}

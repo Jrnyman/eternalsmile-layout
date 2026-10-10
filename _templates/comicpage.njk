@@ -26,7 +26,7 @@ eleventyComputed:
 
 		          <a href="{{ p.href.next | r }}#start"><img id="nextpage" class="white bg page bgpage dynamicles ani{% if not p.href.next %} off{% endif %}" alt="next page" src="{{ defaultNext }}#start"></a>
             </nav>
-            <div id="comic-viewport" class="flex row">
+		        <div id="comic-viewport">
 		          <div id="comic-rail" class="flex row">
                 <div class="off" id="page-sticker" style="z-index: 2; margin: auto; display: flex; justify-content: center;">
 		              <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
