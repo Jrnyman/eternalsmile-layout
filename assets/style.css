@@ -502,6 +502,11 @@ table.goals.next {max-width: 1100px;}
 #comic-rail > * {
 flex: none;
 min-width: 100%;
+margin: unset;
+}
+#comic-rail > * > img {
+  left: unset;
+  right: unset;
 }
 .row h1, .cred.icles span {flex-basis:100%;}
 .row, .cred.icles {flex-wrap: wrap;}
