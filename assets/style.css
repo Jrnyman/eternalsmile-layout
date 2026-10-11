@@ -510,8 +510,12 @@ table.goals.next {max-width: 1100px;}
   overflow-x: scroll;
   position: absolute;
   pointer-events: none;
+
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-#comic-rail {}
+#comic-viewport::-webkit-scrollbar {display: none;}
 #comic-rail {
   width: calc(calc(1600px + 2pt) + calc(100vw - 800px));
   justify-content: center;
