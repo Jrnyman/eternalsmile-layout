@@ -204,6 +204,12 @@ body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: 800/1219; max-width: var
 	left: 0;
 	right: 0;
 }
+body.actual * main::after {
+  content: "";
+  display: block;
+  aspect-ratio: 800/1219;
+  width: 800px;
+}
 #back3 {transform: translate(calc(-5.7% * 3), calc(3.25714% * 3));}
 #back2 {transform: translate(calc(-5.7% * 2), calc(3.25714% * 2));}
 #back1 {transform: translate(-5.7%, 3.25714%);}
@@ -501,8 +507,9 @@ table.goals.next {max-width: 1100px;}
 #comic-viewport {
   width: 100%;
   margin: auto;
-  overflow-x: auto;
+  overflow-x: scroll;
   position: absolute;
+  pointer-events: none;
 }
 #comic-rail {}
 #comic-rail {
@@ -514,9 +521,10 @@ table.goals.next {max-width: 1100px;}
   height: 1219px;
 }
 #comic-rail > * {
-flex: none;
-min-width: 800px; /*problematic*/
-margin: unset;
+  flex: none;
+  min-width: 800px; /*problematic*/
+  margin: unset;
+  pointer-events: auto;
 }
 #comic-rail > * > img {
   left: unset;
