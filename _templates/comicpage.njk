@@ -1,5 +1,5 @@
 ---
-scripts: <script src="assets/js/pulldown.js"></script>
+scripts: <script src="assets/js/pulldown.js"></script><script src="assets/js/grabandmove.js"></script>
 permalink: assets/pagetray/{{ comicPage.name | slugify }}.html
 root: ../../
 tag: page
@@ -33,8 +33,8 @@ eleventyComputed:
 		              <img src="{{ comb + comicPage.sticker.url }}" id="sticker" class="untouchable off " alt="sticker layer">
                 </div>
 
-                <a href="{{ pagination.href.next | r }}"><img id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
-		            <a href="{{ pagination.href.next | r }}"><img id="rightpage" class="white bg page dynamicles ani" src="assets/pagetray/input/103big.png"></img></a>
+                <a draggable="false" href="{{ pagination.href.next | r }}"><img draggable='false' id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
+		            <a draggable="false" href="{{ pagination.href.next | r }}"><img draggable='false' id="rightpage" class="white bg page dynamicles ani" src="assets/pagetray/input/103big.png"></img></a>
 
 		          </div>
 		        </div>
