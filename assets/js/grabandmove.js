@@ -69,6 +69,32 @@ function startInertia() {
   }
 }
 
-container.addEventListener('wheel', () => {
-  cancelAnimationFrame(animationId);
+// i don't know if I want this behavior anymore
+//container.addEventListener('wheel', () => {
+//  cancelAnimationFrame(animationId);
+//});
+
+const gmNextpage = document.getElementById('nextpage');
+const gmRightpage = document.getElementById('rightpage');
+
+function Overlaper(el1, el2) {
+  const rect1 = el1.getBoundingClientRect();
+  const rect2 = el2.getBoundingClientRect();
+
+  const isOverlapping = !(
+    rect1.right < rect2.left ||
+    rect1.left > rect2.right ||
+    rect1.bottom < rect2.top ||
+    rect1.top > rect2.bottom
+  );
+
+  if (isOverlapping) {
+    console.log("i aughta move");
+  };
+
+};
+
+container.addEventListener('mousedown', (e) => {
+  Overlaper(gmNextpage, gmRightpage);
 });
+
