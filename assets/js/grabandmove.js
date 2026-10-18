@@ -68,10 +68,6 @@ function startInertia() {
   }
 }
 
-// i don't know if I want this behavior anymore
-//container.addEventListener('wheel', () => {
-//  cancelAnimationFrame(animationId);
-//});
 
 const gmNextpage = document.getElementById('nextpage');
 const gmRightpage = document.getElementById('rightpage');
@@ -95,9 +91,8 @@ function Overlaper(el1, el2) {
 
 };
 
-container.addEventListener('mousemove', (e) => {
-  Overlaper(gmNextpage, gmRightpage);
-});
+container.addEventListener('scroll', () => Overlaper(gmNextpage, gmRightpage));
+window.addEventListener('resize', () => Overlaper(gmNextpage, gmRightpage));
 
 //scroll 50
 window.addEventListener('DOMContentLoaded', () => {
