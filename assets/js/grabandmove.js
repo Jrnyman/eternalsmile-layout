@@ -100,11 +100,9 @@ container.addEventListener('mousemove', (e) => {
   Overlaper(gmNextpage, gmRightpage);
 });
 
-//scroll 50%
-//window.addEventListener('DOMContentLoaded', () => {
-//  const gmHalfScroll = (container.scrollHeight - container.clientHeight) * 0.5;
-//  container.scrollTo({
-//    top: gmHalfScroll,
-//    behaviour: 'smooth'
-//  });
-//});
+//scroll 50
+window.addEventListener('DOMContentLoaded', () => {
+  if (container) {
+    container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+  }
+});
