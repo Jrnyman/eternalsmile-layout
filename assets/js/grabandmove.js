@@ -89,12 +89,22 @@ function Overlaper(el1, el2) {
   );
 
   if (isOverlapping) {
-    console.log("i aughta move");
+    el1.classList.add('gmDodge');
+  } else {
+    el1.classList.remove('gmDodge');
   };
 
 };
 
-container.addEventListener('mousedown', (e) => {
+container.addEventListener('mousemove', (e) => {
   Overlaper(gmNextpage, gmRightpage);
 });
 
+//scroll 50%
+//window.addEventListener('DOMContentLoaded', () => {
+//  const gmHalfScroll = (container.scrollHeight - container.clientHeight) * 0.5;
+//  container.scrollTo({
+//    top: gmHalfScroll,
+//    behaviour: 'smooth'
+//  });
+//});
