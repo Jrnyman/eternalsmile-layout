@@ -103,6 +103,14 @@ container.addEventListener('mousemove', (e) => {
 //scroll 50
 window.addEventListener('DOMContentLoaded', () => {
   if (container) {
-    container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+    setTimeout(() => {
+    const halfScrolled = (container.scrollWidth - container.clientWidth) / 2;
+    //container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+
+    container.scrollTo({
+      left: halfScrolled,
+      behavior: 'smooth'
+    });
+    }, 1360);
   }
 });

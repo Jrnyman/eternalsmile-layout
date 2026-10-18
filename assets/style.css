@@ -551,7 +551,7 @@ table.goals.next {max-width: 1100px;}
 }
 #currentpage {z-index: 1;}
 #rightpage {
-  animation: spreadintro 2s ease-in-out;
+  animation: spreadintro 1.7s ease-in-out;
 }
 #comic-rail > a:last-child::before {
   content: "";
@@ -567,7 +567,7 @@ table.goals.next {max-width: 1100px;}
   translate: 0px -3.25714% !important;
   filter: brightness(0.90);
 }
-@keyframes spreadintro {0% {margin-left: -20%;} 50% {margin-left: -20%;} 100% {margin: unset;}}
+@keyframes spreadintro {0% {margin-left: -20%; opacity: 0;} 50% {margin-left: -20%;} 80% {opacity: 0;} 100% {margin: unset;}}
 
 .row h1, .cred.icles span {flex-basis:100%;}
 .row, .cred.icles {flex-wrap: wrap;}
