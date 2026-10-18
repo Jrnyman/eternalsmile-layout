@@ -1,4 +1,3 @@
-const container2 = document.getElementById('comic-viewport');
 const container = document.getElementById('comic-viewport');
 
 let Dragging = false;
