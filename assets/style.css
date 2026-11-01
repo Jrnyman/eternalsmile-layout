@@ -1,8 +1,11 @@
 /*TODO - start splitting into separate files: cfw, mini, */
 .off, .hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow, body.local * hr.main.splitter {display: none !important;}
 :root {
+    --comicRealPixelWidth: 1600px;
+    --comicRealPixelHeight: 2438px;
     --comicWidth: 1000px;
-    --v2comicWidth: 800px;
+    --v2comicWidth: calc(var(--comicRealPixelWidth) / 2);
+    --v2comicHeight: calc(var(--comicRealPixelHeight) / 2);
     --comicHeight: 1750px;
     --white: 237, 239, 236;
     --black: 26, 27, 25;
