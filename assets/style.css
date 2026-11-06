@@ -535,10 +535,11 @@ table.goals.next {max-width: 1100px;}
   margin: auto;
   height: 1219px;
 }
-#comic-rail > * {
+#comic-rail > a {
   flex: none;
-  min-width: var(--v2comicWidth);
-  aspect-ratio: var(--v2comicWidth)/var(--v2comicHeight);
+  max-width: var(--v2comicWidth);
+  aspect-ratio: 800/1219;
+  width: 100vw;
   margin: unset;
   pointer-events: auto;
 }
