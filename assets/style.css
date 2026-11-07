@@ -65,6 +65,10 @@ body, html {overflow-x: hidden;}
 	body.mini#chapter-select-page main * .archivelist li:nth-child(2n) {background-color: rgba(var(--white), 0.06); backdrop-filter: initial;}
 	body.mini#chapter-select-page main > .not.row.center > div {width: 85%; text-align: initial; padding-bottom: initial; flex-direction: row;}
 	body.mini#chapter-select-page main * h1 {padding-bottom: initial;}
+
+  #comic-rail {width: calc(calc(calc(95vw * 2) + 4px) + calc(100cqw - 95vw));}
+  /* Thers a sucky transition with this when it goes small mode */
+  /* but isn't small enough to shrink the pages, i need a different @media at that moment the 95% is smaller than 800px */
 }
 
 @media (min-width: 1230px) {
@@ -76,6 +80,7 @@ body, html {overflow-x: hidden;}
 	.wrap>main {
 		padding-bottom:200px;
 	}
+	#comic-rail {width: calc(calc(1600px + 4px) + calc(100cqw - 800px));}
 	body#chapter-select-page main {padding-bottom: 130px;}
     #underpage, #mobileSub, .mobile{
         display: none;
@@ -527,7 +532,6 @@ table.goals.next {max-width: 1100px;}
 #comic-viewport.active {cursor: grabbing;}
 #comic-viewport::-webkit-scrollbar {display: none;}
 #comic-rail {
-  width: calc(calc(1600px + 4px) + calc(100cqw - 800px));
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
