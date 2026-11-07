@@ -539,9 +539,11 @@ table.goals.next {max-width: 1100px;}
   flex: none;
   max-width: var(--v2comicWidth);
   aspect-ratio: 800/1219;
-  width: 100vw;
+  width: 95vw;
   margin: unset;
   pointer-events: auto;
+
+  position: relative;
 }
 #comic-rail > * > img {
   left: unset;
