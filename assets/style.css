@@ -20,6 +20,12 @@
 }
 body {margin:0;}
 body, html {overflow-x: hidden;}
+@media (max-width: 842px) {
+  #comic-rail {width: calc(calc(calc(95vw * 2) + 4px) + calc(100cqw - 95vw));}
+}
+@media (min-width: 843px) {
+  #comic-rail {width: calc(calc(1600px + 4px) + calc(100cqw - 800px));}
+}
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
 	
@@ -66,7 +72,7 @@ body, html {overflow-x: hidden;}
 	body.mini#chapter-select-page main > .not.row.center > div {width: 85%; text-align: initial; padding-bottom: initial; flex-direction: row;}
 	body.mini#chapter-select-page main * h1 {padding-bottom: initial;}
 
-  #comic-rail {width: calc(calc(calc(95vw * 2) + 4px) + calc(100cqw - 95vw));}
+
   /* Thers a sucky transition with this when it goes small mode */
   /* but isn't small enough to shrink the pages, i need a different @media at that moment the 95% is smaller than 800px */
   /* they start shrinking @ 842 px wide */

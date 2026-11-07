@@ -13,5 +13,8 @@
 		"page": "assets/pagetray/input/",
 		"old": "assets/pagetray/input/old/",
 		"article": "assets/pagetray/input/blerbs/"
-	}
+	},
+	"actualComicWidth": "1600",
+	"actualComicHeight": "2438",
+	"smallComicMaxWidth": "95"
 }
