@@ -47,6 +47,14 @@ const isDragging = (e) => {
   container.scrollLeft = scrollLeft - walk;
 };
 
+const touchPassthrough = () => {
+  container.style.pointerEvents = "auto";
+};
+// const touchStopthrough = () => {
+//   container.style.pointerEvents = "none";
+// };
+container.addEventListener('touchmove', touchPassthrough);
+// container.addEventListener('touchend', touchStopthrough);
 // container.addEventListener('touchstart', startDragging);
 // container.addEventListener('touchmove', isDragging);
 
