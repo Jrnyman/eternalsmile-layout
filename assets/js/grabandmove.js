@@ -23,8 +23,8 @@ container.addEventListener('click', (e) => {
   }
 }, true);
 
-container.addEventListener('mousedown', (e) => {
-  isDown = true;
+const startDragging = (e) => {
+ isDown = true;
   container.classList.add('active');
 
   startX = e.pageX - container.offsetLeft;
@@ -32,9 +32,9 @@ container.addEventListener('mousedown', (e) => {
   lastX = e.pageX;
 
   cancelAnimationFrame(animationId);
-});
+};
 
-container.addEventListener('mousemove', (e) => {
+const isDragging = (e) => {
   if (!isDown) return;
   e.preventDefault();
 
@@ -45,7 +45,10 @@ container.addEventListener('mousemove', (e) => {
   lastX = e.pageX;
 
   container.scrollLeft = scrollLeft - walk;
-});
+};
+
+container.addEventListener('mousedown', startDragging);
+container.addEventListener('mousemove', isDragging);
 
 const stopDragging = () => {
   if (!isDown) return;
