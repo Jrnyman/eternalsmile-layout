@@ -47,6 +47,9 @@ const isDragging = (e) => {
   container.scrollLeft = scrollLeft - walk;
 };
 
+// container.addEventListener('touchstart', startDragging);
+// container.addEventListener('touchmove', isDragging);
+
 container.addEventListener('mousedown', startDragging);
 container.addEventListener('mousemove', isDragging);
 
@@ -60,6 +63,8 @@ const stopDragging = () => {
 
 container.addEventListener('mouseup', stopDragging);
 container.addEventListener('mouseleave', stopDragging);
+
+// container.addEventListener('touchend', stopDragging);
 
 function startInertia() {
   container.scrollLeft -= velocityX;
