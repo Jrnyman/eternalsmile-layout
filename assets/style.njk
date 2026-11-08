@@ -1,3 +1,5 @@
+{% set comicWidth = comic_data.actualComicWidth / 2 %}
+{% set comicHeight = comic_data.actualComicHeight / 2 %}
 /*TODO - start splitting into separate files: cfw, mini, */
 .off, .hosted, body.local * .bookmark, body#chapter-select-page * .arrow, body.local * header .arrow, body.local * hr.main.splitter {display: none !important;}
 :root {
@@ -28,10 +30,10 @@ body, html {overflow-x: hidden;}
 }
 @media (max-width: 1229px) {
     /* Tablet small mode is on */
-	
+
 	#topBookmarks, #dSub, body.local * #underpage #bookmarkside {display: none;}
 	.page, #mainnav>*, .rounder, .cred img, .cred a, hr, li, body#chapter-select-page main * img, #comicimage, #previous1, #previous2, #previous3, #nextone {border-radius: 10px;}
-	
+
 	#back1 {filter: blur(5px) brightness(0.5);}
 	#back2 {filter: blur(7px) brightness(0.4);}
 	#back3 {filter: blur(9px) brightness(0.3);}
@@ -40,15 +42,15 @@ body, html {overflow-x: hidden;}
 	#nextpage {
 		left: 105%;
 	}
-    
+
 	.wrap {
 		width: 95%;
 		position: relative;
 	}
-	.row, .cred.main.collab {flex-direction:column;}    
+	.row, .cred.main.collab {flex-direction:column;}
 	.row.center {align-items: center;}
 	.row hr {flex: 1 1 3px; width:100%;flex-basis:unset;}
-	
+
 	body#chapter-select-page main * .archivelist {max-width: initial; min-height: unset;}
 	body#chapter-select-page main * img#chapter-cover {left: 0; right: 0; margin: auto; max-width: 100%; mask-image: linear-gradient(to bottom, black, transparent 97%)!important;}
 	body#chapter-select-page main * .archivelist {gap: min(7vw, 40px);}
@@ -117,7 +119,7 @@ body, html {overflow-x: hidden;}
     #nextpage {
 	    left: calc(70% + 300px);
 	    float: right;
-	    
+
 	    z-index: 2;
 
 	    animation: page-come-in 1s;
@@ -160,7 +162,7 @@ a {text-decoration: none;}
 .relative, .iconBox, #underpage {position: relative;}
 .absolute, .page, #sticker, .text-bg, #comicimage, #previous1, #previous2, #previous3, #nextone {position: absolute;}
 #underpage, #mobileSub {z-index:1;}
-.boldify, .iconBox {white-space:nowrap;} 
+.boldify, .iconBox {white-space:nowrap;}
 
 .fancyText, .cred p, .cred, address {font-family:Libertinus;}
 
@@ -212,7 +214,7 @@ body.v2 * .page::before {width: var(--v2comicWidth);}
     width: var(--comicWidth);
 }*/
 body.v1 * .page, body.v1 * #page-sticker {aspect-ratio: 4/7; max-width: var(--comicWidth);}
-body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: var(--v2comicWidth)/var(--v2comicHeight); max-width: var(--v2comicWidth);}
+body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: {{ comicWidth }}/{{ comicHeight }}; max-width: var(--v2comicWidth);}
 .page, body.actual * main > div{
 	/*max-width: var(--comicWidth);*/
 	/*max-height: var(--comicHeight);*/
@@ -224,7 +226,7 @@ body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: var(--v2comicWidth)/var(
 body.actual * main::after {
   content: "";
   display: block;
-  aspect-ratio: 800/1219; /*?????*/
+  aspect-ratio: 800/1219;
   max-width: 800px;
 }
 #back3 {transform: translate(calc(-5.7% * 3), calc(3.25714% * 3));}
@@ -241,7 +243,7 @@ body.actual * main::after {
 	z-index: 1;
 }
 #underpage {
-    max-width: 1000px; 
+    max-width: 1000px;
     transform: translateY(-25%);
 }
 #underpage.horizontalList >* {flex-basis: 250px;}
@@ -272,7 +274,7 @@ body.local * .nav.icon {max-width: 120px;}
 	transform:translateY(-24px);
 }
 #navside {
-    margin-right: auto; 
+    margin-right: auto;
     gap: 7%;
 }
 #bookmarkside >* {
@@ -300,7 +302,7 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 	width: unset;
 	display: flex;
 	align-items: center;
-	opacity: 0.5;	
+	opacity: 0.5;
 }
 .subButton .web img {
 	width: 60px;
@@ -360,7 +362,7 @@ th, table.goals tr td:nth-of-type(1) span, table.goals tr td:nth-of-type(3) span
 	transform: skewY(15deg) translateY(-3px);
 	filter: drop-shadow(0 0 2px black);
 }
-.main.cascade >* { transform: unset; filter: unset; opacity: 0.8;} 
+.main.cascade >* { transform: unset; filter: unset; opacity: 0.8;}
 .main.cascade {
 	width:fit-content;
 	padding: 5px;
@@ -492,10 +494,10 @@ blockquote.j {padding-left:70px;}
 article h1 {font-size: 30px;}
 h1 span, .cred.icles {align-items: flex-start;}
 h1 span {
-	gap: 1%; 
-	padding-left:20px; 
+	gap: 1%;
+	padding-left:20px;
 	padding-right:20px;
-	width: 90%; 
+	width: 90%;
 	margin: auto;
 	max-width: 460px;
 }
@@ -590,8 +592,8 @@ table.goals.next {max-width: 1100px;}
   translate: 0px -3.25714% !important;
   filter: brightness(0.90);
 }
-@keyframes spreadintro {0% {margin-left: -20%; opacity: 0;} 50% {margin-left: -20%;} 80% {opacity: 0;} 100% {margin: unset;}}
-@keyframes gmOpacity {0% {opacity: 0;} 80% {opacity: 0;}}
+@keyframes spreadintro {0% {margin-left: -20%; opacity: 0;} 50% {margin-left: -20%;} 80% {opacity: 0;} 100% {margin: unset;} }
+@keyframes gmOpacity {0% {opacity: 0;} 80% {opacity: 0;} }
 
 
 .row h1, .cred.icles span {flex-basis:100%;}
@@ -656,7 +658,7 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 	display: flex;
 	flex-direction: column;
 	transform-style: preserve-3d;
-	animation: spin 20s infinite linear;	
+	animation: spin 20s infinite linear;
 	width: 800px;
 	max-width: 70%;
 }
@@ -667,7 +669,7 @@ span.gradient {background: linear-gradient(to right, var(--eternalsmileWhite), r
 .card.styled img {
 	filter: brightness(0.85);
 	padding: 20px;
-	background-color: white; 
+	background-color: white;
 }
 .appendage, table.goals tr td:nth-of-type(1) span {margin-left: 3px;}
 .appendage, li.complete::before, .blogmeta , table.goals tr td:nth-of-type(1) span, table.goals tr td:nth-of-type(3) span {
@@ -752,11 +754,11 @@ span.key::before {
 .archivelist a:visited{color: rgb(121, 121, 121);}
 .archivelist li:hover{background-color: var(--eternalsmileGrey);}
 .archivelist li {
-	font-size: 22px;	
+	font-size: 22px;
 	font-family: 'Archivo Black';
 	list-style-type: none;
 	margin-bottom: 10px;
-	
+
 }
 .verify, .verifyd {display: inline; padding: unset;}
 .verify {background-color: rgb(255, 0 , 255);}
@@ -935,18 +937,18 @@ body.mini * #sticker {max-width: 145.1%; max-height: 1450.5px}
 	width: 95%;
 	display: block;
 }
-@keyframes opacity {0% {opacity: 0;}};
-@keyframes spin {100% {transform: rotateY(360deg)}}
-@keyframes flick {98% {opacity: 0;} 99% {opacity: 1;}}
-@keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;}}
-@keyframes flick-softer {0% {opacity:0.25} 50% {opacity: 0.4;} 100% {opacity: 0.25;}}
-@keyframes hold {0% {opacity: 1;} 99% {opacity: 1;}}
-@keyframes page-come-in {0% {transform: translateX(100%);}}
-@keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);}}
-@keyframes batch-come-in {0% {transform: translateX(-10%);}}
+@keyframes opacity {0% {opacity: 0;} };
+@keyframes spin {100% {transform: rotateY(360deg)} }
+@keyframes flick {98% {opacity: 0;} 99% {opacity: 1;} }
+@keyframes flick2 {49% {opacity: 0;} 50% {opacity: 1;} 99% {opacity: 1;} }
+@keyframes flick-softer {0% {opacity:0.25} 50% {opacity: 0.4;} 100% {opacity: 0.25;} }
+@keyframes hold {0% {opacity: 1;} 99% {opacity: 1;} }
+@keyframes page-come-in {0% {transform: translateX(100%);} }
+@keyframes page-come-in-BOTTOM {0% {transform: translateY(40%);} }
+@keyframes batch-come-in {0% {transform: translateX(-10%);} }
 
-@keyframes background-slide {0% {background-position-x: -5%;}}
+@keyframes background-slide {0% {background-position-x: -5%;} }
 
-@keyframes page-get-out {0%{left: 0; opacity:1;} 25%{opacity: 0;}}
+@keyframes page-get-out {0%{left: 0; opacity:1;} 25%{opacity: 0;} }
 
 @keyframes  cursor-a {50% {transform: translateX(-15px);} 100% {transform: translateX(0);}
