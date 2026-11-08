@@ -74,10 +74,6 @@ body, html {overflow-x: hidden;}
 	body.mini#chapter-select-page main > .not.row.center > div {width: 85%; text-align: initial; padding-bottom: initial; flex-direction: row;}
 	body.mini#chapter-select-page main * h1 {padding-bottom: initial;}
 
-
-  /* Thers a sucky transition with this when it goes small mode */
-  /* but isn't small enough to shrink the pages, i need a different @media at that moment the 95% is smaller than 800px */
-  /* they start shrinking @ 842 px wide */
 }
 
 @media (min-width: 1230px) {
@@ -131,20 +127,20 @@ body, html {overflow-x: hidden;}
 @media (min-width: 500px) {}
 
 @font-face {
-	font-family: "Fira Mono";
-	src:url(metacontent/fonts/FiraMono-Regular.woff2);
+	font-family: {{ comic_data.assets.fonts.code.name | safe }};
+	src:url({{ comic_data.assets.fonts.code.path }});
 }
 @font-face {
-	font-family: Libertinus;
-	src:url(metacontent/fonts/LibertinusSerif-Regular.woff2);
+	font-family: {{ comic_data.assets.fonts.serif.name | safe }};
+	src:url({{ comic_data.assets.fonts.serif.path }});
 }
 @font-face {
-	font-family:'Archivo Black';
-	src: url(metacontent/fonts/ArchivoBlack-Regular.woff2);
+	font-family:{{ comic_data.assets.fonts.bold.name | safe }};
+	src: url({{ comic_data.assets.fonts.bold.path }});
 }
 @font-face {
-	font-family: 'Francois One';
-	src: url(metacontent/fonts/francois-one-v21-latin-regular.woff2);
+	font-family: {{ comic_data.assets.fonts.text.name | safe }};
+	src: url({{ comic_data.assets.fonts.text.path }});
 }
 
 a {text-decoration: none;}
@@ -164,7 +160,7 @@ a {text-decoration: none;}
 #underpage, #mobileSub {z-index:1;}
 .boldify, .iconBox {white-space:nowrap;}
 
-.fancyText, .cred p, .cred, address {font-family:Libertinus;}
+.fancyText, .cred p, .cred, address {font-family:{{ comic_data.assets.fonts.serif.name | safe }};}
 
 .divided >#pageSelect::after {font-size:30px;}
 .divided >*::after, .cred.plug >*::after {
@@ -226,7 +222,7 @@ body.v2 * .page, body.v2 * #page-sticker {aspect-ratio: {{ comicWidth }}/{{ comi
 body.actual * main::after {
   content: "";
   display: block;
-  aspect-ratio: 800/1219;
+  aspect-ratio: {{ comicWidth }}/{{ comicHeight }};
   max-width: 800px;
 }
 #back3 {transform: translate(calc(-5.7% * 3), calc(3.25714% * 3));}
@@ -342,7 +338,7 @@ body.local * .subButton {max-width: unset !important; min-width: max-content !im
 
 h1, h2, h3, h4, h5, h6, .boldify, .nl-archivecomictitle, .nl-archivecomicnumber, .nl-chapter-more a, .blogtitle, .blogmeta, .blog .posttime,
 th, table.goals tr td:nth-of-type(1) span, table.goals tr td:nth-of-type(3) span {
-	font-family: 'Archivo Black';
+	font-family: {{ comic_data.assets.fonts.bold.name | safe }};
 	text-transform: uppercase;
 }
 .boldify, .boldify a, .boldify div {padding:1%;}
@@ -386,7 +382,7 @@ article, .blog, .nl-archive-page {
 	margin: auto;
 }
 p, li, table{
-	font-family: 'Francois One';
+	font-family: {{ comic_data.assets.fonts.text.name | safe }};
 	font-size: 16px;
 	letter-spacing: 0.5px;
 }
@@ -402,7 +398,7 @@ li:nth-of-type(even), table.goals tr:nth-of-type(even) {
 }
 ol li::marker {
 	color: rgba(var(--white), 0.35);
-	font-family: Libertinus;
+	font-family: {{ comic_data.assets.fonts.serif.name | safe }};
 }
 ol.letters {list-style-type: lower-alpha;}
 ol.letters.uppercase {list-style-type: upper-alpha;}
@@ -412,7 +408,7 @@ li.complete::before {
 	content: "ok!";
 	position: absolute;
 	margin-left: -70px;
-	font-family: 'Archivo Black';
+	font-family: {{ comic_data.assets.fonts.bold.name | safe }};
 	align-self: center;
 }
 li.complete {
@@ -448,7 +444,7 @@ li.current, li.complete, .progress * li, #behindContent {
 	letter-spacing: 1.5px;
 }
 .progress * span {
-	font-family: 'Archivo Black';
+	font-family: {{ comic_data.assets.fonts.bold.name | safe }};
 	font-size: 15px;
 	align-self: center;
 	margin-left: 5px;
@@ -467,7 +463,7 @@ footer {
 footer span, footer p {
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Libertinus';
+	font-family: '{{ comic_data.assets.fonts.serif.name | safe }}';
 }
 address {
 	padding-left: 20px;
@@ -553,7 +549,7 @@ table.goals.next {max-width: 1100px;}
 #comic-rail > a {
   flex: none;
   max-width: var(--v2comicWidth);
-  aspect-ratio: 800/1219;
+  aspect-ratio: {{ comicWidth }}/{{ comicHeight }};
   width: 95vw;
   margin: unset;
   pointer-events: auto;
@@ -755,7 +751,7 @@ span.key::before {
 .archivelist li:hover{background-color: var(--eternalsmileGrey);}
 .archivelist li {
 	font-size: 22px;
-	font-family: 'Archivo Black';
+	font-family: {{ comic_data.assets.fonts.bold.name | safe }};
 	list-style-type: none;
 	margin-bottom: 10px;
 
@@ -773,7 +769,7 @@ body#chapter-select-page article * ul li {
 	align-items:end;
 	list-style-type:none;
 	text-transform:uppercase;
-	font-family:'Archivo Black';
+	font-family:{{ comic_data.assets.fonts.bold.name | safe }};
 	text-wrap: nowrap;
 	gap: 23px;
 }
@@ -830,7 +826,7 @@ body.mini * #sticker {max-width: 145.1%; max-height: 1450.5px}
 .box {
 	padding:10px;
 	margin-bottom:15px;
-	font-family: 'Francois One', sans-serif;
+	font-family: {{ comic_data.assets.fonts.text.name | safe }}, sans-serif;
 }
 .box img {
 	max-width:100%;
@@ -855,7 +851,7 @@ body.mini * #sticker {max-width: 145.1%; max-height: 1450.5px}
 	font-size:12px;
 	float:right;
 	font-weight:bold;
-	font-family: Libertinus;
+	font-family: {{ comic_data.assets.fonts.serif.name | safe }};
 	letter-spacing: 1px;
 }
 #trueposttime {
@@ -880,7 +876,7 @@ body.mini * #sticker {max-width: 145.1%; max-height: 1450.5px}
 }
 .author {
 	font-size:18px;
-	font-family: 'Archivo Black';
+	font-family: {{ comic_data.assets.fonts.bold.name | safe }};
 
 	text-transform: uppercase;
 }

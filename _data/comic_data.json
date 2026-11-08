@@ -16,5 +16,26 @@
 	},
 	"actualComicWidth": "1600",
 	"actualComicHeight": "2438",
-	"smallComicMaxWidth": "95"
+	"smallComicMaxWidth": "95",
+	"assets": {
+		"fonts": {
+			"bold": {
+				"path": "metacontent/fonts/ArchivoBlack-Regular.woff2",
+				"name": "'Archivo Black'"
+				},
+			"text": {
+				"path": "metacontent/fonts/francois-one-v21-latin-regular.woff2",
+				"name": "'Francois One'"
+				},
+			"serif": {
+				"path": "metacontent/fonts/LibertinusSerif-Regular.woff2",
+				"name": "Libertinus"
+			},
+			"code": {
+				"path": "metacontent/fonts/FiraMono-Regular.woff2",
+				"name": "'Fira Mono'"
+				}
+		},
+		"drawings": ""
+	}
 }
