@@ -2,7 +2,7 @@
 <html>
 	<head>
 	  <base href="../../">
-		<link rel="stylesheet" href="assets/style.css"/>
+		<link rel="stylesheet" href=".assets/style.css"/>
 	</head>
 	<body >
 		<h1 style="text-align: center; font-size: 50px;">
@@ -34,20 +34,20 @@
 				<input type="BUTTON" id="reboot" style="max-width: 90px;" />
 			</div>
 		</div>
-		<script src="assets/js/theme.js"></script>
+		<script src=".assets/js/theme.js"></script>
 		<script>
-			localStorage.setItem("theme", false); 
+			localStorage.setItem("theme", false);
 			usersays.ok.onclick = function(){
 				rootget.style.setProperty('--white', usersays.primary.value);
 				rootget.style.setProperty('--black', usersays.secondary.value);
 				rootget.style.setProperty('--splash', usersays.splash.value);
 
-				localStorage.setItem("localW", usersays.primary.value); 
+				localStorage.setItem("localW", usersays.primary.value);
 				localStorage.setItem("localB", usersays.secondary.value);
 				localStorage.setItem("localS", usersays.splash.value);
 				local.ready = true;
 			};
-			
+
 		</script>
 	</body>
 </html>

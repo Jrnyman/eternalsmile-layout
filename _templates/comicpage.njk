@@ -1,6 +1,6 @@
 ---
-scripts: <script src="assets/js/pulldown.js"></script><script src="assets/js/grabandmove.js"></script>
-permalink: assets/pagetray/{{ comicPage.name | slugify }}.html
+scripts: <script src=".assets/js/pulldown.js"></script><script src=".assets/js/grabandmove.js"></script>
+permalink: .assets/pagetray/{{ comicPage.name | slugify }}.html
 root: ../../
 tag: page
 pagination: 
@@ -34,7 +34,7 @@ eleventyComputed:
                 </div>
 
                 <a draggable="false" href="{{ pagination.href.next | r }}"><img draggable='false' id="currentpage" class="white bg page dynamicles ani{% if comicPage.sticker.behind %} reverse-sticker{% endif %}" alt="current page" src="{{ default }}"></a>
-		            <a draggable="false" href="{{ pagination.href.next | r }}"><img draggable='false' id="rightpage" class="white bg page dynamicles ani" src="assets/pagetray/input/103big.png"></img></a>
+		            <a draggable="false" href="{{ pagination.href.next | r }}"><img draggable='false' id="rightpage" class="white bg page dynamicles ani" src=".assets/pagetray/input/103big.png"></img></a>
 
 		          </div>
 		        </div>
@@ -42,12 +42,12 @@ eleventyComputed:
 
 	<nav id="underpage" class="horizontalList mobile" style="padding:2%; margin-bottom: 3%;">
 		<div id="navside" class="horizontalList" style="padding-top: 2px;">
-			<a class="local" href="assets/pagetray/.html" style="filter: drop-shadow(-4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-left: 10px;">
+			<a class="local" href=".assets/pagetray/.html" style="filter: drop-shadow(-4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-left: 10px;">
 				<div class="arrow nav clippy white bg icon dynamicles flip" ></div>
 			</a>
-			<a href="assets/pagetray/3.html" class="arrow nav clippy white bg flip icon dynamicles" ></a>
-			<a href="assets/pagetray/5.html" class="arrow nav clippy white bg icon dynamicles"></a>
-			<a class="local" href="assets/pagetray/20.html" style="filter: drop-shadow(4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-right: 10px;">
+			<a href=".assets/pagetray/3.html" class="arrow nav clippy white bg flip icon dynamicles" ></a>
+			<a href=".assets/pagetray/5.html" class="arrow nav clippy white bg icon dynamicles"></a>
+			<a class="local" href=".assets/pagetray/20.html" style="filter: drop-shadow(4vw 1.5vw rgba(var(--white), 0.3)); max-width: 120px; margin-right: 10px;">
 				<div class="arrow nav clippy white bg icon dynamicles" ></div>
 			</a>
 		</div>
@@ -67,7 +67,7 @@ eleventyComputed:
 					<option value="{{ comb + comicPage.thumb.url }}">THUMBNAIL</option>
 				</optgroup>
 				<optgroup label="OLD">
-					<option value="assets/pagetray/50.png">"NO. 42" (12/16/24)</option>
+					<option value=".assets/pagetray/50.png">"NO. 42" (12/16/24)</option>
 				</optgroup>
 			</select>
 		</span>
@@ -78,15 +78,15 @@ eleventyComputed:
 	</a>
 
    		<article class="under" style="padding-top:20px">
-			{% include '../assets/extra/cfw/no86.njk' %}
-			<!--{% include '../assets/extra/chapter4plot.njk' %}
-			{% include '../assets/extra/table-demo.njk' %}-->
+			{% include '../.assets/extra/cfw/no86.njk' %}
+			<!--{% include '../.assets/extra/chapter4plot.njk' %}
+			{% include '../.assets/extra/table-demo.njk' %}-->
 		</article>
 
 		<div id="catch-up"></div>
 		<div class="flexify not row center hosted" style="padding-top: 20px; padding-bottom:30px;">
 			<a class="center" href="comic.html">
-				<img src="assets/metacontent/icons/airtalk.svg">
+				<img src=".assets/metacontent/icons/airtalk.svg">
 			</a>
 			<h1 class="center" style="font-size:35px;">comments:</h1>
 		</div>

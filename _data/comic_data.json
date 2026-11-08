@@ -9,10 +9,10 @@
 	"social-bluesky": "@eternalsmile.org",
 	"pageDefault": "bw", 
 	"url": {
-		"dir": "assets/pagetray/",
-		"page": "assets/pagetray/input/",
-		"old": "assets/pagetray/input/old/",
-		"article": "assets/pagetray/input/blerbs/"
+		"dir": ".assets/pagetray/",
+		"page": ".assets/pagetray/input/",
+		"old": ".assets/pagetray/input/old/",
+		"article": ".assets/pagetray/input/blerbs/"
 	},
 	"actualComicWidth": "1600",
 	"actualComicHeight": "2438",
