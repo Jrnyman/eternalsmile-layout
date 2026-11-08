@@ -11,7 +11,7 @@ let animationId;
 
 container.addEventListener('mousemove', () => {
   // hacky way to make it switch between mobile and desktop, but I think it aughta work
-  container.style.pointerEvents = "none"; hacky
+  container.style.pointerEvents = "none";
   Dragging = true;
 });
 container.addEventListener('mousedown', () => {
